@@ -16,7 +16,7 @@
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.7
         Device            :  PIC16F1827
         Driver Version    :  2.00
-*/
+ */
 
 /*
     (c) 2018 Microchip Technology Inc. and its subsidiaries. 
@@ -39,18 +39,29 @@
     CLAIMS IN ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT 
     OF FEES, IF ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS 
     SOFTWARE.
-*/
+ */
 
 #include "mcc_generated_files/mcc.h"
+#include <math.h> //está en el PATH de compilación osea la ruta donde busca el copilador por defecto
+#include"nuestrostimers.h" //está en el mismo directorio donde está el main
+#include "definiciones.h"
+#include "displays.h"
 
 /*
                          Main application
  */
-void main(void)
-{
+void main(void) {
     // initialize the device
     SYSTEM_Initialize();
 
+    Tm_Periodico timerS1;
+
+    timerS1.contador
+
+    // initialize de estructure de tiempo
+    
+    Tm_Inicie_periodico(&timerS1,CONTEOSTIMERS1);
+    
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
 
@@ -66,11 +77,24 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
 
-    while (1)
-    {
+    while (1) {
         // Add your application code
+        if (Tm_Hubo_periodico (&timerS1)){ //Evento que ocurre cada segundo
+            //Reset del timer por hardware
+            //atencion del timer por hardware
+            Tm_Procese_tiempo (&timerS1);
+        }
+        
+        if(/*condición del timer por software*/Tm_Hubo_periodico (&timerS1)){
+            //reset del timer por software
+            Tm_Baje_periodico (&timerS1);
+            //
+            /*haga lo que tenga que hacer cada segundo...*/
+
+        }
+        
     }
 }
 /**
  End of File
-*/
+ */
