@@ -27,7 +27,8 @@ void Ds_Encienda_Disp(char dispNum){
         case 1:
 
             IO_RB0_SetHigh();//Enciende display 1 9ms
-
+            IO_RB3_SetLow();
+            IO_RB4_SetLow();
         break;
 
         case 2:
