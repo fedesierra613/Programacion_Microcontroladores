@@ -54,13 +54,13 @@ void main(void) {
     // initialize the device
     SYSTEM_Initialize();
 
-    Tm_Periodico timerS1;
+    //Tm_Periodico timerS1;
 
-    timerS1.contador
+    //timerS1.contador
 
     // initialize de estructure de tiempo
     
-    Tm_Inicie_periodico(&timerS1,CONTEOSTIMERS1);
+    //Tm_Inicie_periodico(&timerS1,CONTEOSTIMERS1);
     
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:

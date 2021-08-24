@@ -33,7 +33,7 @@ void Ds_Procese_displays (Ds_Display *dsp){
         apagar transistores 2 y 3
         y prender los transistores de acuerdo al numero
         */
-        //acá va la función
+        //aca va la funcion
         Ds_Encienda_Disp(1);
         Ds_BCD(dsp->D1);
 
