@@ -209,6 +209,7 @@ void Ds_Procese_displays (Ds_Display *dsp){
             }
             
             Ds_Encienda_Disp(1);
+            Ds_Convertir_en_uni_deci_centi(1)
             Ds_BDC(dsp->D1);
 
             break;
