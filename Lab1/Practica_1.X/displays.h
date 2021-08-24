@@ -27,14 +27,12 @@ struct Ds_Display
     char tempE;
     char tempA;
 };
+
 // funcion para inicializar estructura de display
 void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA);
 
 //funciones para  procesar display
 void Ds_Procese_displays (Ds_Display *dsp);
-
-// funciones para traducir el numero a BCD
-/*Faltan....*/
 
 
 /* 
@@ -63,12 +61,11 @@ void Ds_BCD(char segmento);
 */
 void Ds_Mostrar_en_display(Ds_Display *dsp, char d1, char d2, char d3);
 
+
 /*
      convertir en decimal unidades, aca se importa el numero del ADC, de 1 a 1024 
 */
 char Ds_Convertir_en_uni_deci_centi(Ds_Display *dsp,int num);
-
-
 
 
 
