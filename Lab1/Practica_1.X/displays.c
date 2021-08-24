@@ -18,7 +18,7 @@ void Ds_Encienda_Disp(char dispNum){
         case 0:
 
             IO_RB0_SetLow();
-            IO_RB3_SetLow();      //Apagar todos los displays 1ms
+            IO_RB3_SetLow();//Apagar todos los displays 1ms
             IO_RB4_SetLow();
 
         break;
@@ -33,13 +33,17 @@ void Ds_Encienda_Disp(char dispNum){
         case 2:
 
             IO_RB3_SetHigh();//Enciende display 2
-            
+            IO_RB0_SetLow();
+            IO_RB4_SetLow();
+
         break;
 
 
         case 3:
 
             IO_RB4_SetHigh();//Enciende display 3
+            IO_RB0_SetLow();
+            IO_RB3_SetLow();
 
         break;
 
@@ -202,11 +206,7 @@ void Ds_Procese_displays (Ds_Display *dsp){
                 dsp->estados =D1A;
                 dsp->tempA=dsp->tiempoApagado;
             }
-            /*funcion que haga el manejo de los LEDS
-            apagar transistores 2 y 3
-            y prender los transistores de acuerdo al numero
-            */
-            //aca va la funcion
+            
             Ds_Encienda_Disp(1);
             Ds_BDC(dsp->D1);
 
@@ -218,9 +218,7 @@ void Ds_Procese_displays (Ds_Display *dsp){
                 dsp->estados =D2E;
                 dsp->tempE=dsp->tiempoEncendido;
             }
-            /*funcion que haga el manejo de los LEDS
-            apagar transistores 1 2 y 3
-            */
+            
             Ds_Encienda_Disp(0);
         break;
 
@@ -230,11 +228,7 @@ void Ds_Procese_displays (Ds_Display *dsp){
                 dsp->estados =D2A;
                 dsp->tempA=dsp->tiempoApagado;
             }
-            /*funcion que haga el manejo de los LEDS
-            apagar transistores 2 y 3
-            y prender los transistores de acuerdo al numero
-            */
-            //acá va la función
+        
             Ds_Encienda_Disp(2); 
             Ds_BCD(dsp->D2);
         break;
@@ -245,9 +239,7 @@ void Ds_Procese_displays (Ds_Display *dsp){
                 dsp->estados =D3E;
                 dsp->tempE=dsp->tiempoEncendido;
             }
-            /*funcion que haga el manejo de los LEDS
-            apagar transistores 1 2 y 3
-            */
+        
             Ds_Encienda_Disp(0);
         break;
 
@@ -257,11 +249,7 @@ void Ds_Procese_displays (Ds_Display *dsp){
                 dsp->estados =D3A;
                 dsp->tempA=dsp->tiempoApagado;
             }
-            /*funcion que haga el manejo de los LEDS
-            apagar transistores 2 y 3
-            y prender los transistores de acuerdo al numero
-            */
-            //acá va la función
+            
             Ds_Encienda_Disp(3);
             Ds_BCD(dsp->D3);
         break;
@@ -272,15 +260,13 @@ void Ds_Procese_displays (Ds_Display *dsp){
                 dsp->estados =D1E;
                 dsp->tempE=dsp->tiempoEncendido;
             }
-            /*funcion que haga el manejo de los LEDS
-            apagar transistores 1 2 y 3
-            */
+            
             Ds_Encienda_Disp(0);
         break;
 
         default:
-            // a este no deberia llegar nunca
             while(1){
+
             /*prendo un LED que me marca el error*/
             }
 }
@@ -290,6 +276,27 @@ void Ds_Procese_displays (Ds_Display *dsp){
 
 char Ds_Convertir_en_uni_deci_centi(Ds_Display *dsp,int num){
 
+    div_t r1;                               // Convertidor digito 1
+    int r2;                                 // Convertidor digito 2
+    div_t r3;                               // Convertidos digito 2
+
+    r1 = div(volt,100);                     // Valor digito 1
+    r2 = r1.rem;                            // Valor digito 2
+    r3 = div(r2,10);                        // Valor dijito 3
+    
+        switch(num){                              // Separador de digitos
+            case 1:
+                volt = r1.quot;                    // Valor digito 1
+                break;
+            case 2:
+                volt = r2/10;                      // Valor digito 2
+                break;
+            case 3:
+                volt = r3.rem;                     // Valor digito 3
+                break;
+        }
+    
+        volt += 48;
         
 
 }
