@@ -116,14 +116,7 @@ void EUSART_Initialize(void)
 
     eusartRxLastError.status = 0;
 
-    // initializing the driver state
-    eusartTxHead = 0;
-    eusartTxTail = 0;
-    eusartTxBufferRemaining = sizeof(eusartTxBuffer);
-
-    eusartRxHead = 0;
-    eusartRxTail = 0;
-    eusartRxCount = 0;
+    
 
     // enable receive interrupt
     PIE1bits.RCIE = 1;
@@ -131,12 +124,12 @@ void EUSART_Initialize(void)
 
 bool EUSART_is_tx_ready(void)
 {
-    return (eusartTxBufferRemaining ? true : false);
+    return (bool)(PIR1bits.TXIF && TXSTAbits.TXEN);
 }
 
 bool EUSART_is_rx_ready(void)
 {
-    return (eusartRxCount ? true : false);
+    return (bool)(PIR1bits.RCIF);
 }
 
 bool EUSART_is_tx_done(void)
@@ -150,34 +143,28 @@ eusart_status_t EUSART_get_last_status(void){
 
 uint8_t EUSART_Read(void)
 {
-    uint8_t readValue  = 0;
+    while(!PIR1bits.RCIF)
+    {
+    }
+
+    eusartRxLastError.status = 0;
     
-    while(0 == eusartRxCount)
+    if(1 == RCSTAbits.OERR)
     {
+        // EUSART error - restart
+
+        RCSTAbits.CREN = 0; 
+        RCSTAbits.CREN = 1; 
     }
 
-    eusartRxLastError = eusartRxStatusBuffer[eusartRxTail];
-
-    readValue = eusartRxBuffer[eusartRxTail++];
-    if(sizeof(eusartRxBuffer) <= eusartRxTail)
-    {
-        eusartRxTail = 0;
-    }
-    PIE1bits.RCIE = 0;
-    eusartRxCount--;
-    PIE1bits.RCIE = 1;
-
-    return readValue;
+    return RCREG;
 }
 
 void EUSART_Write(uint8_t txData)
 {
-    while(0 == eusartTxBufferRemaining)
+    while(0 == PIE1bits.TXIE)
     {
-    }
-
-    if(0 == PIE1bits.TXIE)
-    {
+<<<<<<< Updated upstream
         TXREG = txData;
     }
     else
@@ -219,34 +206,17 @@ void EUSART_Transmit_ISR(void)
     else
     {
         PIE1bits.TXIE = 0;
+=======
+>>>>>>> Stashed changes
     }
+    
+    TXREG = txData;
+   
 }
 
-void EUSART_Receive_ISR(void)
-{
-    
-    eusartRxStatusBuffer[eusartRxHead].status = 0;
 
-    if(RCSTAbits.FERR){
-        eusartRxStatusBuffer[eusartRxHead].ferr = 1;
-        EUSART_FramingErrorHandler();
-    }
 
-    if(RCSTAbits.OERR){
-        eusartRxStatusBuffer[eusartRxHead].oerr = 1;
-        EUSART_OverrunErrorHandler();
-    }
-    
-    if(eusartRxStatusBuffer[eusartRxHead].status){
-        EUSART_ErrorHandler();
-    } else {
-        EUSART_RxDataHandler();
-    }
-    
-    // or set custom function using EUSART_SetRxInterruptHandler()
-}
-
-void EUSART_RxDataHandler(void){
+/*void EUSART_RxDataHandler(void){
     // use this default receive interrupt handler code
     eusartRxBuffer[eusartRxHead++] = RCREG;
     if(sizeof(eusartRxBuffer) <= eusartRxHead)
@@ -254,9 +224,11 @@ void EUSART_RxDataHandler(void){
         eusartRxHead = 0;
     }
     eusartRxCount++;
-}
+}*/
 
-void EUSART_DefaultFramingErrorHandler(void){}
+void EUSART_DefaultFramingErrorHandler(void){
+
+}
 
 void EUSART_DefaultOverrunErrorHandler(void){
     // EUSART error - restart
@@ -282,13 +254,6 @@ void EUSART_SetErrorHandler(void (* interruptHandler)(void)){
     EUSART_ErrorHandler = interruptHandler;
 }
 
-void EUSART_SetTxInterruptHandler(void (* interruptHandler)(void)){
-    EUSART_TxDefaultInterruptHandler = interruptHandler;
-}
-
-void EUSART_SetRxInterruptHandler(void (* interruptHandler)(void)){
-    EUSART_RxDefaultInterruptHandler = interruptHandler;
-}
 /**
   End of File
 */

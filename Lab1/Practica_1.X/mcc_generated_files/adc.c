@@ -80,11 +80,6 @@ void ADC_Initialize(void)
     // GO_nDONE stop; ADON enabled; CHS AN0; 
     ADCON0 = 0x01;
     
-    // Enabling ADC interrupt.
-    PIE1bits.ADIE = 1;
-	
-	// Set Default Interrupt Handler
-    ADC_SetInterruptHandler(ADC_DefaultInterruptHandler);
 }
 
 void ADC_SelectChannel(adc_channel_t channel)
@@ -98,14 +93,14 @@ void ADC_SelectChannel(adc_channel_t channel)
 void ADC_StartConversion(void)
 {
     // Start the conversion
-    ADCON0bits.GO_nDONE = 1;
+    ADCON0bits.GO = 1;
 }
 
 
 bool ADC_IsConversionDone(void)
 {
     // Start the conversion
-   return ((bool)(!ADCON0bits.GO_nDONE));
+   return ((bool)(!ADCON0bits.GO));
 }
 
 adc_result_t ADC_GetConversionResult(void)
@@ -142,7 +137,7 @@ void ADC_TemperatureAcquisitionDelay(void)
     __delay_us(200);
 }
 
-void ADC_ISR(void)
+/*void ADC_ISR(void)
 {
     // Clear the ADC interrupt flag
     PIR1bits.ADIF = 0;

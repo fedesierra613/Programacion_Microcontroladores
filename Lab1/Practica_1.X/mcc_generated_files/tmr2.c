@@ -78,7 +78,7 @@ void TMR2_Initialize(void)
     PIE1bits.TMR2IE = 1;
 
     // Set Default Interrupt Handler
-    TMR2_SetInterruptHandler(TMR2_DefaultInterruptHandler);
+    /*TMR2_SetInterruptHandler(TMR2_DefaultInterruptHandler);*/
 
     // T2CKPS 1:16; T2OUTPS 1:4; TMR2ON on; 
     T2CON = 0x1E;
@@ -116,7 +116,18 @@ void TMR2_LoadPeriodRegister(uint8_t periodVal)
    PR2 = periodVal;
 }
 
-void TMR2_ISR(void)
+bool TMR2_Overflow(void)
+{
+    // check if  overflow has occurred by checking the TMRIF bit
+    bool status = PIR1bits.TMR2IF;
+    if(status)
+    {
+        // Clearing IF flag.
+        PIR1bits.TMR2IF = 0;
+    }
+    return status;
+}
+/*void TMR2_ISR(void)
 {
 
     // clear the TMR2 interrupt flag
@@ -137,7 +148,7 @@ void TMR2_CallBack(void)
     }
 }
 
-void TMR2_SetInterruptHandler(void (* InterruptHandler)(void)){
+/*void TMR2_SetInterruptHandler(void (* InterruptHandler)(void)){
     TMR2_InterruptHandler = InterruptHandler;
 }
 
