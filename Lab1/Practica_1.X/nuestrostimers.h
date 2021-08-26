@@ -6,15 +6,15 @@ extern "C" {
 #endif
 //#include <stddef.h>
 typedef struct Tm_Periodico Tm_Periodico;
-#define TM_PER_B_ACTIVO		0x01U// nos dice si el timer esta prendido
-#define TM_PER_B_TC 		0x02U// esta bandera nos dice si el timer se desborda, o sea que llego al conteo
+#define TM_PER_B_ACTIVO		0x01U// nos dice si el timer está prendido
+#define TM_PER_B_TC			0x02U// esta bandera nos dice si el timer se desbordó que llegó la conteo
 #define TM_Out_B_TC			0x04U
 struct Tm_Periodico
 {
-	unsigned int	contador,// van los conteos temporales por timer multiplo
-	periodo;//hasta donde quiero contar
-	unsigned long	timeout;//ac� va un timeout
-	unsigned char banderas; //el primer bit me dice si est� activo este timer el segundo me dice si se da periodo
+	unsigned int contador;
+    unsigned int periodo; 
+	unsigned long	timeout;//acá va un timeout
+	unsigned char banderas; //el primer bit me dice si está activo este timer el segundo me dice si se da periodo
 };
 
 //funciones para  procesar tiempo

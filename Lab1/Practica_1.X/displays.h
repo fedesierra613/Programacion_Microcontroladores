@@ -15,6 +15,7 @@ typedef struct Ds_Display Ds_Display;
 struct Ds_Display
 {
 	char estados; //6 estados, dos por cada 7 segmentos
+    
 //Numero de cada 7 segmentos
     char D1;
     char D2;
@@ -22,7 +23,6 @@ struct Ds_Display
 //Tiempos de cada estado, encendido o apagado  
     char tiempoEncendido;
     char tiempoApagado;
-
 
     char tempE;
     char tempA;

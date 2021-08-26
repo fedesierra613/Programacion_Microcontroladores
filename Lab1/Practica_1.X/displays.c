@@ -1,4 +1,7 @@
 #include "displays.h"
+#include "pin_manager.h"
+#include <stdint.h>
+
 
 
 void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA){
@@ -13,6 +16,7 @@ void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, ch
 }
 
 void Ds_Encienda_Disp(char dispNum){
+
     switch (dispNum){
 
         case 0:
@@ -52,6 +56,7 @@ void Ds_Encienda_Disp(char dispNum){
 
 
 void Ds_BCD(char segmento){
+
     switch (segmento){
 
         case 0:
@@ -195,21 +200,37 @@ void Ds_BCD(char segmento){
     }
 }
 
+
+void Ds_Convertir_en_uni_deci_centi (Ds_Display *dsp, uint16_t voltaje){
+	dsp->D1 = Recibido % 10;
+	voltaje = voltaje/10;
+	dsp->D2 = voltaje % 10;
+	voltaje = voltaje/10;
+	dsp->D3 = voltaje % 10;
+}
+
+uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT){ // retora el valor leido de 0-10           
+
+    float pendiente = 0.9766;
+    uint16_t voltios = (uint16_t) ADC_OUT*pendiente;
+	return(voltios);
+}
+
+
+
 void Ds_Procese_displays (Ds_Display *dsp){
 
-    switch ( dsp->estados )
-{
-    // declarations
-    // . . .
+    switch ( dsp->estados ){
+
         case D1E:
-            --(dsp->tempE);
+            --(dsp->tempE); //Temp estado encendido 9 veces para 9 ms 
             if(!(dsp->tempE)){
                 dsp->estados =D1A;
                 dsp->tempA=dsp->tiempoApagado;
             }
             
+
             Ds_Encienda_Disp(1);
-            Ds_Convertir_en_uni_deci_centi(1)
             Ds_BDC(dsp->D1);
 
             break;
@@ -259,7 +280,7 @@ void Ds_Procese_displays (Ds_Display *dsp){
         case D3A:
             --(dsp->tempA);
             if(!(dsp->tempA)){
-                dsp->estados =D1E;
+                dsp->estados = D1E;
                 dsp->tempE=dsp->tiempoEncendido;
             }
             
@@ -272,40 +293,5 @@ void Ds_Procese_displays (Ds_Display *dsp){
             /*prendo un LED que me marca el error*/
             }
 }
-
-}
-
-
-char Ds_Convertir_en_uni_deci_centi(Ds_Display *dsp,int num){
-
-    div_t r1;                               // Convertidor digito 1
-    int r2;                                 // Convertidor digito 2
-    div_t r3;                               // Convertidos digito 2
-
-    r1 = div(volt,100);                     // Valor digito 1
-    r2 = r1.rem;                            // Valor digito 2
-    r3 = div(r2,10);                        // Valor dijito 3
-    
-        switch(num){                              // Separador de digitos
-            case 1:
-                volt = r1.quot;                    // Valor digito 1
-                break;
-            case 2:
-                volt = r2/10;                      // Valor digito 2
-                break;
-            case 3:
-                volt = r3.rem;                     // Valor digito 3
-                break;
-        }
-    
-        volt += 48;
-        
-
-}
-
-
-
-void Ds_Mostrar_en_display(Ds_Display *dsp, char d1, char d2, char d3){
-
 
 }
