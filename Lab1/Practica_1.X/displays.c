@@ -209,7 +209,7 @@ void Ds_Convertir_en_uni_deci_centi (Ds_Display *dsp, uint16_t voltaje){
 	dsp->D3 = voltaje % 10;
 }
 
-uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT){ // retora el valor leido de 0-10           
+uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT){ // return a el valor de 0-10           
 
     float pendiente = 0.9766;
     uint16_t voltios = (uint16_t) ADC_OUT*pendiente;
