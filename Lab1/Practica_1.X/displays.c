@@ -6,9 +6,9 @@
 
 void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA){
     dsp->estados=D1E;
-    dsp->D1=8;
-    dsp->D2=8;
-    dsp->D3=8;
+    dsp->D1=d1;
+    dsp->D2=d2;
+    dsp->D3=d3;
     dsp->tiempoEncendido=tE;
     dsp->tiempoApagado=tA;
     dsp->tempE=tE;
@@ -55,7 +55,7 @@ void Ds_Encienda_Disp(char dispNum){
 }
 
 
-void Ds_BCD(char segmento){
+void Ds_BCD(int segmento){
 
     switch (segmento){
 

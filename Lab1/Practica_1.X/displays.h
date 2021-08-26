@@ -67,7 +67,7 @@ void Ds_Mostrar_en_display(Ds_Display *dsp, char d1, char d2, char d3);
 */
 void Ds_Convertir_en_uni_deci_centi(Ds_Display *dsp,uint16_t voltaje);
 
-uint16_t Ds_Conversor_ADC ( uint16_t ADC_OUT);
+uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT);
 
 
 

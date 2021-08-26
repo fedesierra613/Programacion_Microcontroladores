@@ -5060,7 +5060,7 @@ void Ds_Mostrar_en_display(Ds_Display *dsp, char d1, char d2, char d3);
 
 void Ds_Convertir_en_uni_deci_centi(Ds_Display *dsp,uint16_t voltaje);
 
-uint16_t Ds_Conversor_ADC ( uint16_t ADC_OUT);
+uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT);
 # 23 "main.c" 2
 
 # 1 "./definiciones.h" 1
@@ -5105,6 +5105,7 @@ void Tm_Baje_timeout (Tm_Periodico *ctp);
 
 
 
+
 uint16_t valor_ADC = 0;
 adc_channel_t AN1_Channel;
 uint16_t volt_ADC = 0;
@@ -5116,13 +5117,13 @@ void main(void){
  SYSTEM_Initialize();
  Ds_Display seven_seg;
  Tm_Periodico timer_1ms;
-
+    Tm_Periodico timer_1000ms;
  Tm_Inicie_periodico (&timer_1ms, 1000);
  ADC_SelectChannel (AN1_Channel);
-
-
+ Tm_Periodico My_ADC_1000ms;
+ Tm_Inicie_periodico (&timer_1000ms, 1000);
  ADC_Initialize();
-
+ Ds_Iniciar_displays (&seven_seg, 4, 5, 6, 4, 1);
     TMR6_StartTimer();
 
 

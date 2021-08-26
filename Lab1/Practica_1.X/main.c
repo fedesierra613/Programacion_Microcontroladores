@@ -26,6 +26,7 @@
 
 
 
+
 uint16_t valor_ADC = 0;
 adc_channel_t AN1_Channel;
 uint16_t volt_ADC = 0;
@@ -37,13 +38,13 @@ void main(void){
 	SYSTEM_Initialize();
 	Ds_Display seven_seg;
 	Tm_Periodico timer_1ms;
-    //Tm_Periodico My_Per_1000ms;
+    Tm_Periodico timer_1000ms;
 	Tm_Inicie_periodico (&timer_1ms, 1000);
 	ADC_SelectChannel (AN1_Channel);
-	//Tm_Periodico My_ADC_1000ms;
-	//Tm_Inicie_periodico (&My_Per_1000ms, 1000);
+	Tm_Periodico My_ADC_1000ms;
+	Tm_Inicie_periodico (&timer_1000ms, 1000);
 	ADC_Initialize();
-	//Ds_Iniciar_displays (&seven_seg, Valor_Inicial0, Valor_Inicial1, Valor_Inicial2, T_On, T_Off);
+	Ds_Iniciar_displays (&seven_seg, Valor_Inicial0, Valor_Inicial1, Valor_Inicial2, T_On, T_Off);
     TMR6_StartTimer();
 
     
