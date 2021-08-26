@@ -93,14 +93,14 @@ void ADC_SelectChannel(adc_channel_t channel)
 void ADC_StartConversion(void)
 {
     // Start the conversion
-    ADCON0bits.GO = 1;
+    ADCON0bits.GO_nDONE = 1;
 }
 
 
 bool ADC_IsConversionDone(void)
 {
     // Start the conversion
-   return ((bool)(!ADCON0bits.GO));
+   return ((bool)(!ADCON0bits.GO_nDONE));
 }
 
 adc_result_t ADC_GetConversionResult(void)
@@ -135,26 +135,6 @@ adc_result_t ADC_GetConversion(adc_channel_t channel)
 void ADC_TemperatureAcquisitionDelay(void)
 {
     __delay_us(200);
-}
-
-/*void ADC_ISR(void)
-{
-    // Clear the ADC interrupt flag
-    PIR1bits.ADIF = 0;
-	
-	if(ADC_InterruptHandler)
-    {
-        ADC_InterruptHandler();
-    }
-}
-
-void ADC_SetInterruptHandler(void (* InterruptHandler)(void)){
-    ADC_InterruptHandler = InterruptHandler;
-}
-
-void ADC_DefaultInterruptHandler(void){
-    // add your ADC interrupt custom code
-    // or set custom function using ADC_SetInterruptHandler()
 }
 /**
  End of File

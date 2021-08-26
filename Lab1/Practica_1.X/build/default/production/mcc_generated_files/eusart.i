@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/adc.c"
+# 1 "mcc_generated_files/eusart.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/adc.c" 2
-# 51 "mcc_generated_files/adc.c"
+# 1 "mcc_generated_files/eusart.c" 2
+# 50 "mcc_generated_files/eusart.c"
+# 1 "mcc_generated_files/eusart.h" 1
+# 54 "mcc_generated_files/eusart.h"
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -4235,10 +4237,11 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 51 "mcc_generated_files/adc.c" 2
+# 54 "mcc_generated_files/eusart.h" 2
 
-# 1 "mcc_generated_files/adc.h" 1
-# 55 "mcc_generated_files/adc.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 55 "mcc_generated_files/eusart.h" 2
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -4324,130 +4327,153 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-# 55 "mcc_generated_files/adc.h" 2
+# 56 "mcc_generated_files/eusart.h" 2
+# 75 "mcc_generated_files/eusart.h"
+typedef union {
+    struct {
+        unsigned perr : 1;
+        unsigned ferr : 1;
+        unsigned oerr : 1;
+        unsigned reserved : 5;
+    };
+    uint8_t status;
+}eusart_status_t;
+# 110 "mcc_generated_files/eusart.h"
+void EUSART_Initialize(void);
+# 158 "mcc_generated_files/eusart.h"
+_Bool EUSART_is_tx_ready(void);
+# 206 "mcc_generated_files/eusart.h"
+_Bool EUSART_is_rx_ready(void);
+# 253 "mcc_generated_files/eusart.h"
+_Bool EUSART_is_tx_done(void);
+# 301 "mcc_generated_files/eusart.h"
+eusart_status_t EUSART_get_last_status(void);
+# 321 "mcc_generated_files/eusart.h"
+uint8_t EUSART_Read(void);
+# 341 "mcc_generated_files/eusart.h"
+void EUSART_Write(uint8_t txData);
+# 361 "mcc_generated_files/eusart.h"
+void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 379 "mcc_generated_files/eusart.h"
+void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 397 "mcc_generated_files/eusart.h"
+void EUSART_SetErrorHandler(void (* interruptHandler)(void));
+# 50 "mcc_generated_files/eusart.c" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
-# 56 "mcc_generated_files/adc.h" 2
-# 72 "mcc_generated_files/adc.h"
-typedef uint16_t adc_result_t;
 
-
-
-
-typedef struct
-{
-    adc_result_t adcResult1;
-    adc_result_t adcResult2;
-} adc_sync_double_result_t;
-# 95 "mcc_generated_files/adc.h"
-typedef enum
-{
-    channel_AN7 = 0x7,
-    channel_Temp = 0x1D,
-    channel_DAC = 0x1E,
-    channel_FVR = 0x1F
-} adc_channel_t;
-# 136 "mcc_generated_files/adc.h"
-void ADC_Initialize(void);
-# 166 "mcc_generated_files/adc.h"
-void ADC_SelectChannel(adc_channel_t channel);
-# 193 "mcc_generated_files/adc.h"
-void ADC_StartConversion(void);
-# 225 "mcc_generated_files/adc.h"
-_Bool ADC_IsConversionDone(void);
-# 258 "mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversionResult(void);
-# 288 "mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 316 "mcc_generated_files/adc.h"
-void ADC_TemperatureAcquisitionDelay(void);
-# 52 "mcc_generated_files/adc.c" 2
-
-# 1 "mcc_generated_files/device_config.h" 1
-# 53 "mcc_generated_files/adc.c" 2
+volatile eusart_status_t eusartRxLastError;
 
 
 
 
 
+void (*EUSART_FramingErrorHandler)(void);
+void (*EUSART_OverrunErrorHandler)(void);
+void (*EUSART_ErrorHandler)(void);
 
+void EUSART_DefaultFramingErrorHandler(void);
+void EUSART_DefaultOverrunErrorHandler(void);
+void EUSART_DefaultErrorHandler(void);
 
-
-void (*ADC_InterruptHandler)(void);
-
-
-
-
-
-void ADC_Initialize(void)
+void EUSART_Initialize(void)
 {
 
 
 
-    ADCON1 = 0xE0;
+    BAUDCON = 0x08;
 
 
-    ADRESL = 0x00;
+    RCSTA = 0x90;
 
 
-    ADRESH = 0x00;
+    TXSTA = 0x24;
 
 
-    ADCON0 = 0x01;
+    SPBRGL = 0x40;
+
+
+    SPBRGH = 0x03;
+
+
+    EUSART_SetFramingErrorHandler(EUSART_DefaultFramingErrorHandler);
+    EUSART_SetOverrunErrorHandler(EUSART_DefaultOverrunErrorHandler);
+    EUSART_SetErrorHandler(EUSART_DefaultErrorHandler);
+
+    eusartRxLastError.status = 0;
 
 }
 
-void ADC_SelectChannel(adc_channel_t channel)
+_Bool EUSART_is_tx_ready(void)
 {
-
-    ADCON0bits.CHS = channel;
-
-    ADCON0bits.ADON = 1;
+    return (_Bool)(PIR1bits.TXIF && TXSTAbits.TXEN);
 }
 
-void ADC_StartConversion(void)
+_Bool EUSART_is_rx_ready(void)
 {
-
-    ADCON0bits.GO_nDONE = 1;
+    return (_Bool)(PIR1bits.RCIF);
 }
 
-
-_Bool ADC_IsConversionDone(void)
+_Bool EUSART_is_tx_done(void)
 {
-
-   return ((_Bool)(!ADCON0bits.GO_nDONE));
+    return TXSTAbits.TRMT;
 }
 
-adc_result_t ADC_GetConversionResult(void)
-{
-
-    return ((adc_result_t)((ADRESH << 8) + ADRESL));
+eusart_status_t EUSART_get_last_status(void){
+    return eusartRxLastError;
 }
 
-adc_result_t ADC_GetConversion(adc_channel_t channel)
+uint8_t EUSART_Read(void)
 {
-
-    ADCON0bits.CHS = channel;
-
-
-    ADCON0bits.ADON = 1;
-
-
-    _delay((unsigned long)((5)*(32000000/4000000.0)));
-
-
-    ADCON0bits.GO_nDONE = 1;
-
-
-    while (ADCON0bits.GO_nDONE)
+    while(!PIR1bits.RCIF)
     {
     }
 
+    eusartRxLastError.status = 0;
 
-    return ((adc_result_t)((ADRESH << 8) + ADRESL));
+    if(1 == RCSTAbits.OERR)
+    {
+
+
+        RCSTAbits.CREN = 0;
+        RCSTAbits.CREN = 1;
+    }
+
+    return RCREG;
 }
 
-void ADC_TemperatureAcquisitionDelay(void)
+void EUSART_Write(uint8_t txData)
 {
-    _delay((unsigned long)((200)*(32000000/4000000.0)));
+    while(0 == PIR1bits.TXIF)
+    {
+    }
+
+    TXREG = txData;
+}
+
+
+
+
+void EUSART_DefaultFramingErrorHandler(void){}
+
+void EUSART_DefaultOverrunErrorHandler(void){
+
+
+    RCSTAbits.CREN = 0;
+    RCSTAbits.CREN = 1;
+
+}
+
+void EUSART_DefaultErrorHandler(void){
+}
+
+void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void)){
+    EUSART_FramingErrorHandler = interruptHandler;
+}
+
+void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void)){
+    EUSART_OverrunErrorHandler = interruptHandler;
+}
+
+void EUSART_SetErrorHandler(void (* interruptHandler)(void)){
+    EUSART_ErrorHandler = interruptHandler;
 }

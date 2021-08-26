@@ -4,6 +4,7 @@
 extern "C" {
 #endif
 
+#include <stdint.h>
 #define D1E 1
 #define D1A 2
 #define D2E 3

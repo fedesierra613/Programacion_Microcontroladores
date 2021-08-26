@@ -63,8 +63,8 @@ void TMR6_Initialize(void)
 {
     // Set TMR6 to the options selected in the User Interface
 
-    // PR6 124; 
-    PR6 = 0x7C;
+    // PR6 255; 
+    PR6 = 0xFF;
 
     // TMR6 0; 
     TMR6 = 0x00;
@@ -72,8 +72,8 @@ void TMR6_Initialize(void)
     // Clearing IF flag.
     PIR3bits.TMR6IF = 0;
 
-    // T6CKPS 1:4; T6OUTPS 1:16; TMR6ON on; 
-    T6CON = 0x7D;
+    // T6CKPS 1:1; T6OUTPS 1:1; TMR6ON on; 
+    T6CON = 0x04;
 }
 
 void TMR6_StartTimer(void)

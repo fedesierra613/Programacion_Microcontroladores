@@ -4,29 +4,29 @@ Version 4.0 HI-TECH Software Intermediate Code
 [c E2500 7 29 30 31 .. ]
 [n E2500 . channel_AN7 channel_Temp channel_DAC channel_FVR  ]
 [p mainexit ]
-"73 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
+"72 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"16 ./displays.h
-[; ;./displays.h: 16: {
-[s S360 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
-[n S360 Ds_Display estados D1 D2 D3 tiempoEncendido tiempoApagado tempE tempA ]
+"17 ./displays.h
+[; ;./displays.h: 17: {
+[s S358 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S358 Ds_Display estados D1 D2 D3 tiempoEncendido tiempoApagado tempE tempA ]
 "13 ./nuestrostimers.h
 [; ;./nuestrostimers.h: 13: {
-[s S363 `ui 1 `ui 1 `ul 1 `uc 1 ]
-[n S363 Tm_Periodico contador periodo timeout banderas ]
+[s S361 `ui 1 `ui 1 `ul 1 `uc 1 ]
+[n S361 Tm_Periodico contador periodo timeout banderas ]
 "25
 [; ;./nuestrostimers.h: 25: void Tm_Inicie_periodico (Tm_Periodico *ctp,unsigned int periodo);
-[v _Tm_Inicie_periodico `(v ~T0 @X0 0 ef2`*S363`ui ]
+[v _Tm_Inicie_periodico `(v ~T0 @X0 0 ef2`*S361`ui ]
 "166 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 166: void ADC_SelectChannel(adc_channel_t channel);
 [v _ADC_SelectChannel `(v ~T0 @X0 0 ef1`E2500 ]
 "136
 [; ;./mcc_generated_files/adc.h: 136: void ADC_Initialize(void);
 [v _ADC_Initialize `(v ~T0 @X0 0 ef ]
-"32 ./displays.h
-[; ;./displays.h: 32: void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA);
-[v _Ds_Iniciar_displays `(v ~T0 @X0 0 ef6`*S360`uc`uc`uc`uc`uc ]
+"33 ./displays.h
+[; ;./displays.h: 33: void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA);
+[v _Ds_Iniciar_displays `(v ~T0 @X0 0 ef6`*S358`uc`uc`uc`uc`uc ]
 "132 ./mcc_generated_files/tmr6.h
 [; ;./mcc_generated_files/tmr6.h: 132: void TMR6_StartTimer(void);
 [v _TMR6_StartTimer `(v ~T0 @X0 0 ef ]
@@ -35,24 +35,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _TMR6_HasOverflowOccured `(a ~T0 @X0 0 ef ]
 "21 ./nuestrostimers.h
 [; ;./nuestrostimers.h: 21: void Tm_Procese_tiempo (Tm_Periodico *ctp);
-[v _Tm_Procese_tiempo `(v ~T0 @X0 0 ef1`*S363 ]
-"35 ./displays.h
-[; ;./displays.h: 35: void Ds_Procese_displays (Ds_Display *dsp);
-[v _Ds_Procese_displays `(v ~T0 @X0 0 ef1`*S360 ]
+[v _Tm_Procese_tiempo `(v ~T0 @X0 0 ef1`*S361 ]
+"36 ./displays.h
+[; ;./displays.h: 36: void Ds_Procese_displays (Ds_Display *dsp);
+[v _Ds_Procese_displays `(v ~T0 @X0 0 ef1`*S358 ]
 "26 ./nuestrostimers.h
 [; ;./nuestrostimers.h: 26: char Tm_Hubo_periodico (Tm_Periodico *ctp);
-[v _Tm_Hubo_periodico `(uc ~T0 @X0 0 ef1`*S363 ]
+[v _Tm_Hubo_periodico `(uc ~T0 @X0 0 ef1`*S361 ]
 "27
 [; ;./nuestrostimers.h: 27: void Tm_Baje_periodico (Tm_Periodico *ctp);
-[v _Tm_Baje_periodico `(v ~T0 @X0 0 ef1`*S363 ]
+[v _Tm_Baje_periodico `(v ~T0 @X0 0 ef1`*S361 ]
 "193 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 193: void ADC_StartConversion(void);
 [v _ADC_StartConversion `(v ~T0 @X0 0 ef ]
-"166 ./mcc_generated_files/eusart.h
-[; ;./mcc_generated_files/eusart.h: 166: _Bool EUSART_is_tx_ready(void);
+"158 ./mcc_generated_files/eusart.h
+[; ;./mcc_generated_files/eusart.h: 158: _Bool EUSART_is_tx_ready(void);
 [v _EUSART_is_tx_ready `(a ~T0 @X0 0 ef ]
-"349
-[; ;./mcc_generated_files/eusart.h: 349: void EUSART_Write(uint8_t txData);
+"341
+[; ;./mcc_generated_files/eusart.h: 341: void EUSART_Write(uint8_t txData);
 [v _EUSART_Write `(v ~T0 @X0 0 ef1`uc ]
 "225 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 225: _Bool ADC_IsConversionDone(void);
@@ -60,12 +60,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "258
 [; ;./mcc_generated_files/adc.h: 258: adc_result_t ADC_GetConversionResult(void);
 [v _ADC_GetConversionResult `(us ~T0 @X0 0 ef ]
-"70 ./displays.h
-[; ;./displays.h: 70: uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT);
+"71 ./displays.h
+[; ;./displays.h: 71: uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT);
 [v _Ds_Conversor_ADC `(us ~T0 @X0 0 ef1`us ]
-"68
-[; ;./displays.h: 68: void Ds_Convertir_en_uni_deci_centi(Ds_Display *dsp,uint16_t voltaje);
-[v _Ds_Convertir_en_uni_deci_centi `(v ~T0 @X0 0 ef2`*S360`us ]
+"69
+[; ;./displays.h: 69: void Ds_Convertir_en_uni_deci_centi(Ds_Display *dsp,uint16_t voltaje);
+[v _Ds_Convertir_en_uni_deci_centi `(v ~T0 @X0 0 ef2`*S358`us ]
 "54 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -570,22 +570,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _SYSTEM_Initialize ..  ]
 "39
 [; ;main.c: 39:  Ds_Display seven_seg;
-[v _seven_seg `S360 ~T0 @X0 1 a ]
+[v _seven_seg `S358 ~T0 @X0 1 a ]
 "40
 [; ;main.c: 40:  Tm_Periodico timer_1ms;
-[v _timer_1ms `S363 ~T0 @X0 1 a ]
+[v _timer_1ms `S361 ~T0 @X0 1 a ]
 "41
 [; ;main.c: 41:     Tm_Periodico timer_1000ms;
-[v _timer_1000ms `S363 ~T0 @X0 1 a ]
+[v _timer_1000ms `S361 ~T0 @X0 1 a ]
 "42
 [; ;main.c: 42:  Tm_Inicie_periodico (&timer_1ms, 1000);
 [e ( _Tm_Inicie_periodico (2 , &U _timer_1ms -> -> 1000 `i `ui ]
 "43
 [; ;main.c: 43:  ADC_SelectChannel (AN1_Channel);
 [e ( _ADC_SelectChannel (1 _AN1_Channel ]
-"44
-[; ;main.c: 44:  Tm_Periodico My_ADC_1000ms;
-[v _My_ADC_1000ms `S363 ~T0 @X0 1 a ]
 "45
 [; ;main.c: 45:  Tm_Inicie_periodico (&timer_1000ms, 1000);
 [e ( _Tm_Inicie_periodico (2 , &U _timer_1000ms -> -> 1000 `i `ui ]
@@ -600,11 +597,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _TMR6_StartTimer ..  ]
 "52
 [; ;main.c: 52:  while (1){
-[e :U 367 ]
+[e :U 365 ]
 {
 "54
 [; ;main.c: 54:   if(TMR6_HasOverflowOccured()){
-[e $ ! != -> ( _TMR6_HasOverflowOccured ..  `i -> 0 `i 369  ]
+[e $ ! != -> ( _TMR6_HasOverflowOccured ..  `i -> 0 `i 367  ]
 {
 "55
 [; ;main.c: 55:    Tm_Procese_tiempo(&timer_1ms);
@@ -615,10 +612,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "57
 [; ;main.c: 57:   }
 }
-[e :U 369 ]
+[e :U 367 ]
 "59
 [; ;main.c: 59:     if(Tm_Hubo_periodico(&timer_1ms)){
-[e $ ! != -> ( _Tm_Hubo_periodico (1 &U _timer_1ms `i -> 0 `i 370  ]
+[e $ ! != -> ( _Tm_Hubo_periodico (1 &U _timer_1ms `i -> 0 `i 368  ]
 {
 "60
 [; ;main.c: 60:   Tm_Baje_periodico(&timer_1ms);
@@ -628,7 +625,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _ADC_StartConversion ..  ]
 "63
 [; ;main.c: 63:         if(EUSART_is_tx_ready()){
-[e $ ! != -> ( _EUSART_is_tx_ready ..  `i -> 0 `i 371  ]
+[e $ ! != -> ( _EUSART_is_tx_ready ..  `i -> 0 `i 369  ]
 {
 "64
 [; ;main.c: 64:             Pack[0]=(seven_seg.D3 + '0');
@@ -669,14 +666,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "76
 [; ;main.c: 76:         }
 }
-[e :U 371 ]
+[e :U 369 ]
 "77
 [; ;main.c: 77:     }
 }
-[e :U 370 ]
+[e :U 368 ]
 "79
 [; ;main.c: 79:   if(ADC_IsConversionDone()){
-[e $ ! != -> ( _ADC_IsConversionDone ..  `i -> 0 `i 372  ]
+[e $ ! != -> ( _ADC_IsConversionDone ..  `i -> 0 `i 370  ]
 {
 "80
 [; ;main.c: 80:             valor_ADC = ADC_GetConversionResult();
@@ -690,14 +687,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "83
 [; ;main.c: 83:   }
 }
-[e :U 372 ]
+[e :U 370 ]
 "84
 [; ;main.c: 84:  }
 }
+[e :U 364 ]
+[e $U 365  ]
 [e :U 366 ]
-[e $U 367  ]
-[e :U 368 ]
 "85
 [; ;main.c: 85: }
-[e :UE 365 ]
+[e :UE 363 ]
 }

@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/adc.c"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\sources\\c99\\pic\\__eeprom.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/adc.c" 2
-# 51 "mcc_generated_files/adc.c"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\sources\\c99\\pic\\__eeprom.c" 2
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -4235,219 +4234,176 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 51 "mcc_generated_files/adc.c" 2
-
-# 1 "mcc_generated_files/adc.h" 1
-# 55 "mcc_generated_files/adc.h"
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef signed char int8_t;
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\sources\\c99\\pic\\__eeprom.c" 2
 
 
 
 
-typedef short int16_t;
-# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long int32_t;
-
-
-
-
-
-typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long intmax_t;
-
-
-
-
-
-typedef unsigned char uint8_t;
-
-
-
-
-typedef unsigned short uint16_t;
-# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uint32_t;
-
-
-
-
-
-typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-
-
-typedef int8_t int_fast8_t;
-
-typedef int64_t int_fast64_t;
-
-
-typedef int8_t int_least8_t;
-typedef int16_t int_least16_t;
-
-typedef int24_t int_least24_t;
-typedef int24_t int_fast24_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-
-typedef uint8_t uint_fast8_t;
-
-typedef uint64_t uint_fast64_t;
-
-
-typedef uint8_t uint_least8_t;
-typedef uint16_t uint_least16_t;
-
-typedef uint24_t uint_least24_t;
-typedef uint24_t uint_fast24_t;
-
-typedef uint32_t uint_least32_t;
-
-typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
-typedef int16_t int_fast16_t;
-typedef int32_t int_fast32_t;
-typedef uint16_t uint_fast16_t;
-typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-# 55 "mcc_generated_files/adc.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
-# 56 "mcc_generated_files/adc.h" 2
-# 72 "mcc_generated_files/adc.h"
-typedef uint16_t adc_result_t;
-
-
-
-
-typedef struct
+void
+__eecpymem(volatile unsigned char *to, __eeprom unsigned char * from, unsigned char size)
 {
-    adc_result_t adcResult1;
-    adc_result_t adcResult2;
-} adc_sync_double_result_t;
-# 95 "mcc_generated_files/adc.h"
-typedef enum
-{
-    channel_AN7 = 0x7,
-    channel_Temp = 0x1D,
-    channel_DAC = 0x1E,
-    channel_FVR = 0x1F
-} adc_channel_t;
-# 136 "mcc_generated_files/adc.h"
-void ADC_Initialize(void);
-# 166 "mcc_generated_files/adc.h"
-void ADC_SelectChannel(adc_channel_t channel);
-# 193 "mcc_generated_files/adc.h"
-void ADC_StartConversion(void);
-# 225 "mcc_generated_files/adc.h"
-_Bool ADC_IsConversionDone(void);
-# 258 "mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversionResult(void);
-# 288 "mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 316 "mcc_generated_files/adc.h"
-void ADC_TemperatureAcquisitionDelay(void);
-# 52 "mcc_generated_files/adc.c" 2
+ volatile unsigned char *cp = to;
 
-# 1 "mcc_generated_files/device_config.h" 1
-# 53 "mcc_generated_files/adc.c" 2
+ while (EECON1bits.WR) continue;
+ EEADR = (unsigned char)from;
+ while(size--) {
+  while (EECON1bits.WR) continue;
 
+  EECON1 &= 0x7F;
 
-
-
-
-
-
-
-void (*ADC_InterruptHandler)(void);
-
-
-
-
-
-void ADC_Initialize(void)
-{
-
-
-
-    ADCON1 = 0xE0;
-
-
-    ADRESL = 0x00;
-
-
-    ADRESH = 0x00;
-
-
-    ADCON0 = 0x01;
-
+  EECON1bits.RD = 1;
+  *cp++ = EEDATA;
+  ++EEADR;
+ }
+# 36 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\sources\\c99\\pic\\__eeprom.c"
 }
 
-void ADC_SelectChannel(adc_channel_t channel)
+void
+__memcpyee(__eeprom unsigned char * to, const unsigned char *from, unsigned char size)
 {
+ const unsigned char *ptr =from;
 
-    ADCON0bits.CHS = channel;
+ while (EECON1bits.WR) continue;
+ EEADR = (unsigned char)to - 1U;
 
-    ADCON0bits.ADON = 1;
+ EECON1 &= 0x7F;
+
+ while(size--) {
+  while (EECON1bits.WR) {
+   continue;
+  }
+  EEDATA = *ptr++;
+  ++EEADR;
+  STATUSbits.CARRY = 0;
+  if (INTCONbits.GIE) {
+   STATUSbits.CARRY = 1;
+  }
+  INTCONbits.GIE = 0;
+  EECON1bits.WREN = 1;
+  EECON2 = 0x55;
+  EECON2 = 0xAA;
+  EECON1bits.WR = 1;
+  EECON1bits.WREN = 0;
+  if (STATUSbits.CARRY) {
+   INTCONbits.GIE = 1;
+  }
+ }
+# 101 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\sources\\c99\\pic\\__eeprom.c"
 }
 
-void ADC_StartConversion(void)
+unsigned char
+__eetoc(__eeprom void *addr)
 {
-
-    ADCON0bits.GO_nDONE = 1;
+ unsigned char data;
+ __eecpymem((unsigned char *) &data,addr,1);
+ return data;
 }
 
-
-_Bool ADC_IsConversionDone(void)
+unsigned int
+__eetoi(__eeprom void *addr)
 {
-
-   return ((_Bool)(!ADCON0bits.GO_nDONE));
+ unsigned int data;
+ __eecpymem((unsigned char *) &data,addr,2);
+ return data;
 }
 
-adc_result_t ADC_GetConversionResult(void)
+#pragma warning push
+#pragma warning disable 2040
+__uint24
+__eetom(__eeprom void *addr)
 {
+ __uint24 data;
+ __eecpymem((unsigned char *) &data,addr,3);
+ return data;
+}
+#pragma warning pop
 
-    return ((adc_result_t)((ADRESH << 8) + ADRESL));
+unsigned long
+__eetol(__eeprom void *addr)
+{
+ unsigned long data;
+ __eecpymem((unsigned char *) &data,addr,4);
+ return data;
 }
 
-adc_result_t ADC_GetConversion(adc_channel_t channel)
+#pragma warning push
+#pragma warning disable 1516
+unsigned long long
+__eetoo(__eeprom void *addr)
 {
+ unsigned long long data;
+ __eecpymem((unsigned char *) &data,addr,8);
+ return data;
+}
+#pragma warning pop
 
-    ADCON0bits.CHS = channel;
-
-
-    ADCON0bits.ADON = 1;
-
-
-    _delay((unsigned long)((5)*(32000000/4000000.0)));
-
-
-    ADCON0bits.GO_nDONE = 1;
-
-
-    while (ADCON0bits.GO_nDONE)
-    {
-    }
-
-
-    return ((adc_result_t)((ADRESH << 8) + ADRESL));
+unsigned char
+__ctoee(__eeprom void *addr, unsigned char data)
+{
+ __memcpyee(addr,(unsigned char *) &data,1);
+ return data;
 }
 
-void ADC_TemperatureAcquisitionDelay(void)
+unsigned int
+__itoee(__eeprom void *addr, unsigned int data)
 {
-    _delay((unsigned long)((200)*(32000000/4000000.0)));
+ __memcpyee(addr,(unsigned char *) &data,2);
+ return data;
+}
+
+#pragma warning push
+#pragma warning disable 2040
+__uint24
+__mtoee(__eeprom void *addr, __uint24 data)
+{
+ __memcpyee(addr,(unsigned char *) &data,3);
+ return data;
+}
+#pragma warning pop
+
+unsigned long
+__ltoee(__eeprom void *addr, unsigned long data)
+{
+ __memcpyee(addr,(unsigned char *) &data,4);
+ return data;
+}
+
+#pragma warning push
+#pragma warning disable 1516
+unsigned long long
+__otoee(__eeprom void *addr, unsigned long long data)
+{
+ __memcpyee(addr,(unsigned char *) &data,8);
+ return data;
+}
+#pragma warning pop
+
+float
+__eetoft(__eeprom void *addr)
+{
+ float data;
+ __eecpymem((unsigned char *) &data,addr,3);
+ return data;
+}
+
+double
+__eetofl(__eeprom void *addr)
+{
+ double data;
+ __eecpymem((unsigned char *) &data,addr,4);
+ return data;
+}
+
+float
+__fttoee(__eeprom void *addr, float data)
+{
+ __memcpyee(addr,(unsigned char *) &data,3);
+ return data;
+}
+
+double
+__fltoee(__eeprom void *addr, double data)
+{
+ __memcpyee(addr,(unsigned char *) &data,4);
+ return data;
 }

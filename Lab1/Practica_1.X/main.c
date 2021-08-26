@@ -41,7 +41,7 @@ void main(void){
     Tm_Periodico timer_1000ms;
 	Tm_Inicie_periodico (&timer_1ms, 1000);
 	ADC_SelectChannel (AN1_Channel);
-	Tm_Periodico My_ADC_1000ms;
+	//Tm_Periodico MyADC1000ms;
 	Tm_Inicie_periodico (&timer_1000ms, 1000);
 	ADC_Initialize();
 	Ds_Iniciar_displays (&seven_seg, Valor_Inicial0, Valor_Inicial1, Valor_Inicial2, T_On, T_Off);

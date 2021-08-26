@@ -4349,7 +4349,7 @@ void TMR6_Initialize(void)
 
 
 
-    PR6 = 0x7C;
+    PR6 = 0xFF;
 
 
     TMR6 = 0x00;
@@ -4358,7 +4358,7 @@ void TMR6_Initialize(void)
     PIR3bits.TMR6IF = 0;
 
 
-    T6CON = 0x7D;
+    T6CON = 0x04;
 }
 
 void TMR6_StartTimer(void)

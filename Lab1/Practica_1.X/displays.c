@@ -194,9 +194,19 @@ void Ds_BCD(int segmento){
             IO_RA7_SetHigh();//f Encendido
             IO_RA6_SetHigh();//g Encendido
 
-
         break;
 
+
+        case 10:
+		    IO_RA0_SetHigh();
+		    IO_RA1_SetHigh();
+		    IO_RA2_SetHigh();
+		    IO_RA3_SetLow();//d Apagado
+            IO_RA4_SetLow();//e Apagado
+            IO_RA7_SetHigh();//f Encendid
+		    IO_RA7_SetHigh();
+		
+	break;
     }
 }
 
@@ -209,13 +219,11 @@ void Ds_Convertir_en_uni_deci_centi (Ds_Display *dsp, uint16_t voltaje){
 	dsp->D3 = voltaje % 10;
 }
 
-uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT){ // return a el valor de 0-10           
-
+uint16_t Ds_Conversor_ADC (uint16_t adcOUT){
     float pendiente = 0.9766;
-    uint16_t voltios = (uint16_t) ADC_OUT*pendiente;
+    uint16_t voltios = (uint16_t) adcOUT*pendiente;
 	return(voltios);
 }
-
 
 
 void Ds_Procese_displays (Ds_Display *dsp){
@@ -290,7 +298,8 @@ void Ds_Procese_displays (Ds_Display *dsp){
         default:
             while(1){
 
-            /*prendo un LED que me marca el error*/
+            Ds_BCD(10);
+			Ds_Encienda_Disp(2);
             }
 }
 

@@ -1,5 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F2500 `(v ~T0 @X0 0 tf ]
+[v F2492 `(v ~T0 @X0 0 tf ]
 "1967 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1967: extern volatile unsigned char ADCON1 __attribute__((address(0x09E)));
 [v _ADCON1 `Vuc ~T0 @X0 0 e@158 ]
@@ -515,7 +515,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSH equ 0FEFh ;# ">
 "61 mcc_generated_files/adc.c
 [; ;mcc_generated_files/adc.c: 61: void (*ADC_InterruptHandler)(void);
-[v _ADC_InterruptHandler `*F2500 ~T0 @X0 1 e ]
+[v _ADC_InterruptHandler `*F2492 ~T0 @X0 1 e ]
 "67
 [; ;mcc_generated_files/adc.c: 67: void ADC_Initialize(void)
 [v _ADC_Initialize `(v ~T0 @X0 1 ef ]
@@ -572,8 +572,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _ADC_StartConversion ]
 [f ]
 "96
-[; ;mcc_generated_files/adc.c: 96:     ADCON0bits.GO = 1;
-[e = . . _ADCON0bits 2 1 -> -> 1 `i `uc ]
+[; ;mcc_generated_files/adc.c: 96:     ADCON0bits.GO_nDONE = 1;
+[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
 "97
 [; ;mcc_generated_files/adc.c: 97: }
 [e :UE 357 ]
@@ -587,8 +587,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _ADC_IsConversionDone ]
 [f ]
 "103
-[; ;mcc_generated_files/adc.c: 103:    return ((_Bool)(!ADCON0bits.GO));
-[e ) -> -> ! != -> . . _ADCON0bits 2 1 `i -> 0 `i `i `a ]
+[; ;mcc_generated_files/adc.c: 103:    return ((_Bool)(!ADCON0bits.GO_nDONE));
+[e ) -> -> ! != -> . . _ADCON0bits 0 1 `i -> 0 `i `i `a ]
 [e $UE 358  ]
 "104
 [; ;mcc_generated_files/adc.c: 104: }

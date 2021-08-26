@@ -4,18 +4,17 @@
 extern "C" {
 #endif
 
+#define PI 3.1415926535f
 #define SI 1
 #define NO 0
 #define UNSEGUNDO 250
 #define DISPLAYENCENDIDO 9
 #define DISPLAYAPAGADO 1
-#define CONTEOSTIMERS1 1000
 
 #define MAX(a,b) (((a)>(b))?(a):(b))
 #define MIN(a,b) (((a)<(b))?(a):(b))
 #define SET_BIT(p,n) ((p) |= (1 << (n)))
 #define CLR_BIT(p,n) ((p) &= ~((1) << (n)))
-
 #define T_On 4
 #define T_Off 1
 #define Valor_Inicial0 4
@@ -31,6 +30,9 @@ extern "C" {
 #define S4 4
 #define S5 5
 #define S6 6
+    
+//#define Valor_Vmax 999
+
 
 #ifdef __cplusplus
 } // extern "C"

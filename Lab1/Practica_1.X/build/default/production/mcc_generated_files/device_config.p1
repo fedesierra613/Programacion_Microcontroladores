@@ -29,4 +29,4 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x BORV  =  LO     ]
 "66
 [; ;mcc_generated_files/device_config.c: 66: 
-[p x LVP  =  OFF     ]
+[p x LVP  =  ON     ]
