@@ -4,8 +4,6 @@
 extern "C" {
 #endif
 
-#include <stdint.h>
-    
 #define D1E 1
 #define D1A 2
 #define D2E 3
@@ -67,9 +65,9 @@ void Ds_Mostrar_en_display(Ds_Display *dsp, char d1, char d2, char d3);
 /*
      convertir en decimal unidades, aca se importa el numero del ADC, de 1 a 1024 
 */
-void Ds_Convertir_en_uni(Ds_Display *dsp, uint16_t voltaje);
+void Ds_Convertir_en_uni(Ds_Display *dsp, int voltaje);
 
-uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT);
+int Ds_Conversor_ADC (int ADC_OUT);
 
 
 

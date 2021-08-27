@@ -1,5 +1,6 @@
 #include "displays.h"
-#include "pin_manager.h"
+#include "nuestrostimers.h"
+#include "mcc_generated_files/pin_manager.h"
 #include <stdint.h>
 
 
@@ -51,11 +52,11 @@ void Ds_Encienda_Disp(char dispNum){
             IO_RB3_SetLow();
 
         break;
-
+    }
 }
 
 
-void Ds_BCD(int segmento){
+void Ds_BCD(char segmento){
 
     switch (segmento){
 
@@ -211,17 +212,17 @@ void Ds_BCD(int segmento){
 }
 
 
-void Ds_Convertir_en_uni(Ds_Display *dsp, uint16_t voltaje){
-	dsp->D1 = Recibido % 10;
+void Ds_Convertir_en_uni(Ds_Display *dsp, int voltaje){
+	dsp->D1 = voltaje % 10;
 	voltaje = voltaje/10;
 	dsp->D2 = voltaje % 10;
 	voltaje = voltaje/10;
 	dsp->D3 = voltaje % 10;
 }
 
-uint16_t Ds_Conversor_ADC (uint16_t adcOUT){
+int Ds_Conversor_ADC (int adcOUT){
     float pendiente = 0.9766;
-    uint16_t voltios = (uint16_t) adcOUT*pendiente;
+    int voltios = (int) adcOUT*pendiente;
 	return(voltios);
 }
 
@@ -239,9 +240,9 @@ void Ds_Procese_displays (Ds_Display *dsp){
             
 
             Ds_Encienda_Disp(1);
-            Ds_BDC(dsp->D1);
+            Ds_BCD(dsp->D1);
 
-            break;
+        break;
 
         case D1A:
             --(dsp->tempA);
@@ -301,6 +302,5 @@ void Ds_Procese_displays (Ds_Display *dsp){
             Ds_BCD(10);
 			Ds_Encienda_Disp(2);
             }
+        }
     }
-
-}

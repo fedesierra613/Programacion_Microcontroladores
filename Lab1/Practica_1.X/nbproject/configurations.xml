@@ -14,6 +14,8 @@
         <itemPath>mcc_generated_files/tmr6.h</itemPath>
         <itemPath>mcc_generated_files/adc.h</itemPath>
       </logicalFolder>
+      <itemPath>displays.h</itemPath>
+      <itemPath>nuestrostimers.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -33,6 +35,8 @@
         <itemPath>mcc_generated_files/device_config.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
+      <itemPath>displays.c</itemPath>
+      <itemPath>nuestrostimers.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -41,6 +45,9 @@
       <itemPath>Practica_1.mc3</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="default" type="2">

@@ -27,10 +27,10 @@
 
 
 
-uint16_t valor_ADC = 0;
+int valor_ADC = 0;
 adc_channel_t AN1_Channel;
-uint16_t volt_ADC = 0;
-uint8_t Pack[6];
+int volt_ADC = 0;
+int Pack[6];
 
 
 void main(void){
@@ -76,10 +76,10 @@ void main(void){
         }      
     }
 
-		if(ADC_IsConversionDone()){
-            valor_ADC = ADC_GetConversionResult();
-			volt_ADC = Ds_Conversor_ADC(valor_ADC);
-			Ds_Convertir_en_uni(&seven_seg, volt_ADC);
+	if(ADC_IsConversionDone()){
+        valor_ADC = ADC_GetConversionResult();
+        volt_ADC = Ds_Conversor_ADC(valor_ADC);
+        Ds_Convertir_en_uni(&seven_seg, volt_ADC);
 		}
 	}
 }

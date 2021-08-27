@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "displays.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,96 @@
 # 1 "<built-in>" 2
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 21 "main.c"
-# 1 "./mcc_generated_files/mcc.h" 1
-# 49 "./mcc_generated_files/mcc.h"
+# 1 "displays.c" 2
+# 1 "./displays.h" 1
+# 14 "./displays.h"
+typedef struct Ds_Display Ds_Display;
+struct Ds_Display
+{
+ char estados;
+
+
+    char D1;
+    char D2;
+    char D3;
+
+    char tiempoEncendido;
+    char tiempoApagado;
+
+    char tempE;
+    char tempA;
+};
+
+
+void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA);
+
+
+void Ds_Procese_displays (Ds_Display *dsp);
+# 47 "./displays.h"
+void Ds_Encienda_Disp(char dispNum);
+
+
+
+
+
+
+
+void Ds_BCD(char segmento);
+
+
+
+
+
+
+void Ds_Mostrar_en_display(Ds_Display *dsp, char d1, char d2, char d3);
+
+
+
+
+
+void Ds_Convertir_en_uni(Ds_Display *dsp, int voltaje);
+
+int Ds_Conversor_ADC (int ADC_OUT);
+# 1 "displays.c" 2
+
+# 1 "./nuestrostimers.h" 1
+
+
+
+
+
+
+
+typedef struct Tm_Periodico Tm_Periodico;
+
+
+
+struct Tm_Periodico
+{
+ unsigned int contador;
+    unsigned int periodo;
+ unsigned long timeout;
+ unsigned char banderas;
+};
+
+
+void Tm_Procese_tiempo (Tm_Periodico *ctp);
+
+
+
+void Tm_Inicie_periodico (Tm_Periodico *ctp,unsigned int periodo);
+char Tm_Hubo_periodico (Tm_Periodico *ctp);
+void Tm_Baje_periodico (Tm_Periodico *ctp);
+void Tm_Termine_periodico (Tm_Periodico *ctp);
+
+
+void Tm_Inicie_timeout (Tm_Periodico *ctp,unsigned int tiempo);
+char Tm_Hubo_timeout (Tm_Periodico *ctp);
+void Tm_Baje_timeout (Tm_Periodico *ctp);
+# 2 "displays.c" 2
+
+# 1 "./mcc_generated_files/pin_manager.h" 1
+# 54 "./mcc_generated_files/pin_manager.h"
 # 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -4237,17 +4323,12 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pin_manager.h" 1
+# 54 "./mcc_generated_files/pin_manager.h" 2
 # 293 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
 # 305 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
+# 3 "displays.c" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
@@ -4334,658 +4415,307 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "./mcc_generated_files/mcc.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 1 3
-
-
-
-
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 1 3
-# 12 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\errno.h" 3
-extern int errno;
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
-
-# 1 "D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\__null.h" 1 3
-# 9 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\conio.h" 2 3
-
-
-
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-
-
-extern char * cgets(char *);
-extern void cputs(const char *);
-# 54 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/tmr6.h" 1
-# 103 "./mcc_generated_files/tmr6.h"
-void TMR6_Initialize(void);
-# 132 "./mcc_generated_files/tmr6.h"
-void TMR6_StartTimer(void);
-# 164 "./mcc_generated_files/tmr6.h"
-void TMR6_StopTimer(void);
-# 199 "./mcc_generated_files/tmr6.h"
-uint8_t TMR6_ReadTimer(void);
-# 238 "./mcc_generated_files/tmr6.h"
-void TMR6_WriteTimer(uint8_t timerVal);
-# 290 "./mcc_generated_files/tmr6.h"
-void TMR6_LoadPeriodRegister(uint8_t periodVal);
-# 325 "./mcc_generated_files/tmr6.h"
-_Bool TMR6_HasOverflowOccured(void);
-# 55 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/adc.h" 1
-# 72 "./mcc_generated_files/adc.h"
-typedef uint16_t adc_result_t;
-
+# 4 "displays.c" 2
 
 
-
-typedef struct
-{
-    adc_result_t adcResult1;
-    adc_result_t adcResult2;
-} adc_sync_double_result_t;
-# 95 "./mcc_generated_files/adc.h"
-typedef enum
-{
-    channel_AN7 = 0x7,
-    channel_Temp = 0x1D,
-    channel_DAC = 0x1E,
-    channel_FVR = 0x1F
-} adc_channel_t;
-# 136 "./mcc_generated_files/adc.h"
-void ADC_Initialize(void);
-# 166 "./mcc_generated_files/adc.h"
-void ADC_SelectChannel(adc_channel_t channel);
-# 193 "./mcc_generated_files/adc.h"
-void ADC_StartConversion(void);
-# 225 "./mcc_generated_files/adc.h"
-_Bool ADC_IsConversionDone(void);
-# 258 "./mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversionResult(void);
-# 288 "./mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversion(adc_channel_t channel);
-# 316 "./mcc_generated_files/adc.h"
-void ADC_TemperatureAcquisitionDelay(void);
-# 56 "./mcc_generated_files/mcc.h" 2
 
-# 1 "./mcc_generated_files/eusart.h" 1
-# 75 "./mcc_generated_files/eusart.h"
-typedef union {
-    struct {
-        unsigned perr : 1;
-        unsigned ferr : 1;
-        unsigned oerr : 1;
-        unsigned reserved : 5;
-    };
-    uint8_t status;
-}eusart_status_t;
-# 110 "./mcc_generated_files/eusart.h"
-void EUSART_Initialize(void);
-# 158 "./mcc_generated_files/eusart.h"
-_Bool EUSART_is_tx_ready(void);
-# 206 "./mcc_generated_files/eusart.h"
-_Bool EUSART_is_rx_ready(void);
-# 253 "./mcc_generated_files/eusart.h"
-_Bool EUSART_is_tx_done(void);
-# 301 "./mcc_generated_files/eusart.h"
-eusart_status_t EUSART_get_last_status(void);
-# 321 "./mcc_generated_files/eusart.h"
-uint8_t EUSART_Read(void);
-# 341 "./mcc_generated_files/eusart.h"
-void EUSART_Write(uint8_t txData);
-# 361 "./mcc_generated_files/eusart.h"
-void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 379 "./mcc_generated_files/eusart.h"
-void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 397 "./mcc_generated_files/eusart.h"
-void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 57 "./mcc_generated_files/mcc.h" 2
-# 73 "./mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 86 "./mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 98 "./mcc_generated_files/mcc.h"
-void WDT_Initialize(void);
-# 21 "main.c" 2
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\math.h" 1 3
-# 15 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\math.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 33 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef float float_t;
+void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA){
+    dsp->estados=1;
+    dsp->D1=d1;
+    dsp->D2=d2;
+    dsp->D3=d3;
+    dsp->tiempoEncendido=tE;
+    dsp->tiempoApagado=tA;
+    dsp->tempE=tE;
+    dsp->tempA=tA;
+}
 
+void Ds_Encienda_Disp(char dispNum){
 
+    switch (dispNum){
 
+        case 0:
 
-typedef double double_t;
-# 15 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\math.h" 2 3
-# 42 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\math.h" 3
-int __fpclassifyf(float);
+            do { LATBbits.LATB0 = 0; } while(0);
+            do { LATBbits.LATB3 = 0; } while(0);
+            do { LATBbits.LATB4 = 0; } while(0);
 
+        break;
 
 
+        case 1:
 
+            do { LATBbits.LATB0 = 1; } while(0);
+            do { LATBbits.LATB3 = 0; } while(0);
+            do { LATBbits.LATB4 = 0; } while(0);
+        break;
 
+        case 2:
 
+            do { LATBbits.LATB3 = 1; } while(0);
+            do { LATBbits.LATB0 = 0; } while(0);
+            do { LATBbits.LATB4 = 0; } while(0);
 
-int __signbitf(float);
-# 59 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\math.h" 3
-double acos(double);
-float acosf(float);
-long double acosl(long double);
+        break;
 
 
+        case 3:
 
-double acosh(double);
-float acoshf(float);
-long double acoshl(long double);
+            do { LATBbits.LATB4 = 1; } while(0);
+            do { LATBbits.LATB0 = 0; } while(0);
+            do { LATBbits.LATB3 = 0; } while(0);
 
+        break;
+    }
+}
 
 
-double asin(double);
-float asinf(float);
-long double asinl(long double);
+void Ds_BCD(char segmento){
 
+    switch (segmento){
 
+        case 0:
 
-double asinh(double);
-float asinhf(float);
-long double asinhl(long double);
+            do { LATAbits.LATA0 = 1; } while(0);
+            do { LATAbits.LATA1 = 1; } while(0);
+            do { LATAbits.LATA2 = 1; } while(0);
+            do { LATAbits.LATA3 = 1; } while(0);
+            do { LATAbits.LATA4 = 1; } while(0);
+            do { LATAbits.LATA7 = 1; } while(0);
+            do { LATAbits.LATA6 = 0; } while(0);
 
 
+        break;
 
-double atan(double);
-float atanf(float);
-long double atanl(long double);
+        case 1:
 
+            do { LATAbits.LATA0 = 0; } while(0);
+            do { LATAbits.LATA1 = 1; } while(0);
+            do { LATAbits.LATA2 = 1; } while(0);
+            do { LATAbits.LATA3 = 0; } while(0);
+            do { LATAbits.LATA4 = 0; } while(0);
+            do { LATAbits.LATA7 = 0; } while(0);
+            do { LATAbits.LATA6 = 0; } while(0);
 
 
-double atan2(double, double);
-float atan2f(float, float);
-long double atan2l(long double, long double);
+        break;
 
 
+        case 2:
 
-double atanh(double);
-float atanhf(float);
-long double atanhl(long double);
+            do { LATAbits.LATA0 = 1; } while(0);
+            do { LATAbits.LATA1 = 1; } while(0);
+            do { LATAbits.LATA2 = 0; } while(0);
+            do { LATAbits.LATA3 = 1; } while(0);
+            do { LATAbits.LATA4 = 1; } while(0);
+            do { LATAbits.LATA7 = 0; } while(0);
+            do { LATAbits.LATA6 = 1; } while(0);
 
 
+        break;
 
-double cbrt(double);
-float cbrtf(float);
-long double cbrtl(long double);
 
+        case 3:
 
+            do { LATAbits.LATA0 = 1; } while(0);
+            do { LATAbits.LATA1 = 1; } while(0);
+            do { LATAbits.LATA2 = 1; } while(0);
+            do { LATAbits.LATA3 = 1; } while(0);
+            do { LATAbits.LATA4 = 0; } while(0);
+            do { LATAbits.LATA7 = 0; } while(0);
+            do { LATAbits.LATA6 = 1; } while(0);
 
-double ceil(double);
-float ceilf(float);
-long double ceill(long double);
 
+        break;
 
 
-double copysign(double, double);
-float copysignf(float, float);
-long double copysignl(long double, long double);
 
+        case 4:
 
+            do { LATAbits.LATA0 = 0; } while(0);
+            do { LATAbits.LATA1 = 1; } while(0);
+            do { LATAbits.LATA2 = 1; } while(0);
+            do { LATAbits.LATA3 = 0; } while(0);
+            do { LATAbits.LATA4 = 0; } while(0);
+            do { LATAbits.LATA7 = 1; } while(0);
+            do { LATAbits.LATA6 = 1; } while(0);
 
-double cos(double);
-float cosf(float);
-long double cosl(long double);
 
+        break;
 
+        case 5:
 
-double cosh(double);
-float coshf(float);
-long double coshl(long double);
+            do { LATAbits.LATA0 = 1; } while(0);
+            do { LATAbits.LATA1 = 0; } while(0);
+            do { LATAbits.LATA2 = 1; } while(0);
+            do { LATAbits.LATA3 = 1; } while(0);
+            do { LATAbits.LATA4 = 0; } while(0);
+            do { LATAbits.LATA7 = 1; } while(0);
+            do { LATAbits.LATA6 = 1; } while(0);
 
 
+        break;
 
-double erf(double);
-float erff(float);
-long double erfl(long double);
 
+        case 6:
 
+            do { LATAbits.LATA0 = 1; } while(0);
+            do { LATAbits.LATA1 = 0; } while(0);
+            do { LATAbits.LATA2 = 1; } while(0);
+            do { LATAbits.LATA3 = 1; } while(0);
+            do { LATAbits.LATA4 = 1; } while(0);
+            do { LATAbits.LATA7 = 1; } while(0);
+            do { LATAbits.LATA6 = 1; } while(0);
 
-double erfc(double);
-float erfcf(float);
-long double erfcl(long double);
 
+        break;
 
 
-double exp(double);
-float expf(float);
-long double expl(long double);
+        case 7:
 
+            do { LATAbits.LATA0 = 1; } while(0);
+            do { LATAbits.LATA1 = 1; } while(0);
+            do { LATAbits.LATA2 = 1; } while(0);
+            do { LATAbits.LATA3 = 0; } while(0);
+            do { LATAbits.LATA4 = 0; } while(0);
+            do { LATAbits.LATA7 = 0; } while(0);
+            do { LATAbits.LATA6 = 0; } while(0);
 
 
-double exp2(double);
-float exp2f(float);
-long double exp2l(long double);
+        break;
 
 
+        case 8:
 
-double expm1(double);
-float expm1f(float);
-long double expm1l(long double);
+            do { LATAbits.LATA0 = 1; } while(0);
+            do { LATAbits.LATA1 = 1; } while(0);
+            do { LATAbits.LATA2 = 1; } while(0);
+            do { LATAbits.LATA3 = 1; } while(0);
+            do { LATAbits.LATA4 = 1; } while(0);
+            do { LATAbits.LATA7 = 1; } while(0);
+            do { LATAbits.LATA6 = 1; } while(0);
 
 
+        break;
 
-double fabs(double);
-float fabsf(float);
-long double fabsl(long double);
 
+        case 9:
 
+            do { LATAbits.LATA0 = 1; } while(0);
+            do { LATAbits.LATA1 = 1; } while(0);
+            do { LATAbits.LATA2 = 1; } while(0);
+            do { LATAbits.LATA3 = 1; } while(0);
+            do { LATAbits.LATA4 = 0; } while(0);
+            do { LATAbits.LATA7 = 1; } while(0);
+            do { LATAbits.LATA6 = 1; } while(0);
 
-double fdim(double, double);
-float fdimf(float, float);
-long double fdiml(long double, long double);
+        break;
 
 
+        case 10:
+      do { LATAbits.LATA0 = 1; } while(0);
+      do { LATAbits.LATA1 = 1; } while(0);
+      do { LATAbits.LATA2 = 1; } while(0);
+      do { LATAbits.LATA3 = 0; } while(0);
+            do { LATAbits.LATA4 = 0; } while(0);
+            do { LATAbits.LATA7 = 1; } while(0);
+      do { LATAbits.LATA7 = 1; } while(0);
 
-double floor(double);
-float floorf(float);
-long double floorl(long double);
+ break;
+    }
+}
 
 
+void Ds_Convertir_en_uni(Ds_Display *dsp, int voltaje){
+ dsp->D1 = voltaje % 10;
+ voltaje = voltaje/10;
+ dsp->D2 = voltaje % 10;
+ voltaje = voltaje/10;
+ dsp->D3 = voltaje % 10;
+}
 
-double fma(double, double, double);
-float fmaf(float, float, float);
-long double fmal(long double, long double, long double);
+int Ds_Conversor_ADC (int adcOUT){
+    float pendiente = 0.9766;
+    int voltios = (int) adcOUT*pendiente;
+ return(voltios);
+}
 
 
+void Ds_Procese_displays (Ds_Display *dsp){
 
-double fmax(double, double);
-float fmaxf(float, float);
-long double fmaxl(long double, long double);
+    switch ( dsp->estados ){
 
+        case 1:
+            --(dsp->tempE);
+            if(!(dsp->tempE)){
+                dsp->estados =2;
+                dsp->tempA=dsp->tiempoApagado;
+            }
 
 
-double fmin(double, double);
-float fminf(float, float);
-long double fminl(long double, long double);
+            Ds_Encienda_Disp(1);
+            Ds_BCD(dsp->D1);
 
+        break;
 
+        case 2:
+            --(dsp->tempA);
+            if(!(dsp->tempA)){
+                dsp->estados =3;
+                dsp->tempE=dsp->tiempoEncendido;
+            }
 
-double fmod(double, double);
-float fmodf(float, float);
-long double fmodl(long double, long double);
+            Ds_Encienda_Disp(0);
+        break;
 
+        case 3:
+            --(dsp->tempE);
+            if(!(dsp->tempE)){
+                dsp->estados =4;
+                dsp->tempA=dsp->tiempoApagado;
+            }
 
+            Ds_Encienda_Disp(2);
+            Ds_BCD(dsp->D2);
+        break;
 
-double frexp(double, int *);
-float frexpf(float, int *);
-long double frexpl(long double, int *);
+        case 4:
+            --(dsp->tempA);
+            if(!(dsp->tempA)){
+                dsp->estados =5;
+                dsp->tempE=dsp->tiempoEncendido;
+            }
 
+            Ds_Encienda_Disp(0);
+        break;
 
+        case 5:
+            --(dsp->tempE);
+            if(!(dsp->tempE)){
+                dsp->estados =6;
+                dsp->tempA=dsp->tiempoApagado;
+            }
 
-double hypot(double, double);
-float hypotf(float, float);
-long double hypotl(long double, long double);
+            Ds_Encienda_Disp(3);
+            Ds_BCD(dsp->D3);
+        break;
 
+        case 6:
+            --(dsp->tempA);
+            if(!(dsp->tempA)){
+                dsp->estados = 1;
+                dsp->tempE=dsp->tiempoEncendido;
+            }
 
+            Ds_Encienda_Disp(0);
+        break;
 
-int ilogb(double);
-int ilogbf(float);
-int ilogbl(long double);
+        default:
+            while(1){
 
-
-
-double ldexp(double, int);
-float ldexpf(float, int);
-long double ldexpl(long double, int);
-
-
-
-double lgamma(double);
-float lgammaf(float);
-long double lgammal(long double);
-
-
-
-long long llrint(double);
-long long llrintf(float);
-long long llrintl(long double);
-
-
-
-long long llround(double);
-long long llroundf(float);
-long long llroundl(long double);
-
-
-
-double log(double);
-float logf(float);
-long double logl(long double);
-
-
-
-double log10(double);
-float log10f(float);
-long double log10l(long double);
-
-
-
-double log1p(double);
-float log1pf(float);
-long double log1pl(long double);
-
-
-
-double log2(double);
-float log2f(float);
-long double log2l(long double);
-
-
-
-double logb(double);
-float logbf(float);
-long double logbl(long double);
-
-
-
-long lrint(double);
-long lrintf(float);
-long lrintl(long double);
-
-
-
-long lround(double);
-long lroundf(float);
-long lroundl(long double);
-
-
-
-double modf(double, double *);
-float modff(float, float *);
-long double modfl(long double, long double *);
-
-
-
-double nan(const char *);
-float nanf(const char *);
-long double nanl(const char *);
-
-
-
-double nearbyint(double);
-float nearbyintf(float);
-long double nearbyintl(long double);
-
-
-
-double nextafter(double, double);
-float nextafterf(float, float);
-long double nextafterl(long double, long double);
-
-
-
-double nexttoward(double, long double);
-float nexttowardf(float, long double);
-long double nexttowardl(long double, long double);
-
-
-
-
-double pow(double, double);
-__attribute__((nonreentrant)) float powf(float, float);
-long double powl(long double, long double);
-
-
-
-double remainder(double, double);
-float remainderf(float, float);
-long double remainderl(long double, long double);
-
-
-
-double remquo(double, double, int *);
-float remquof(float, float, int *);
-long double remquol(long double, long double, int *);
-
-
-
-double rint(double);
-float rintf(float);
-long double rintl(long double);
-
-
-
-double round(double);
-float roundf(float);
-long double roundl(long double);
-
-
-
-double scalbln(double, long);
-float scalblnf(float, long);
-long double scalblnl(long double, long);
-
-
-
-double scalbn(double, int);
-float scalbnf(float, int);
-long double scalbnl(long double, int);
-
-
-
-double sin(double);
-float sinf(float);
-long double sinl(long double);
-
-
-
-double sinh(double);
-float sinhf(float);
-long double sinhl(long double);
-
-
-
-double sqrt(double);
-float sqrtf(float);
-long double sqrtl(long double);
-
-
-
-double tan(double);
-float tanf(float);
-long double tanl(long double);
-
-
-
-double tanh(double);
-float tanhf(float);
-long double tanhl(long double);
-
-
-
-double tgamma(double);
-float tgammaf(float);
-long double tgammal(long double);
-
-
-
-double trunc(double);
-float truncf(float);
-long double truncl(long double);
-# 423 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\math.h" 3
-extern int signgam;
-
-double j0(double);
-double j1(double);
-double jn(int, double);
-
-double y0(double);
-double y1(double);
-double yn(int, double);
-# 22 "main.c" 2
-
-# 1 "./displays.h" 1
-# 14 "./displays.h"
-typedef struct Ds_Display Ds_Display;
-struct Ds_Display
-{
- char estados;
-
-
-    char D1;
-    char D2;
-    char D3;
-
-    char tiempoEncendido;
-    char tiempoApagado;
-
-    char tempE;
-    char tempA;
-};
-
-
-void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA);
-
-
-void Ds_Procese_displays (Ds_Display *dsp);
-# 47 "./displays.h"
-void Ds_Encienda_Disp(char dispNum);
-
-
-
-
-
-
-
-void Ds_BCD(char segmento);
-
-
-
-
-
-
-void Ds_Mostrar_en_display(Ds_Display *dsp, char d1, char d2, char d3);
-
-
-
-
-
-void Ds_Convertir_en_uni(Ds_Display *dsp, int voltaje);
-
-int Ds_Conversor_ADC (int ADC_OUT);
-# 23 "main.c" 2
-
-# 1 "./definiciones.h" 1
-# 24 "main.c" 2
-
-# 1 "./nuestrostimers.h" 1
-
-
-
-
-
-
-
-typedef struct Tm_Periodico Tm_Periodico;
-
-
-
-struct Tm_Periodico
-{
- unsigned int contador;
-    unsigned int periodo;
- unsigned long timeout;
- unsigned char banderas;
-};
-
-
-void Tm_Procese_tiempo (Tm_Periodico *ctp);
-
-
-
-void Tm_Inicie_periodico (Tm_Periodico *ctp,unsigned int periodo);
-char Tm_Hubo_periodico (Tm_Periodico *ctp);
-void Tm_Baje_periodico (Tm_Periodico *ctp);
-void Tm_Termine_periodico (Tm_Periodico *ctp);
-
-
-void Tm_Inicie_timeout (Tm_Periodico *ctp,unsigned int tiempo);
-char Tm_Hubo_timeout (Tm_Periodico *ctp);
-void Tm_Baje_timeout (Tm_Periodico *ctp);
-# 25 "main.c" 2
-
-
-
-
-
-int valor_ADC = 0;
-adc_channel_t AN1_Channel;
-int volt_ADC = 0;
-int Pack[6];
-
-
-void main(void){
-
- SYSTEM_Initialize();
- Ds_Display seven_seg;
- Tm_Periodico timer_1ms;
-    Tm_Periodico timer_1000ms;
- Tm_Inicie_periodico (&timer_1ms, 1000);
- ADC_SelectChannel (AN1_Channel);
-
- Tm_Inicie_periodico (&timer_1000ms, 1000);
- ADC_Initialize();
- Ds_Iniciar_displays (&seven_seg, 4, 5, 6, 4, 1);
-    TMR6_StartTimer();
-
-
-
- while (1){
-
-  if(TMR6_HasOverflowOccured()){
-   Tm_Procese_tiempo(&timer_1ms);
-            Ds_Procese_displays(&seven_seg);
-  }
-
-    if(Tm_Hubo_periodico(&timer_1ms)){
-  Tm_Baje_periodico(&timer_1ms);
-        ADC_StartConversion();
-
-        if(EUSART_is_tx_ready()){
-            Pack[0]=(seven_seg.D3 + '0');
-            Pack[1]=(',');
-            Pack[2]=(seven_seg.D2 + '0');
-            Pack[3]=(seven_seg.D1 + '0');
-            Pack[5]=0x0D;
-            Pack[4]= '\n';
-            EUSART_Write(Pack[0]);
-            EUSART_Write(Pack[1]);
-            EUSART_Write(Pack[2]);
-            EUSART_Write(Pack[3]);
-            EUSART_Write(Pack[4]);
-            EUSART_Write(Pack[5]);
+            Ds_BCD(10);
+   Ds_Encienda_Disp(2);
+            }
         }
     }
-
- if(ADC_IsConversionDone()){
-        valor_ADC = ADC_GetConversionResult();
-        volt_ADC = Ds_Conversor_ADC(valor_ADC);
-        Ds_Convertir_en_uni(&seven_seg, volt_ADC);
-  }
- }
-}
