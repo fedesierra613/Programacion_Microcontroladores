@@ -296,7 +296,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADCON1"/>
-         <value>224</value>
+         <value>96</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="ADC" registerAlias="ADRESH"/>
@@ -324,7 +324,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADFM"/>
-         <value>right</value>
+         <value>left</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="ADC" registerAlias="ADCON1" settingAlias="ADNREF"/>
@@ -3058,7 +3058,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\adc.c</file>
-         <hash>3bdb4f3d1f62c342d2d73633b06c7493aa9efe337b2cad0e1dde4d3b35430623</hash>
+         <hash>ff6914dba94609917ff92ceb0a0cb3817b4dfee6ef2c2f763e6a05bf7693f7da</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
