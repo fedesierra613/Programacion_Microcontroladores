@@ -41,8 +41,8 @@ void main(void){
 	//Tm_Inicie_periodico (&timer_1000ms, tiempo_cont);
 	ADC_Initialize();
     TMR6_StartTimer();
-    ADCON0 = ADCON0 | 0b00100001;
-    ADCON0 = ADCON0 & 0b10100011;
+    ADCON0 = ADCON0 | 0b00011101;
+    ADCON0 = ADCON0 & 0b10011111;
     ADCON1 = 0b11100000;
 	Ds_Iniciar_displays (&seven_seg, N_1, N_2, N_3, T_On, T_Off);
   

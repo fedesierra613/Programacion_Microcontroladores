@@ -23,8 +23,8 @@ extern "C" {
 #define T_On 4
 #define T_Off 1
 #define N_1 1
-#define N_2 2
-#define N_3 3
+#define N_2 1
+#define N_3 1
 #define Zero 0
 
 #define S0 0

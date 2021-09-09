@@ -1350,9 +1350,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _pendiente `f ~T0 @X0 1 a ]
 [e = _pendiente -> .0.97665 `f ]
 "226
-[; ;displays.c: 226:     uint16_t voltios = (uint16_t) adcOUT*pendiente;
+[; ;displays.c: 226:     uint16_t voltios = (uint16_t)(((float)adcOUT)*pendiente);
 [v _voltios `us ~T0 @X0 1 a ]
-[e = _voltios -> * -> -> _adcOUT `ui `f _pendiente `us ]
+[e = _voltios -> * -> _adcOUT `f _pendiente `us ]
 "227
 [; ;displays.c: 227:  return(voltios);
 [e ) _voltios ]
@@ -1392,172 +1392,172 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;displays.c: 240:             }
 }
 [e :U 657 ]
-"243
-[; ;displays.c: 243:             Ds_Encienda_Disp(1);
+"242
+[; ;displays.c: 242:             Ds_Encienda_Disp(1);
 [e ( _Ds_Encienda_Disp (1 -> -> 1 `i `uc ]
-"244
-[; ;displays.c: 244:             Ds_BCD(dsp->D1);
+"243
+[; ;displays.c: 243:             Ds_BCD(dsp->D1);
 [e ( _Ds_BCD (1 . *U _dsp 1 ]
-"246
-[; ;displays.c: 246:         break;
+"245
+[; ;displays.c: 245:         break;
 [e $U 654  ]
-"248
-[; ;displays.c: 248:         case 2:
+"247
+[; ;displays.c: 247:         case 2:
 [e :U 658 ]
-"249
-[; ;displays.c: 249:             --(dsp->tempA);
+"248
+[; ;displays.c: 248:             --(dsp->tempA);
 [e =- . *U _dsp 7 -> -> 1 `i `uc ]
-"250
-[; ;displays.c: 250:             if(!(dsp->tempA)){
+"249
+[; ;displays.c: 249:             if(!(dsp->tempA)){
 [e $ ! ! != -> . *U _dsp 7 `i -> 0 `i 659  ]
 {
-"251
-[; ;displays.c: 251:                 dsp->estados =3;
+"250
+[; ;displays.c: 250:                 dsp->estados =3;
 [e = . *U _dsp 0 -> -> 3 `i `uc ]
-"252
-[; ;displays.c: 252:                 dsp->tempE=dsp->tiempoEncendido;
+"251
+[; ;displays.c: 251:                 dsp->tempE=dsp->tiempoEncendido;
 [e = . *U _dsp 6 . *U _dsp 4 ]
-"253
-[; ;displays.c: 253:             }
+"252
+[; ;displays.c: 252:             }
 }
 [e :U 659 ]
-"255
-[; ;displays.c: 255:             Ds_Encienda_Disp(0);
+"254
+[; ;displays.c: 254:             Ds_Encienda_Disp(0);
 [e ( _Ds_Encienda_Disp (1 -> -> 0 `i `uc ]
-"256
-[; ;displays.c: 256:         break;
+"255
+[; ;displays.c: 255:         break;
 [e $U 654  ]
-"258
-[; ;displays.c: 258:         case 3:
+"257
+[; ;displays.c: 257:         case 3:
 [e :U 660 ]
-"259
-[; ;displays.c: 259:             --(dsp->tempE);
+"258
+[; ;displays.c: 258:             --(dsp->tempE);
 [e =- . *U _dsp 6 -> -> 1 `i `uc ]
-"260
-[; ;displays.c: 260:             if(!(dsp->tempE)){
+"259
+[; ;displays.c: 259:             if(!(dsp->tempE)){
 [e $ ! ! != -> . *U _dsp 6 `i -> 0 `i 661  ]
 {
-"261
-[; ;displays.c: 261:                 dsp->estados =4;
+"260
+[; ;displays.c: 260:                 dsp->estados =4;
 [e = . *U _dsp 0 -> -> 4 `i `uc ]
-"262
-[; ;displays.c: 262:                 dsp->tempA=dsp->tiempoApagado;
+"261
+[; ;displays.c: 261:                 dsp->tempA=dsp->tiempoApagado;
 [e = . *U _dsp 7 . *U _dsp 5 ]
-"263
-[; ;displays.c: 263:             }
+"262
+[; ;displays.c: 262:             }
 }
 [e :U 661 ]
-"265
-[; ;displays.c: 265:             Ds_Encienda_Disp(2);
+"264
+[; ;displays.c: 264:             Ds_Encienda_Disp(2);
 [e ( _Ds_Encienda_Disp (1 -> -> 2 `i `uc ]
-"266
-[; ;displays.c: 266:             Ds_BCD(dsp->D2);
+"265
+[; ;displays.c: 265:             Ds_BCD(dsp->D2);
 [e ( _Ds_BCD (1 . *U _dsp 2 ]
-"267
-[; ;displays.c: 267:         break;
+"266
+[; ;displays.c: 266:         break;
 [e $U 654  ]
-"269
-[; ;displays.c: 269:         case 4:
+"268
+[; ;displays.c: 268:         case 4:
 [e :U 662 ]
-"270
-[; ;displays.c: 270:             --(dsp->tempA);
+"269
+[; ;displays.c: 269:             --(dsp->tempA);
 [e =- . *U _dsp 7 -> -> 1 `i `uc ]
-"271
-[; ;displays.c: 271:             if(!(dsp->tempA)){
+"270
+[; ;displays.c: 270:             if(!(dsp->tempA)){
 [e $ ! ! != -> . *U _dsp 7 `i -> 0 `i 663  ]
 {
-"272
-[; ;displays.c: 272:                 dsp->estados =5;
+"271
+[; ;displays.c: 271:                 dsp->estados =5;
 [e = . *U _dsp 0 -> -> 5 `i `uc ]
-"273
-[; ;displays.c: 273:                 dsp->tempE=dsp->tiempoEncendido;
+"272
+[; ;displays.c: 272:                 dsp->tempE=dsp->tiempoEncendido;
 [e = . *U _dsp 6 . *U _dsp 4 ]
-"274
-[; ;displays.c: 274:             }
+"273
+[; ;displays.c: 273:             }
 }
 [e :U 663 ]
-"276
-[; ;displays.c: 276:             Ds_Encienda_Disp(0);
+"275
+[; ;displays.c: 275:             Ds_Encienda_Disp(0);
 [e ( _Ds_Encienda_Disp (1 -> -> 0 `i `uc ]
-"277
-[; ;displays.c: 277:         break;
+"276
+[; ;displays.c: 276:         break;
 [e $U 654  ]
-"279
-[; ;displays.c: 279:         case 5:
+"278
+[; ;displays.c: 278:         case 5:
 [e :U 664 ]
-"280
-[; ;displays.c: 280:             --(dsp->tempE);
+"279
+[; ;displays.c: 279:             --(dsp->tempE);
 [e =- . *U _dsp 6 -> -> 1 `i `uc ]
-"281
-[; ;displays.c: 281:             if(!(dsp->tempE)){
+"280
+[; ;displays.c: 280:             if(!(dsp->tempE)){
 [e $ ! ! != -> . *U _dsp 6 `i -> 0 `i 665  ]
 {
-"282
-[; ;displays.c: 282:                 dsp->estados =6;
+"281
+[; ;displays.c: 281:                 dsp->estados =6;
 [e = . *U _dsp 0 -> -> 6 `i `uc ]
-"283
-[; ;displays.c: 283:                 dsp->tempA=dsp->tiempoApagado;
+"282
+[; ;displays.c: 282:                 dsp->tempA=dsp->tiempoApagado;
 [e = . *U _dsp 7 . *U _dsp 5 ]
-"284
-[; ;displays.c: 284:             }
+"283
+[; ;displays.c: 283:             }
 }
 [e :U 665 ]
-"286
-[; ;displays.c: 286:             Ds_Encienda_Disp(3);
+"285
+[; ;displays.c: 285:             Ds_Encienda_Disp(3);
 [e ( _Ds_Encienda_Disp (1 -> -> 3 `i `uc ]
-"287
-[; ;displays.c: 287:             Ds_BCD(dsp->D3);
+"286
+[; ;displays.c: 286:             Ds_BCD(dsp->D3);
 [e ( _Ds_BCD (1 . *U _dsp 3 ]
-"288
-[; ;displays.c: 288:         break;
+"287
+[; ;displays.c: 287:         break;
 [e $U 654  ]
-"290
-[; ;displays.c: 290:         case 6:
+"289
+[; ;displays.c: 289:         case 6:
 [e :U 666 ]
-"291
-[; ;displays.c: 291:             --(dsp->tempA);
+"290
+[; ;displays.c: 290:             --(dsp->tempA);
 [e =- . *U _dsp 7 -> -> 1 `i `uc ]
-"292
-[; ;displays.c: 292:             if(!(dsp->tempA)){
+"291
+[; ;displays.c: 291:             if(!(dsp->tempA)){
 [e $ ! ! != -> . *U _dsp 7 `i -> 0 `i 667  ]
 {
-"293
-[; ;displays.c: 293:                 dsp->estados = 1;
+"292
+[; ;displays.c: 292:                 dsp->estados = 1;
 [e = . *U _dsp 0 -> -> 1 `i `uc ]
-"294
-[; ;displays.c: 294:                 dsp->tempE=dsp->tiempoEncendido;
+"293
+[; ;displays.c: 293:                 dsp->tempE=dsp->tiempoEncendido;
 [e = . *U _dsp 6 . *U _dsp 4 ]
-"295
-[; ;displays.c: 295:             }
+"294
+[; ;displays.c: 294:             }
 }
 [e :U 667 ]
-"297
-[; ;displays.c: 297:             Ds_Encienda_Disp(0);
+"296
+[; ;displays.c: 296:             Ds_Encienda_Disp(0);
 [e ( _Ds_Encienda_Disp (1 -> -> 0 `i `uc ]
-"298
-[; ;displays.c: 298:         break;
+"297
+[; ;displays.c: 297:         break;
 [e $U 654  ]
-"300
-[; ;displays.c: 300:         default:
+"299
+[; ;displays.c: 299:         default:
 [e :U 668 ]
-"301
-[; ;displays.c: 301:             while(1){
+"300
+[; ;displays.c: 300:             while(1){
 [e :U 670 ]
 {
-"303
-[; ;displays.c: 303:             Ds_BCD(10);
+"302
+[; ;displays.c: 302:                 Ds_BCD(10);
 [e ( _Ds_BCD (1 -> -> 10 `i `uc ]
-"304
-[; ;displays.c: 304:    Ds_Encienda_Disp(2);
+"303
+[; ;displays.c: 303:        Ds_Encienda_Disp(2);
 [e ( _Ds_Encienda_Disp (1 -> -> 2 `i `uc ]
-"305
-[; ;displays.c: 305:             }
+"304
+[; ;displays.c: 304:             }
 }
 [e :U 669 ]
 [e $U 670  ]
 [e :U 671 ]
-"306
-[; ;displays.c: 306:         }
+"305
+[; ;displays.c: 305:         }
 }
 [e $U 654  ]
 [e :U 655 ]
@@ -1569,7 +1569,7 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> 6 `i 666
  668 ]
 [e :U 654 ]
-"307
-[; ;displays.c: 307:     }
+"306
+[; ;displays.c: 306:     }
 [e :UE 653 ]
 }

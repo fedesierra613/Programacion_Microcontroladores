@@ -3,14 +3,14 @@
 [d edition pro ]
 [d chip 16F1827 ]
 [d frameptr 6 ]
-"85 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/adc.c
+"85 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/adc.c
 [e E2476 . `uc
 channel_AN7 7
 channel_Temp 29
 channel_DAC 30
 channel_FVR 31
 ]
-"32 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\main.c
+"32 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\main.c
 [e E2500 . `uc
 channel_AN7 7
 channel_Temp 29
@@ -35,7 +35,7 @@ channel_FVR 31
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"9 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\displays.c
+"9 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\displays.c
 [v _Ds_Iniciar_displays Ds_Iniciar_displays `(v  1 e 1 0 ]
 "20
 [v _Ds_Encienda_Disp Ds_Encienda_Disp `(v  1 e 1 0 ]
@@ -47,9 +47,9 @@ channel_FVR 31
 [v _Ds_Conversor_ADC Ds_Conversor_ADC `(us  1 e 2 0 ]
 "231
 [v _Ds_Procese_displays Ds_Procese_displays `(v  1 e 1 0 ]
-"28 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\main.c
+"28 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"67 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/adc.c
+"67 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 "85
 [v _ADC_SelectChannel ADC_SelectChannel `(v  1 e 1 0 ]
@@ -59,7 +59,7 @@ channel_FVR 31
 [v _ADC_IsConversionDone ADC_IsConversionDone `(a  1 e 1 0 ]
 "106
 [v _ADC_GetConversionResult ADC_GetConversionResult `(us  1 e 2 0 ]
-"66 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/eusart.c
+"66 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 "94
 [v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
@@ -77,21 +77,21 @@ channel_FVR 31
 [v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "165
 [v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
-"50 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/mcc.c
+"50 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "61
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "75
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"55 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"62 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/tmr6.c
+"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/tmr6.c
 [v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
 "79
 [v _TMR6_StartTimer TMR6_StartTimer `(v  1 e 1 0 ]
 "111
 [v _TMR6_HasOverflowOccured TMR6_HasOverflowOccured `(a  1 e 1 0 ]
-"11 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\nuestrostimers.c
+"11 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\nuestrostimers.c
 [v _Tm_Inicie_periodico Tm_Inicie_periodico `(v  1 e 1 0 ]
 "17
 [v _Tm_Procese_tiempo Tm_Procese_tiempo `(v  1 e 1 0 ]
@@ -176,7 +176,7 @@ channel_FVR 31
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
 "2039
 [v _LATA LATA `VEuc  1 e 1 @268 ]
-[s S555 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S550 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -186,11 +186,11 @@ channel_FVR 31
 `uc 1 LATA7 1 0 :1:7 
 ]
 "2056
-[u S564 . 1 `S555 1 . 1 0 ]
-[v _LATAbits LATAbits `VES564  1 e 1 @268 ]
+[u S559 . 1 `S550 1 . 1 0 ]
+[v _LATAbits LATAbits `VES559  1 e 1 @268 ]
 "2096
 [v _LATB LATB `VEuc  1 e 1 @269 ]
-[s S534 . 1 `uc 1 LATB0 1 0 :1:0 
+[s S529 . 1 `uc 1 LATB0 1 0 :1:0 
 `uc 1 LATB1 1 0 :1:1 
 `uc 1 LATB2 1 0 :1:2 
 `uc 1 LATB3 1 0 :1:3 
@@ -200,8 +200,8 @@ channel_FVR 31
 `uc 1 LATB7 1 0 :1:7 
 ]
 "2113
-[u S543 . 1 `S534 1 . 1 0 ]
-[v _LATBbits LATBbits `VES543  1 e 1 @269 ]
+[u S538 . 1 `S529 1 . 1 0 ]
+[v _LATBbits LATBbits `VES538  1 e 1 @269 ]
 "2430
 [v _BORCON BORCON `VEuc  1 e 1 @278 ]
 "2779
@@ -282,7 +282,7 @@ channel_FVR 31
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
-"52 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/eusart.c
+"52 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/eusart.c
 [u S151 . 1 `S146 1 . 1 0 `uc 1 status 1 0 ]
 [v _eusartRxLastError eusartRxLastError `VES151  1 e 1 0 ]
 "58
@@ -291,28 +291,26 @@ channel_FVR 31
 [v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
-"28 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\main.c
+"28 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "34
-[v main@Pack Pack `[6]i  1 a 12 5 ]
+[v main@Pack Pack `[6]i  1 a 12 51 ]
 [s S425 Tm_Periodico 9 `ui 1 contador 2 0 `ui 1 periodo 2 2 `ul 1 timeout 4 4 `uc 1 banderas 1 8 ]
 "37
-[v main@timer_1ms timer_1ms `S425  1 a 9 26 ]
-"38
-[v main@timer_1000ms timer_1000ms `S425  1 a 9 17 ]
+[v main@timer_1ms timer_1ms `S425  1 a 9 63 ]
 [s S416 Ds_Display 8 `uc 1 estados 1 0 `uc 1 D1 1 1 `uc 1 D2 1 2 `uc 1 D3 1 3 `uc 1 tiempoEncendido 1 4 `uc 1 tiempoApagado 1 5 `uc 1 tempE 1 6 `uc 1 tempA 1 7 ]
 "36
-[v main@seven_seg seven_seg `S416  1 a 8 35 ]
-"31
-[v main@valor_ADC valor_ADC `us  1 a 2 3 ]
+[v main@seven_seg seven_seg `S416  1 a 8 72 ]
 "33
-[v main@volt_ADC volt_ADC `us  1 a 2 0 ]
+[v main@volt_ADC volt_ADC `us  1 a 2 49 ]
+"31
+[v main@valor_ADC valor_ADC `us  1 a 2 47 ]
 "32
-[v main@AN1_Channel AN1_Channel `E2500  1 a 1 2 ]
-"88
+[v main@AN1_Channel AN1_Channel `E2500  1 a 1 46 ]
+"83
 } 0
-"17 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\nuestrostimers.c
+"17 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\nuestrostimers.c
 [v _Tm_Procese_tiempo Tm_Procese_tiempo `(v  1 e 1 0 ]
 {
 [s S425 Tm_Periodico 9 `ui 1 contador 2 0 `ui 1 periodo 2 2 `ul 1 timeout 4 4 `uc 1 banderas 1 8 ]
@@ -357,7 +355,7 @@ channel_FVR 31
 [v Tm_Baje_periodico@ctp ctp `*.4S425  1 a 1 1 ]
 "46
 } 0
-"79 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/tmr6.c
+"79 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/tmr6.c
 [v _TMR6_StartTimer TMR6_StartTimer `(v  1 e 1 0 ]
 {
 "83
@@ -369,7 +367,7 @@ channel_FVR 31
 [v TMR6_HasOverflowOccured@status status `a  1 a 1 0 ]
 "121
 } 0
-"50 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/mcc.c
+"50 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "59
@@ -379,22 +377,22 @@ channel_FVR 31
 {
 "79
 } 0
-"62 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/tmr6.c
+"62 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/tmr6.c
 [v _TMR6_Initialize TMR6_Initialize `(v  1 e 1 0 ]
 {
 "77
 } 0
-"55 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/pin_manager.c
+"55 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "94
 } 0
-"61 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/mcc.c
+"61 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "73
 } 0
-"66 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/eusart.c
+"66 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 {
 "92
@@ -417,12 +415,12 @@ channel_FVR 31
 [v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "167
 } 0
-"67 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/adc.c
+"67 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 {
 "83
 } 0
-"94 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/eusart.c
+"94 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/eusart.c
 [v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
 {
 "97
@@ -435,14 +433,14 @@ channel_FVR 31
 [v EUSART_Write@txData txData `uc  1 a 1 0 ]
 "139
 } 0
-"231 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\displays.c
+"231 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\displays.c
 [v _Ds_Procese_displays Ds_Procese_displays `(v  1 e 1 0 ]
 {
 [s S416 Ds_Display 8 `uc 1 estados 1 0 `uc 1 D1 1 1 `uc 1 D2 1 2 `uc 1 D3 1 3 `uc 1 tiempoEncendido 1 4 `uc 1 tiempoApagado 1 5 `uc 1 tempE 1 6 `uc 1 tempA 1 7 ]
 [v Ds_Procese_displays@dsp dsp `*.4S416  1 a 1 wreg ]
 [v Ds_Procese_displays@dsp dsp `*.4S416  1 a 1 wreg ]
 [v Ds_Procese_displays@dsp dsp `*.4S416  1 a 1 5 ]
-"307
+"306
 } 0
 "20
 [v _Ds_Encienda_Disp Ds_Encienda_Disp `(v  1 e 1 0 ]
@@ -506,7 +504,7 @@ channel_FVR 31
 [v ___lwdiv@dividend dividend `ui  1 p 2 2 ]
 "30
 } 0
-"224 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\displays.c
+"224 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\displays.c
 [v _Ds_Conversor_ADC Ds_Conversor_ADC `(us  1 e 2 0 ]
 {
 "225
@@ -545,17 +543,17 @@ channel_FVR 31
 "8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S1012 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S1007 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S1017 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
-[u S1020 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1012 1 fAsBytes 4 0 `S1017 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S1020  1 a 4 20 ]
+[s S1012 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S1015 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1007 1 fAsBytes 4 0 `S1012 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1015  1 a 4 20 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 14 ]
-[s S1089 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S1084 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S1092 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1089 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S1092  1 a 2 24 ]
+[u S1087 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S1084 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1087  1 a 2 24 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 19 ]
 "11
@@ -581,7 +579,7 @@ channel_FVR 31
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
 "60
 } 0
-"93 C:\Users\estudiante\Downloads\Pooling\Lab1\Practica_1.X\mcc_generated_files/adc.c
+"93 C:\Users\estudiante\Downloads\Lab 1\Proyecto_II\Lab1\Pooling\Practica_1.X\mcc_generated_files/adc.c
 [v _ADC_StartConversion ADC_StartConversion `(v  1 e 1 0 ]
 {
 "97

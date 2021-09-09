@@ -525,7 +525,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _ADC_Initialize ]
 [f ]
 "72
-[; ;mcc_generated_files/adc.c: 72:     ADCON1 = 0xE0;
+[; ;mcc_generated_files/adc.c: 72:     ADCON1 = 0b11100000;
 [e = _ADCON1 -> -> 224 `i `uc ]
 "75
 [; ;mcc_generated_files/adc.c: 75:     ADRESL = 0x00;
@@ -534,7 +534,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/adc.c: 78:     ADRESH = 0x00;
 [e = _ADRESH -> -> 0 `i `uc ]
 "81
-[; ;mcc_generated_files/adc.c: 81:     ADCON0 = 0x1D;
+[; ;mcc_generated_files/adc.c: 81:     ADCON0 = 0b00011101;
 [e = _ADCON0 -> -> 29 `i `uc ]
 "83
 [; ;mcc_generated_files/adc.c: 83: }

@@ -5081,33 +5081,30 @@ void main(void){
  SYSTEM_Initialize();
  Ds_Display seven_seg;
  Tm_Periodico timer_1ms;
-    Tm_Periodico timer_1000ms;
+
  Tm_Inicie_periodico (&timer_1ms, 1000);
  ADC_SelectChannel (AN1_Channel);
- Tm_Inicie_periodico (&timer_1000ms, 1000);
+
  ADC_Initialize();
     TMR6_StartTimer();
-    ADCON0 = ADCON0 | 0b00100001;
-    ADCON0 = ADCON0 & 0b10100011;
+    ADCON0 = ADCON0 | 0b00011101;
+    ADCON0 = ADCON0 & 0b10011111;
     ADCON1 = 0b11100000;
- Ds_Iniciar_displays (&seven_seg, 1, 2, 3, 4, 1);
-
-
-
+ Ds_Iniciar_displays (&seven_seg, 1, 1, 1, 4, 1);
 
 
  while (1){
 
   if(TMR6_HasOverflowOccured()){
    Tm_Procese_tiempo(&timer_1ms);
-            Ds_Procese_displays(&seven_seg);
+      Ds_Procese_displays(&seven_seg);
   }
 
         if(Tm_Hubo_periodico(&timer_1ms)){
             Tm_Baje_periodico(&timer_1ms);
             ADC_StartConversion();
 
-             if(EUSART_is_tx_ready()){
+          if(EUSART_is_tx_ready()){
             Pack[0]=(seven_seg.D3 + '0');
             Pack[1]=(',');
             Pack[2]=(seven_seg.D2 + '0');
@@ -5120,15 +5117,13 @@ void main(void){
             EUSART_Write(Pack[3]);
             EUSART_Write(Pack[4]);
             EUSART_Write(Pack[5]);
-        }
-
-
+          }
     }
 
         if(ADC_IsConversionDone()){
             valor_ADC = ADC_GetConversionResult();
             volt_ADC = Ds_Conversor_ADC(valor_ADC);
-            Ds_Convertir_en_uni(&seven_seg, 132);
+            Ds_Convertir_en_uni(&seven_seg, volt_ADC);
   }
- }
+ };
 }

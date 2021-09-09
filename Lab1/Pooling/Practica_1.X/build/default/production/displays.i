@@ -4781,7 +4781,7 @@ void Ds_Convertir_en_uni(Ds_Display *dsp, uint16_t voltaje){
 
 uint16_t Ds_Conversor_ADC (uint16_t adcOUT){
     float pendiente = 0.97665;
-    uint16_t voltios = (uint16_t) adcOUT*pendiente;
+    uint16_t voltios = (uint16_t)(((float)adcOUT)*pendiente);
  return(voltios);
 }
 
@@ -4796,7 +4796,6 @@ void Ds_Procese_displays (Ds_Display *dsp){
                 dsp->estados =2;
                 dsp->tempA=dsp->tiempoApagado;
             }
-
 
             Ds_Encienda_Disp(1);
             Ds_BCD(dsp->D1);
@@ -4858,8 +4857,8 @@ void Ds_Procese_displays (Ds_Display *dsp){
         default:
             while(1){
 
-            Ds_BCD(10);
-   Ds_Encienda_Disp(2);
+                Ds_BCD(10);
+       Ds_Encienda_Disp(2);
             }
         }
     }
