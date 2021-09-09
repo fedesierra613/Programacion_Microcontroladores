@@ -65,9 +65,9 @@ void Ds_Mostrar_en_display(Ds_Display *dsp, char d1, char d2, char d3);
 /*
      convertir en decimal unidades, aca se importa el numero del ADC, de 1 a 1024 
 */
-void Ds_Convertir_en_uni(Ds_Display *dsp, int voltaje);
+void Ds_Convertir_en_uni(Ds_Display *dsp, uint16_t voltaje);
 
-int Ds_Conversor_ADC (int ADC_OUT);
+uint16_t Ds_Conversor_ADC (uint16_t ADC_OUT);
 
 
 

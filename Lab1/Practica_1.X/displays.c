@@ -1,3 +1,4 @@
+#include "definiciones.h"
 #include "displays.h"
 #include "nuestrostimers.h"
 #include "mcc_generated_files/pin_manager.h"
@@ -202,17 +203,17 @@ void Ds_BCD(char segmento){
 		    IO_RA0_SetHigh();
 		    IO_RA1_SetHigh();
 		    IO_RA2_SetHigh();
-		    IO_RA3_SetLow();//d Apagado
-            IO_RA4_SetLow();//e Apagado
+		    IO_RA3_SetHigh();//d Apagado
+            IO_RA4_SetHigh();//e Apagado
             IO_RA7_SetHigh();//f Encendid
 		    IO_RA7_SetHigh();
 		
-	break;
+        break;
     }
 }
 
 
-void Ds_Convertir_en_uni(Ds_Display *dsp, int voltaje){
+void Ds_Convertir_en_uni(Ds_Display *dsp, uint16_t voltaje){
 	dsp->D1 = voltaje % 10;
 	voltaje = voltaje/10;
 	dsp->D2 = voltaje % 10;
@@ -220,9 +221,9 @@ void Ds_Convertir_en_uni(Ds_Display *dsp, int voltaje){
 	dsp->D3 = voltaje % 10;
 }
 
-int Ds_Conversor_ADC (int adcOUT){
-    float pendiente = 0.9766;
-    int voltios = (int) adcOUT*pendiente;
+uint16_t Ds_Conversor_ADC (uint16_t adcOUT){
+    float pendiente = 0.97665;
+    uint16_t voltios = (uint16_t) adcOUT*pendiente;
 	return(voltios);
 }
 

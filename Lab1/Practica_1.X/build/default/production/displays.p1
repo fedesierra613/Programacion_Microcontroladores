@@ -1,1575 +1,1575 @@
 Version 4.0 HI-TECH Software Intermediate Code
 "16 ./displays.h
 [; ;./displays.h: 16: {
-[s S2 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
-[n S2 Ds_Display estados D1 D2 D3 tiempoEncendido tiempoApagado tempE tempA ]
-"2102 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2102:     struct {
-[s S118 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S118 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+[s S4 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S4 Ds_Display estados D1 D2 D3 tiempoEncendido tiempoApagado tempE tempA ]
+"2102 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2102:     struct {
+[s S120 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S120 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
 "2101
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2101: typedef union {
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2101: typedef union {
+[u S119 `S120 1 ]
+[n S119 . . ]
+"2113
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2113: extern volatile LATBbits_t LATBbits __attribute__((address(0x10D)));
+[v _LATBbits `VS119 ~T0 @X0 0 e@269 ]
+"2045
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2045:     struct {
+[s S118 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S118 . LATA0 LATA1 LATA2 LATA3 LATA4 . LATA6 LATA7 ]
+"2044
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2044: typedef union {
 [u S117 `S118 1 ]
 [n S117 . . ]
-"2113
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2113: extern volatile LATBbits_t LATBbits __attribute__((address(0x10D)));
-[v _LATBbits `VS117 ~T0 @X0 0 e@269 ]
-"2045
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2045:     struct {
-[s S116 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S116 . LATA0 LATA1 LATA2 LATA3 LATA4 . LATA6 LATA7 ]
-"2044
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2044: typedef union {
-[u S115 `S116 1 ]
-[n S115 . . ]
 "2056
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2056: extern volatile LATAbits_t LATAbits __attribute__((address(0x10C)));
-[v _LATAbits `VS115 ~T0 @X0 0 e@268 ]
-"54 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 54: __asm("INDF0 equ 00h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2056: extern volatile LATAbits_t LATAbits __attribute__((address(0x10C)));
+[v _LATAbits `VS117 ~T0 @X0 0 e@268 ]
+"54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
 "74
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 74: __asm("INDF1 equ 01h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 74: __asm("INDF1 equ 01h");
 [; <" INDF1 equ 01h ;# ">
 "94
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 94: __asm("PCL equ 02h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 94: __asm("PCL equ 02h");
 [; <" PCL equ 02h ;# ">
 "114
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 114: __asm("STATUS equ 03h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 114: __asm("STATUS equ 03h");
 [; <" STATUS equ 03h ;# ">
 "177
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 177: __asm("FSR0L equ 04h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 177: __asm("FSR0L equ 04h");
 [; <" FSR0L equ 04h ;# ">
 "197
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 197: __asm("FSR0H equ 05h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 197: __asm("FSR0H equ 05h");
 [; <" FSR0H equ 05h ;# ">
 "221
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 221: __asm("FSR1L equ 06h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 221: __asm("FSR1L equ 06h");
 [; <" FSR1L equ 06h ;# ">
 "241
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 241: __asm("FSR1H equ 07h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 241: __asm("FSR1H equ 07h");
 [; <" FSR1H equ 07h ;# ">
 "261
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 261: __asm("BSR equ 08h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 261: __asm("BSR equ 08h");
 [; <" BSR equ 08h ;# ">
 "313
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 313: __asm("WREG equ 09h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 313: __asm("WREG equ 09h");
 [; <" WREG equ 09h ;# ">
 "333
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 333: __asm("PCLATH equ 0Ah");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 333: __asm("PCLATH equ 0Ah");
 [; <" PCLATH equ 0Ah ;# ">
 "353
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 353: __asm("INTCON equ 0Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 353: __asm("INTCON equ 0Bh");
 [; <" INTCON equ 0Bh ;# ">
 "431
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 431: __asm("PORTA equ 0Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 431: __asm("PORTA equ 0Ch");
 [; <" PORTA equ 0Ch ;# ">
 "493
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 493: __asm("PORTB equ 0Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 493: __asm("PORTB equ 0Dh");
 [; <" PORTB equ 0Dh ;# ">
 "555
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 555: __asm("PIR1 equ 011h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 555: __asm("PIR1 equ 011h");
 [; <" PIR1 equ 011h ;# ">
 "617
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 617: __asm("PIR2 equ 012h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 617: __asm("PIR2 equ 012h");
 [; <" PIR2 equ 012h ;# ">
 "668
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 668: __asm("PIR3 equ 013h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 668: __asm("PIR3 equ 013h");
 [; <" PIR3 equ 013h ;# ">
 "708
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 708: __asm("PIR4 equ 014h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 708: __asm("PIR4 equ 014h");
 [; <" PIR4 equ 014h ;# ">
 "734
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 734: __asm("TMR0 equ 015h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 734: __asm("TMR0 equ 015h");
 [; <" TMR0 equ 015h ;# ">
 "754
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 754: __asm("TMR1 equ 016h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 754: __asm("TMR1 equ 016h");
 [; <" TMR1 equ 016h ;# ">
 "761
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 761: __asm("TMR1L equ 016h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 761: __asm("TMR1L equ 016h");
 [; <" TMR1L equ 016h ;# ">
 "781
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 781: __asm("TMR1H equ 017h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 781: __asm("TMR1H equ 017h");
 [; <" TMR1H equ 017h ;# ">
 "801
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 801: __asm("T1CON equ 018h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 801: __asm("T1CON equ 018h");
 [; <" T1CON equ 018h ;# ">
 "873
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 873: __asm("T1GCON equ 019h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 873: __asm("T1GCON equ 019h");
 [; <" T1GCON equ 019h ;# ">
 "943
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 943: __asm("TMR2 equ 01Ah");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 943: __asm("TMR2 equ 01Ah");
 [; <" TMR2 equ 01Ah ;# ">
 "963
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 963: __asm("PR2 equ 01Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 963: __asm("PR2 equ 01Bh");
 [; <" PR2 equ 01Bh ;# ">
 "983
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 983: __asm("T2CON equ 01Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 983: __asm("T2CON equ 01Ch");
 [; <" T2CON equ 01Ch ;# ">
 "1054
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1054: __asm("CPSCON0 equ 01Eh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1054: __asm("CPSCON0 equ 01Eh");
 [; <" CPSCON0 equ 01Eh ;# ">
 "1108
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1108: __asm("CPSCON1 equ 01Fh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1108: __asm("CPSCON1 equ 01Fh");
 [; <" CPSCON1 equ 01Fh ;# ">
 "1154
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1154: __asm("TRISA equ 08Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1154: __asm("TRISA equ 08Ch");
 [; <" TRISA equ 08Ch ;# ">
 "1216
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1216: __asm("TRISB equ 08Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1216: __asm("TRISB equ 08Dh");
 [; <" TRISB equ 08Dh ;# ">
 "1278
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1278: __asm("PIE1 equ 091h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1278: __asm("PIE1 equ 091h");
 [; <" PIE1 equ 091h ;# ">
 "1340
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1340: __asm("PIE2 equ 092h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1340: __asm("PIE2 equ 092h");
 [; <" PIE2 equ 092h ;# ">
 "1391
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1391: __asm("PIE3 equ 093h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1391: __asm("PIE3 equ 093h");
 [; <" PIE3 equ 093h ;# ">
 "1431
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1431: __asm("PIE4 equ 094h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1431: __asm("PIE4 equ 094h");
 [; <" PIE4 equ 094h ;# ">
 "1457
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1457: __asm("OPTION_REG equ 095h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1457: __asm("OPTION_REG equ 095h");
 [; <" OPTION_REG equ 095h ;# ">
 "1540
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1540: __asm("PCON equ 096h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1540: __asm("PCON equ 096h");
 [; <" PCON equ 096h ;# ">
 "1591
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1591: __asm("WDTCON equ 097h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1591: __asm("WDTCON equ 097h");
 [; <" WDTCON equ 097h ;# ">
 "1650
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1650: __asm("OSCTUNE equ 098h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1650: __asm("OSCTUNE equ 098h");
 [; <" OSCTUNE equ 098h ;# ">
 "1708
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1708: __asm("OSCCON equ 099h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1708: __asm("OSCCON equ 099h");
 [; <" OSCCON equ 099h ;# ">
 "1780
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1780: __asm("OSCSTAT equ 09Ah");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1780: __asm("OSCSTAT equ 09Ah");
 [; <" OSCSTAT equ 09Ah ;# ">
 "1842
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1842: __asm("ADRES equ 09Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1842: __asm("ADRES equ 09Bh");
 [; <" ADRES equ 09Bh ;# ">
 "1849
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1849: __asm("ADRESL equ 09Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1849: __asm("ADRESL equ 09Bh");
 [; <" ADRESL equ 09Bh ;# ">
 "1869
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1869: __asm("ADRESH equ 09Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1869: __asm("ADRESH equ 09Ch");
 [; <" ADRESH equ 09Ch ;# ">
 "1889
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1889: __asm("ADCON0 equ 09Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1889: __asm("ADCON0 equ 09Dh");
 [; <" ADCON0 equ 09Dh ;# ">
 "1969
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1969: __asm("ADCON1 equ 09Eh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1969: __asm("ADCON1 equ 09Eh");
 [; <" ADCON1 equ 09Eh ;# ">
 "2041
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2041: __asm("LATA equ 010Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2041: __asm("LATA equ 010Ch");
 [; <" LATA equ 010Ch ;# ">
 "2098
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2098: __asm("LATB equ 010Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2098: __asm("LATB equ 010Dh");
 [; <" LATB equ 010Dh ;# ">
 "2160
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2160: __asm("CM1CON0 equ 0111h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2160: __asm("CM1CON0 equ 0111h");
 [; <" CM1CON0 equ 0111h ;# ">
 "2217
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2217: __asm("CM1CON1 equ 0112h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2217: __asm("CM1CON1 equ 0112h");
 [; <" CM1CON1 equ 0112h ;# ">
 "2283
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2283: __asm("CM2CON0 equ 0113h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2283: __asm("CM2CON0 equ 0113h");
 [; <" CM2CON0 equ 0113h ;# ">
 "2340
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2340: __asm("CM2CON1 equ 0114h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2340: __asm("CM2CON1 equ 0114h");
 [; <" CM2CON1 equ 0114h ;# ">
 "2406
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2406: __asm("CMOUT equ 0115h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2406: __asm("CMOUT equ 0115h");
 [; <" CMOUT equ 0115h ;# ">
 "2432
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2432: __asm("BORCON equ 0116h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2432: __asm("BORCON equ 0116h");
 [; <" BORCON equ 0116h ;# ">
 "2459
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2459: __asm("FVRCON equ 0117h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2459: __asm("FVRCON equ 0117h");
 [; <" FVRCON equ 0117h ;# ">
 "2535
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2535: __asm("DACCON0 equ 0118h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2535: __asm("DACCON0 equ 0118h");
 [; <" DACCON0 equ 0118h ;# ">
 "2596
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2596: __asm("DACCON1 equ 0119h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2596: __asm("DACCON1 equ 0119h");
 [; <" DACCON1 equ 0119h ;# ">
 "2648
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2648: __asm("SRCON0 equ 011Ah");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2648: __asm("SRCON0 equ 011Ah");
 [; <" SRCON0 equ 011Ah ;# ">
 "2719
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2719: __asm("SRCON1 equ 011Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2719: __asm("SRCON1 equ 011Bh");
 [; <" SRCON1 equ 011Bh ;# ">
 "2781
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2781: __asm("APFCON0 equ 011Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2781: __asm("APFCON0 equ 011Dh");
 [; <" APFCON0 equ 011Dh ;# ">
 "2843
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2843: __asm("APFCON1 equ 011Eh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2843: __asm("APFCON1 equ 011Eh");
 [; <" APFCON1 equ 011Eh ;# ">
 "2863
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2863: __asm("ANSELA equ 018Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2863: __asm("ANSELA equ 018Ch");
 [; <" ANSELA equ 018Ch ;# ">
 "2915
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2915: __asm("ANSELB equ 018Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2915: __asm("ANSELB equ 018Dh");
 [; <" ANSELB equ 018Dh ;# ">
 "2980
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2980: __asm("EEADR equ 0191h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2980: __asm("EEADR equ 0191h");
 [; <" EEADR equ 0191h ;# ">
 "2987
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2987: __asm("EEADRL equ 0191h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 2987: __asm("EEADRL equ 0191h");
 [; <" EEADRL equ 0191h ;# ">
 "3007
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3007: __asm("EEADRH equ 0192h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3007: __asm("EEADRH equ 0192h");
 [; <" EEADRH equ 0192h ;# ">
 "3027
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3027: __asm("EEDAT equ 0193h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3027: __asm("EEDAT equ 0193h");
 [; <" EEDAT equ 0193h ;# ">
 "3034
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3034: __asm("EEDATL equ 0193h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3034: __asm("EEDATL equ 0193h");
 [; <" EEDATL equ 0193h ;# ">
 "3039
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3039: __asm("EEDATA equ 0193h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3039: __asm("EEDATA equ 0193h");
 [; <" EEDATA equ 0193h ;# ">
 "3072
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3072: __asm("EEDATH equ 0194h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3072: __asm("EEDATH equ 0194h");
 [; <" EEDATH equ 0194h ;# ">
 "3092
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3092: __asm("EECON1 equ 0195h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3092: __asm("EECON1 equ 0195h");
 [; <" EECON1 equ 0195h ;# ">
 "3154
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3154: __asm("EECON2 equ 0196h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3154: __asm("EECON2 equ 0196h");
 [; <" EECON2 equ 0196h ;# ">
 "3174
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3174: __asm("RCREG equ 0199h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3174: __asm("RCREG equ 0199h");
 [; <" RCREG equ 0199h ;# ">
 "3194
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3194: __asm("TXREG equ 019Ah");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3194: __asm("TXREG equ 019Ah");
 [; <" TXREG equ 019Ah ;# ">
 "3214
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3214: __asm("SP1BRG equ 019Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3214: __asm("SP1BRG equ 019Bh");
 [; <" SP1BRG equ 019Bh ;# ">
 "3221
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3221: __asm("SP1BRGL equ 019Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3221: __asm("SP1BRGL equ 019Bh");
 [; <" SP1BRGL equ 019Bh ;# ">
 "3226
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3226: __asm("SPBRG equ 019Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3226: __asm("SPBRG equ 019Bh");
 [; <" SPBRG equ 019Bh ;# ">
 "3230
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3230: __asm("SPBRGL equ 019Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3230: __asm("SPBRGL equ 019Bh");
 [; <" SPBRGL equ 019Bh ;# ">
 "3275
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3275: __asm("SP1BRGH equ 019Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3275: __asm("SP1BRGH equ 019Ch");
 [; <" SP1BRGH equ 019Ch ;# ">
 "3280
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3280: __asm("SPBRGH equ 019Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3280: __asm("SPBRGH equ 019Ch");
 [; <" SPBRGH equ 019Ch ;# ">
 "3313
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3313: __asm("RCSTA equ 019Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3313: __asm("RCSTA equ 019Dh");
 [; <" RCSTA equ 019Dh ;# ">
 "3375
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3375: __asm("TXSTA equ 019Eh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3375: __asm("TXSTA equ 019Eh");
 [; <" TXSTA equ 019Eh ;# ">
 "3437
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3437: __asm("BAUDCON equ 019Fh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3437: __asm("BAUDCON equ 019Fh");
 [; <" BAUDCON equ 019Fh ;# ">
 "3489
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3489: __asm("WPUA equ 020Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3489: __asm("WPUA equ 020Ch");
 [; <" WPUA equ 020Ch ;# ">
 "3518
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3518: __asm("WPUB equ 020Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3518: __asm("WPUB equ 020Dh");
 [; <" WPUB equ 020Dh ;# ">
 "3588
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3588: __asm("SSP1BUF equ 0211h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3588: __asm("SSP1BUF equ 0211h");
 [; <" SSP1BUF equ 0211h ;# ">
 "3593
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3593: __asm("SSPBUF equ 0211h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3593: __asm("SSPBUF equ 0211h");
 [; <" SSPBUF equ 0211h ;# ">
 "3626
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3626: __asm("SSP1ADD equ 0212h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3626: __asm("SSP1ADD equ 0212h");
 [; <" SSP1ADD equ 0212h ;# ">
 "3631
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3631: __asm("SSPADD equ 0212h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3631: __asm("SSPADD equ 0212h");
 [; <" SSPADD equ 0212h ;# ">
 "3664
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3664: __asm("SSP1MSK equ 0213h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3664: __asm("SSP1MSK equ 0213h");
 [; <" SSP1MSK equ 0213h ;# ">
 "3669
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3669: __asm("SSPMSK equ 0213h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3669: __asm("SSPMSK equ 0213h");
 [; <" SSPMSK equ 0213h ;# ">
 "3702
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3702: __asm("SSP1STAT equ 0214h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3702: __asm("SSP1STAT equ 0214h");
 [; <" SSP1STAT equ 0214h ;# ">
 "3707
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3707: __asm("SSPSTAT equ 0214h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3707: __asm("SSPSTAT equ 0214h");
 [; <" SSPSTAT equ 0214h ;# ">
 "3824
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3824: __asm("SSP1CON1 equ 0215h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3824: __asm("SSP1CON1 equ 0215h");
 [; <" SSP1CON1 equ 0215h ;# ">
 "3829
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3829: __asm("SSPCON1 equ 0215h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3829: __asm("SSPCON1 equ 0215h");
 [; <" SSPCON1 equ 0215h ;# ">
 "3833
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3833: __asm("SSPCON equ 0215h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 3833: __asm("SSPCON equ 0215h");
 [; <" SSPCON equ 0215h ;# ">
 "4028
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4028: __asm("SSP1CON2 equ 0216h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4028: __asm("SSP1CON2 equ 0216h");
 [; <" SSP1CON2 equ 0216h ;# ">
 "4033
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4033: __asm("SSPCON2 equ 0216h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4033: __asm("SSPCON2 equ 0216h");
 [; <" SSPCON2 equ 0216h ;# ">
 "4150
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4150: __asm("SSP1CON3 equ 0217h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4150: __asm("SSP1CON3 equ 0217h");
 [; <" SSP1CON3 equ 0217h ;# ">
 "4155
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4155: __asm("SSPCON3 equ 0217h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4155: __asm("SSPCON3 equ 0217h");
 [; <" SSPCON3 equ 0217h ;# ">
 "4272
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4272: __asm("SSP2BUF equ 0219h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4272: __asm("SSP2BUF equ 0219h");
 [; <" SSP2BUF equ 0219h ;# ">
 "4292
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4292: __asm("SSP2ADD equ 021Ah");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4292: __asm("SSP2ADD equ 021Ah");
 [; <" SSP2ADD equ 021Ah ;# ">
 "4312
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4312: __asm("SSP2MSK equ 021Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4312: __asm("SSP2MSK equ 021Bh");
 [; <" SSP2MSK equ 021Bh ;# ">
 "4332
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4332: __asm("SSP2STAT equ 021Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4332: __asm("SSP2STAT equ 021Ch");
 [; <" SSP2STAT equ 021Ch ;# ">
 "4394
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4394: __asm("SSP2CON1 equ 021Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4394: __asm("SSP2CON1 equ 021Dh");
 [; <" SSP2CON1 equ 021Dh ;# ">
 "4464
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4464: __asm("SSP2CON2 equ 021Eh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4464: __asm("SSP2CON2 equ 021Eh");
 [; <" SSP2CON2 equ 021Eh ;# ">
 "4526
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4526: __asm("SSP2CON3 equ 021Fh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4526: __asm("SSP2CON3 equ 021Fh");
 [; <" SSP2CON3 equ 021Fh ;# ">
 "4588
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4588: __asm("CCPR1 equ 0291h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4588: __asm("CCPR1 equ 0291h");
 [; <" CCPR1 equ 0291h ;# ">
 "4595
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4595: __asm("CCPR1L equ 0291h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4595: __asm("CCPR1L equ 0291h");
 [; <" CCPR1L equ 0291h ;# ">
 "4615
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4615: __asm("CCPR1H equ 0292h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4615: __asm("CCPR1H equ 0292h");
 [; <" CCPR1H equ 0292h ;# ">
 "4635
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4635: __asm("CCP1CON equ 0293h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4635: __asm("CCP1CON equ 0293h");
 [; <" CCP1CON equ 0293h ;# ">
 "4717
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4717: __asm("PWM1CON equ 0294h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4717: __asm("PWM1CON equ 0294h");
 [; <" PWM1CON equ 0294h ;# ">
 "4787
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4787: __asm("CCP1AS equ 0295h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4787: __asm("CCP1AS equ 0295h");
 [; <" CCP1AS equ 0295h ;# ">
 "4792
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4792: __asm("ECCP1AS equ 0295h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4792: __asm("ECCP1AS equ 0295h");
 [; <" ECCP1AS equ 0295h ;# ">
 "4949
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4949: __asm("PSTR1CON equ 0296h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4949: __asm("PSTR1CON equ 0296h");
 [; <" PSTR1CON equ 0296h ;# ">
 "4993
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4993: __asm("CCPR2 equ 0298h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 4993: __asm("CCPR2 equ 0298h");
 [; <" CCPR2 equ 0298h ;# ">
 "5000
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5000: __asm("CCPR2L equ 0298h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5000: __asm("CCPR2L equ 0298h");
 [; <" CCPR2L equ 0298h ;# ">
 "5020
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5020: __asm("CCPR2H equ 0299h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5020: __asm("CCPR2H equ 0299h");
 [; <" CCPR2H equ 0299h ;# ">
 "5040
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5040: __asm("CCP2CON equ 029Ah");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5040: __asm("CCP2CON equ 029Ah");
 [; <" CCP2CON equ 029Ah ;# ">
 "5122
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5122: __asm("PWM2CON equ 029Bh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5122: __asm("PWM2CON equ 029Bh");
 [; <" PWM2CON equ 029Bh ;# ">
 "5192
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5192: __asm("CCP2AS equ 029Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5192: __asm("CCP2AS equ 029Ch");
 [; <" CCP2AS equ 029Ch ;# ">
 "5197
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5197: __asm("ECCP2AS equ 029Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5197: __asm("ECCP2AS equ 029Ch");
 [; <" ECCP2AS equ 029Ch ;# ">
 "5354
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5354: __asm("PSTR2CON equ 029Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5354: __asm("PSTR2CON equ 029Dh");
 [; <" PSTR2CON equ 029Dh ;# ">
 "5398
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5398: __asm("CCPTMRS equ 029Eh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5398: __asm("CCPTMRS equ 029Eh");
 [; <" CCPTMRS equ 029Eh ;# ">
 "5403
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5403: __asm("CCPTMRS0 equ 029Eh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5403: __asm("CCPTMRS0 equ 029Eh");
 [; <" CCPTMRS0 equ 029Eh ;# ">
 "5572
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5572: __asm("CCPR3 equ 0311h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5572: __asm("CCPR3 equ 0311h");
 [; <" CCPR3 equ 0311h ;# ">
 "5579
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5579: __asm("CCPR3L equ 0311h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5579: __asm("CCPR3L equ 0311h");
 [; <" CCPR3L equ 0311h ;# ">
 "5599
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5599: __asm("CCPR3H equ 0312h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5599: __asm("CCPR3H equ 0312h");
 [; <" CCPR3H equ 0312h ;# ">
 "5619
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5619: __asm("CCP3CON equ 0313h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5619: __asm("CCP3CON equ 0313h");
 [; <" CCP3CON equ 0313h ;# ">
 "5683
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5683: __asm("CCPR4 equ 0318h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5683: __asm("CCPR4 equ 0318h");
 [; <" CCPR4 equ 0318h ;# ">
 "5690
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5690: __asm("CCPR4L equ 0318h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5690: __asm("CCPR4L equ 0318h");
 [; <" CCPR4L equ 0318h ;# ">
 "5710
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5710: __asm("CCPR4H equ 0319h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5710: __asm("CCPR4H equ 0319h");
 [; <" CCPR4H equ 0319h ;# ">
 "5730
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5730: __asm("CCP4CON equ 031Ah");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5730: __asm("CCP4CON equ 031Ah");
 [; <" CCP4CON equ 031Ah ;# ">
 "5794
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5794: __asm("IOCBP equ 0394h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5794: __asm("IOCBP equ 0394h");
 [; <" IOCBP equ 0394h ;# ">
 "5864
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5864: __asm("IOCBN equ 0395h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5864: __asm("IOCBN equ 0395h");
 [; <" IOCBN equ 0395h ;# ">
 "5934
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5934: __asm("IOCBF equ 0396h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 5934: __asm("IOCBF equ 0396h");
 [; <" IOCBF equ 0396h ;# ">
 "6004
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6004: __asm("CLKRCON equ 039Ah");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6004: __asm("CLKRCON equ 039Ah");
 [; <" CLKRCON equ 039Ah ;# ">
 "6080
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6080: __asm("MDCON equ 039Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6080: __asm("MDCON equ 039Ch");
 [; <" MDCON equ 039Ch ;# ">
 "6131
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6131: __asm("MDSRC equ 039Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6131: __asm("MDSRC equ 039Dh");
 [; <" MDSRC equ 039Dh ;# ">
 "6184
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6184: __asm("MDCARL equ 039Eh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6184: __asm("MDCARL equ 039Eh");
 [; <" MDCARL equ 039Eh ;# ">
 "6249
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6249: __asm("MDCARH equ 039Fh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6249: __asm("MDCARH equ 039Fh");
 [; <" MDCARH equ 039Fh ;# ">
 "6314
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6314: __asm("TMR4 equ 0415h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6314: __asm("TMR4 equ 0415h");
 [; <" TMR4 equ 0415h ;# ">
 "6334
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6334: __asm("PR4 equ 0416h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6334: __asm("PR4 equ 0416h");
 [; <" PR4 equ 0416h ;# ">
 "6354
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6354: __asm("T4CON equ 0417h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6354: __asm("T4CON equ 0417h");
 [; <" T4CON equ 0417h ;# ">
 "6425
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6425: __asm("TMR6 equ 041Ch");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6425: __asm("TMR6 equ 041Ch");
 [; <" TMR6 equ 041Ch ;# ">
 "6445
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6445: __asm("PR6 equ 041Dh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6445: __asm("PR6 equ 041Dh");
 [; <" PR6 equ 041Dh ;# ">
 "6465
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6465: __asm("T6CON equ 041Eh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6465: __asm("T6CON equ 041Eh");
 [; <" T6CON equ 041Eh ;# ">
 "6536
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6536: __asm("STATUS_SHAD equ 0FE4h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6536: __asm("STATUS_SHAD equ 0FE4h");
 [; <" STATUS_SHAD equ 0FE4h ;# ">
 "6568
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6568: __asm("WREG_SHAD equ 0FE5h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6568: __asm("WREG_SHAD equ 0FE5h");
 [; <" WREG_SHAD equ 0FE5h ;# ">
 "6588
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6588: __asm("BSR_SHAD equ 0FE6h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6588: __asm("BSR_SHAD equ 0FE6h");
 [; <" BSR_SHAD equ 0FE6h ;# ">
 "6608
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6608: __asm("PCLATH_SHAD equ 0FE7h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6608: __asm("PCLATH_SHAD equ 0FE7h");
 [; <" PCLATH_SHAD equ 0FE7h ;# ">
 "6628
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6628: __asm("FSR0L_SHAD equ 0FE8h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6628: __asm("FSR0L_SHAD equ 0FE8h");
 [; <" FSR0L_SHAD equ 0FE8h ;# ">
 "6648
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6648: __asm("FSR0H_SHAD equ 0FE9h");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6648: __asm("FSR0H_SHAD equ 0FE9h");
 [; <" FSR0H_SHAD equ 0FE9h ;# ">
 "6668
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6668: __asm("FSR1L_SHAD equ 0FEAh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6668: __asm("FSR1L_SHAD equ 0FEAh");
 [; <" FSR1L_SHAD equ 0FEAh ;# ">
 "6688
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6688: __asm("FSR1H_SHAD equ 0FEBh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6688: __asm("FSR1H_SHAD equ 0FEBh");
 [; <" FSR1H_SHAD equ 0FEBh ;# ">
 "6708
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6708: __asm("STKPTR equ 0FEDh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6708: __asm("STKPTR equ 0FEDh");
 [; <" STKPTR equ 0FEDh ;# ">
 "6728
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6728: __asm("TOSL equ 0FEEh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6728: __asm("TOSL equ 0FEEh");
 [; <" TOSL equ 0FEEh ;# ">
 "6748
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6748: __asm("TOSH equ 0FEFh");
+[; ;C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6748: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"8 displays.c
-[; ;displays.c: 8: void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA){
-[v _Ds_Iniciar_displays `(v ~T0 @X0 1 ef6`*S2`uc`uc`uc`uc`uc ]
+"9 displays.c
+[; ;displays.c: 9: void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, char tA){
+[v _Ds_Iniciar_displays `(v ~T0 @X0 1 ef6`*S4`uc`uc`uc`uc`uc ]
 {
 [e :U _Ds_Iniciar_displays ]
-[v _dsp `*S2 ~T0 @X0 1 r1 ]
+[v _dsp `*S4 ~T0 @X0 1 r1 ]
 [v _d1 `uc ~T0 @X0 1 r2 ]
 [v _d2 `uc ~T0 @X0 1 r3 ]
 [v _d3 `uc ~T0 @X0 1 r4 ]
 [v _tE `uc ~T0 @X0 1 r5 ]
 [v _tA `uc ~T0 @X0 1 r6 ]
 [f ]
-"9
-[; ;displays.c: 9:     dsp->estados=1;
-[e = . *U _dsp 0 -> -> 1 `i `uc ]
 "10
-[; ;displays.c: 10:     dsp->D1=d1;
-[e = . *U _dsp 1 _d1 ]
+[; ;displays.c: 10:     dsp->estados=1;
+[e = . *U _dsp 0 -> -> 1 `i `uc ]
 "11
-[; ;displays.c: 11:     dsp->D2=d2;
-[e = . *U _dsp 2 _d2 ]
+[; ;displays.c: 11:     dsp->D1=d1;
+[e = . *U _dsp 1 _d1 ]
 "12
-[; ;displays.c: 12:     dsp->D3=d3;
-[e = . *U _dsp 3 _d3 ]
+[; ;displays.c: 12:     dsp->D2=d2;
+[e = . *U _dsp 2 _d2 ]
 "13
-[; ;displays.c: 13:     dsp->tiempoEncendido=tE;
-[e = . *U _dsp 4 _tE ]
+[; ;displays.c: 13:     dsp->D3=d3;
+[e = . *U _dsp 3 _d3 ]
 "14
-[; ;displays.c: 14:     dsp->tiempoApagado=tA;
-[e = . *U _dsp 5 _tA ]
+[; ;displays.c: 14:     dsp->tiempoEncendido=tE;
+[e = . *U _dsp 4 _tE ]
 "15
-[; ;displays.c: 15:     dsp->tempE=tE;
-[e = . *U _dsp 6 _tE ]
+[; ;displays.c: 15:     dsp->tiempoApagado=tA;
+[e = . *U _dsp 5 _tA ]
 "16
-[; ;displays.c: 16:     dsp->tempA=tA;
-[e = . *U _dsp 7 _tA ]
+[; ;displays.c: 16:     dsp->tempE=tE;
+[e = . *U _dsp 6 _tE ]
 "17
-[; ;displays.c: 17: }
-[e :UE 360 ]
+[; ;displays.c: 17:     dsp->tempA=tA;
+[e = . *U _dsp 7 _tA ]
+"18
+[; ;displays.c: 18: }
+[e :UE 362 ]
 }
-"19
-[; ;displays.c: 19: void Ds_Encienda_Disp(char dispNum){
+"20
+[; ;displays.c: 20: void Ds_Encienda_Disp(char dispNum){
 [v _Ds_Encienda_Disp `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _Ds_Encienda_Disp ]
 [v _dispNum `uc ~T0 @X0 1 r1 ]
 [f ]
-"21
-[; ;displays.c: 21:     switch (dispNum){
-[e $U 363  ]
+"22
+[; ;displays.c: 22:     switch (dispNum){
+[e $U 365  ]
 {
-"23
-[; ;displays.c: 23:         case 0:
-[e :U 364 ]
-"25
-[; ;displays.c: 25:             do { LATBbits.LATB0 = 0; } while(0);
-[e :U 367 ]
+"24
+[; ;displays.c: 24:         case 0:
+[e :U 366 ]
+"26
+[; ;displays.c: 26:             do { LATBbits.LATB0 = 0; } while(0);
+[e :U 369 ]
 {
 [e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 366 ]
-"26
-[; ;displays.c: 26:             do { LATBbits.LATB3 = 0; } while(0);
-[e :U 370 ]
+[e :U 368 ]
+"27
+[; ;displays.c: 27:             do { LATBbits.LATB3 = 0; } while(0);
+[e :U 372 ]
 {
 [e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 369 ]
-"27
-[; ;displays.c: 27:             do { LATBbits.LATB4 = 0; } while(0);
-[e :U 373 ]
+[e :U 371 ]
+"28
+[; ;displays.c: 28:             do { LATBbits.LATB4 = 0; } while(0);
+[e :U 375 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 372 ]
-"29
-[; ;displays.c: 29:         break;
-[e $U 362  ]
-"32
-[; ;displays.c: 32:         case 1:
 [e :U 374 ]
-"34
-[; ;displays.c: 34:             do { LATBbits.LATB0 = 1; } while(0);
-[e :U 377 ]
+"30
+[; ;displays.c: 30:         break;
+[e $U 364  ]
+"33
+[; ;displays.c: 33:         case 1:
+[e :U 376 ]
+"35
+[; ;displays.c: 35:             do { LATBbits.LATB0 = 1; } while(0);
+[e :U 379 ]
 {
 [e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 376 ]
-"35
-[; ;displays.c: 35:             do { LATBbits.LATB3 = 0; } while(0);
-[e :U 380 ]
+[e :U 378 ]
+"36
+[; ;displays.c: 36:             do { LATBbits.LATB3 = 0; } while(0);
+[e :U 382 ]
 {
 [e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 379 ]
-"36
-[; ;displays.c: 36:             do { LATBbits.LATB4 = 0; } while(0);
-[e :U 383 ]
+[e :U 381 ]
+"37
+[; ;displays.c: 37:             do { LATBbits.LATB4 = 0; } while(0);
+[e :U 385 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 382 ]
-"37
-[; ;displays.c: 37:         break;
-[e $U 362  ]
-"39
-[; ;displays.c: 39:         case 2:
 [e :U 384 ]
-"41
-[; ;displays.c: 41:             do { LATBbits.LATB3 = 1; } while(0);
-[e :U 387 ]
+"38
+[; ;displays.c: 38:         break;
+[e $U 364  ]
+"40
+[; ;displays.c: 40:         case 2:
+[e :U 386 ]
+"42
+[; ;displays.c: 42:             do { LATBbits.LATB3 = 1; } while(0);
+[e :U 389 ]
 {
 [e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 386 ]
-"42
-[; ;displays.c: 42:             do { LATBbits.LATB0 = 0; } while(0);
-[e :U 390 ]
+[e :U 388 ]
+"43
+[; ;displays.c: 43:             do { LATBbits.LATB0 = 0; } while(0);
+[e :U 392 ]
 {
 [e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 389 ]
-"43
-[; ;displays.c: 43:             do { LATBbits.LATB4 = 0; } while(0);
-[e :U 393 ]
+[e :U 391 ]
+"44
+[; ;displays.c: 44:             do { LATBbits.LATB4 = 0; } while(0);
+[e :U 395 ]
 {
 [e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 392 ]
-"45
-[; ;displays.c: 45:         break;
-[e $U 362  ]
-"48
-[; ;displays.c: 48:         case 3:
 [e :U 394 ]
-"50
-[; ;displays.c: 50:             do { LATBbits.LATB4 = 1; } while(0);
-[e :U 397 ]
+"46
+[; ;displays.c: 46:         break;
+[e $U 364  ]
+"49
+[; ;displays.c: 49:         case 3:
+[e :U 396 ]
+"51
+[; ;displays.c: 51:             do { LATBbits.LATB4 = 1; } while(0);
+[e :U 399 ]
 {
 [e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 396 ]
-"51
-[; ;displays.c: 51:             do { LATBbits.LATB0 = 0; } while(0);
-[e :U 400 ]
+[e :U 398 ]
+"52
+[; ;displays.c: 52:             do { LATBbits.LATB0 = 0; } while(0);
+[e :U 402 ]
 {
 [e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 399 ]
-"52
-[; ;displays.c: 52:             do { LATBbits.LATB3 = 0; } while(0);
-[e :U 403 ]
+[e :U 401 ]
+"53
+[; ;displays.c: 53:             do { LATBbits.LATB3 = 0; } while(0);
+[e :U 405 ]
 {
 [e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 402 ]
-"54
-[; ;displays.c: 54:         break;
-[e $U 362  ]
+[e :U 404 ]
 "55
-[; ;displays.c: 55:     }
-}
-[e $U 362  ]
-[e :U 363 ]
-[e [\ -> _dispNum `i , $ -> 0 `i 364
- , $ -> 1 `i 374
- , $ -> 2 `i 384
- , $ -> 3 `i 394
- 362 ]
-[e :U 362 ]
+[; ;displays.c: 55:         break;
+[e $U 364  ]
 "56
-[; ;displays.c: 56: }
-[e :UE 361 ]
+[; ;displays.c: 56:     }
 }
-"59
-[; ;displays.c: 59: void Ds_BCD(char segmento){
+[e $U 364  ]
+[e :U 365 ]
+[e [\ -> _dispNum `i , $ -> 0 `i 366
+ , $ -> 1 `i 376
+ , $ -> 2 `i 386
+ , $ -> 3 `i 396
+ 364 ]
+[e :U 364 ]
+"57
+[; ;displays.c: 57: }
+[e :UE 363 ]
+}
+"60
+[; ;displays.c: 60: void Ds_BCD(char segmento){
 [v _Ds_BCD `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _Ds_BCD ]
 [v _segmento `uc ~T0 @X0 1 r1 ]
 [f ]
-"61
-[; ;displays.c: 61:     switch (segmento){
-[e $U 406  ]
+"62
+[; ;displays.c: 62:     switch (segmento){
+[e $U 408  ]
 {
-"63
-[; ;displays.c: 63:         case 0:
-[e :U 407 ]
-"65
-[; ;displays.c: 65:             do { LATAbits.LATA0 = 1; } while(0);
-[e :U 410 ]
+"64
+[; ;displays.c: 64:         case 0:
+[e :U 409 ]
+"66
+[; ;displays.c: 66:             do { LATAbits.LATA0 = 1; } while(0);
+[e :U 412 ]
 {
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 409 ]
-"66
-[; ;displays.c: 66:             do { LATAbits.LATA1 = 1; } while(0);
-[e :U 413 ]
+[e :U 411 ]
+"67
+[; ;displays.c: 67:             do { LATAbits.LATA1 = 1; } while(0);
+[e :U 415 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 412 ]
-"67
-[; ;displays.c: 67:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 416 ]
+[e :U 414 ]
+"68
+[; ;displays.c: 68:             do { LATAbits.LATA2 = 1; } while(0);
+[e :U 418 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 415 ]
-"68
-[; ;displays.c: 68:             do { LATAbits.LATA3 = 1; } while(0);
-[e :U 419 ]
+[e :U 417 ]
+"69
+[; ;displays.c: 69:             do { LATAbits.LATA3 = 1; } while(0);
+[e :U 421 ]
 {
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 418 ]
-"69
-[; ;displays.c: 69:             do { LATAbits.LATA4 = 1; } while(0);
-[e :U 422 ]
+[e :U 420 ]
+"70
+[; ;displays.c: 70:             do { LATAbits.LATA4 = 1; } while(0);
+[e :U 424 ]
 {
 [e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 421 ]
-"70
-[; ;displays.c: 70:             do { LATAbits.LATA7 = 1; } while(0);
-[e :U 425 ]
+[e :U 423 ]
+"71
+[; ;displays.c: 71:             do { LATAbits.LATA7 = 1; } while(0);
+[e :U 427 ]
 {
 [e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
 }
-[e :U 424 ]
-"71
-[; ;displays.c: 71:             do { LATAbits.LATA6 = 0; } while(0);
-[e :U 428 ]
+[e :U 426 ]
+"72
+[; ;displays.c: 72:             do { LATAbits.LATA6 = 0; } while(0);
+[e :U 430 ]
 {
 [e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
 }
-[e :U 427 ]
-"74
-[; ;displays.c: 74:         break;
-[e $U 405  ]
-"76
-[; ;displays.c: 76:         case 1:
 [e :U 429 ]
-"78
-[; ;displays.c: 78:             do { LATAbits.LATA0 = 0; } while(0);
-[e :U 432 ]
+"75
+[; ;displays.c: 75:         break;
+[e $U 407  ]
+"77
+[; ;displays.c: 77:         case 1:
+[e :U 431 ]
+"79
+[; ;displays.c: 79:             do { LATAbits.LATA0 = 0; } while(0);
+[e :U 434 ]
 {
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 431 ]
-"79
-[; ;displays.c: 79:             do { LATAbits.LATA1 = 1; } while(0);
-[e :U 435 ]
+[e :U 433 ]
+"80
+[; ;displays.c: 80:             do { LATAbits.LATA1 = 1; } while(0);
+[e :U 437 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 434 ]
-"80
-[; ;displays.c: 80:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 438 ]
+[e :U 436 ]
+"81
+[; ;displays.c: 81:             do { LATAbits.LATA2 = 1; } while(0);
+[e :U 440 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 437 ]
-"81
-[; ;displays.c: 81:             do { LATAbits.LATA3 = 0; } while(0);
-[e :U 441 ]
+[e :U 439 ]
+"82
+[; ;displays.c: 82:             do { LATAbits.LATA3 = 0; } while(0);
+[e :U 443 ]
 {
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 440 ]
-"82
-[; ;displays.c: 82:             do { LATAbits.LATA4 = 0; } while(0);
-[e :U 444 ]
+[e :U 442 ]
+"83
+[; ;displays.c: 83:             do { LATAbits.LATA4 = 0; } while(0);
+[e :U 446 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 443 ]
-"83
-[; ;displays.c: 83:             do { LATAbits.LATA7 = 0; } while(0);
-[e :U 447 ]
+[e :U 445 ]
+"84
+[; ;displays.c: 84:             do { LATAbits.LATA7 = 0; } while(0);
+[e :U 449 ]
 {
 [e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
 }
-[e :U 446 ]
-"84
-[; ;displays.c: 84:             do { LATAbits.LATA6 = 0; } while(0);
-[e :U 450 ]
+[e :U 448 ]
+"85
+[; ;displays.c: 85:             do { LATAbits.LATA6 = 0; } while(0);
+[e :U 452 ]
 {
 [e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
 }
-[e :U 449 ]
-"87
-[; ;displays.c: 87:         break;
-[e $U 405  ]
-"90
-[; ;displays.c: 90:         case 2:
 [e :U 451 ]
-"92
-[; ;displays.c: 92:             do { LATAbits.LATA0 = 1; } while(0);
-[e :U 454 ]
+"88
+[; ;displays.c: 88:         break;
+[e $U 407  ]
+"91
+[; ;displays.c: 91:         case 2:
+[e :U 453 ]
+"93
+[; ;displays.c: 93:             do { LATAbits.LATA0 = 1; } while(0);
+[e :U 456 ]
 {
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 453 ]
-"93
-[; ;displays.c: 93:             do { LATAbits.LATA1 = 1; } while(0);
-[e :U 457 ]
+[e :U 455 ]
+"94
+[; ;displays.c: 94:             do { LATAbits.LATA1 = 1; } while(0);
+[e :U 459 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 456 ]
-"94
-[; ;displays.c: 94:             do { LATAbits.LATA2 = 0; } while(0);
-[e :U 460 ]
+[e :U 458 ]
+"95
+[; ;displays.c: 95:             do { LATAbits.LATA2 = 0; } while(0);
+[e :U 462 ]
 {
 [e = . . _LATAbits 0 2 -> -> 0 `i `uc ]
 }
-[e :U 459 ]
-"95
-[; ;displays.c: 95:             do { LATAbits.LATA3 = 1; } while(0);
-[e :U 463 ]
+[e :U 461 ]
+"96
+[; ;displays.c: 96:             do { LATAbits.LATA3 = 1; } while(0);
+[e :U 465 ]
 {
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 462 ]
-"96
-[; ;displays.c: 96:             do { LATAbits.LATA4 = 1; } while(0);
-[e :U 466 ]
+[e :U 464 ]
+"97
+[; ;displays.c: 97:             do { LATAbits.LATA4 = 1; } while(0);
+[e :U 468 ]
 {
 [e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 465 ]
-"97
-[; ;displays.c: 97:             do { LATAbits.LATA7 = 0; } while(0);
-[e :U 469 ]
+[e :U 467 ]
+"98
+[; ;displays.c: 98:             do { LATAbits.LATA7 = 0; } while(0);
+[e :U 471 ]
 {
 [e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
 }
-[e :U 468 ]
-"98
-[; ;displays.c: 98:             do { LATAbits.LATA6 = 1; } while(0);
-[e :U 472 ]
+[e :U 470 ]
+"99
+[; ;displays.c: 99:             do { LATAbits.LATA6 = 1; } while(0);
+[e :U 474 ]
 {
 [e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 471 ]
-"101
-[; ;displays.c: 101:         break;
-[e $U 405  ]
-"104
-[; ;displays.c: 104:         case 3:
 [e :U 473 ]
-"106
-[; ;displays.c: 106:             do { LATAbits.LATA0 = 1; } while(0);
-[e :U 476 ]
+"102
+[; ;displays.c: 102:         break;
+[e $U 407  ]
+"105
+[; ;displays.c: 105:         case 3:
+[e :U 475 ]
+"107
+[; ;displays.c: 107:             do { LATAbits.LATA0 = 1; } while(0);
+[e :U 478 ]
 {
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 475 ]
-"107
-[; ;displays.c: 107:             do { LATAbits.LATA1 = 1; } while(0);
-[e :U 479 ]
+[e :U 477 ]
+"108
+[; ;displays.c: 108:             do { LATAbits.LATA1 = 1; } while(0);
+[e :U 481 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 478 ]
-"108
-[; ;displays.c: 108:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 482 ]
+[e :U 480 ]
+"109
+[; ;displays.c: 109:             do { LATAbits.LATA2 = 1; } while(0);
+[e :U 484 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 481 ]
-"109
-[; ;displays.c: 109:             do { LATAbits.LATA3 = 1; } while(0);
-[e :U 485 ]
+[e :U 483 ]
+"110
+[; ;displays.c: 110:             do { LATAbits.LATA3 = 1; } while(0);
+[e :U 487 ]
 {
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 484 ]
-"110
-[; ;displays.c: 110:             do { LATAbits.LATA4 = 0; } while(0);
-[e :U 488 ]
+[e :U 486 ]
+"111
+[; ;displays.c: 111:             do { LATAbits.LATA4 = 0; } while(0);
+[e :U 490 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 487 ]
-"111
-[; ;displays.c: 111:             do { LATAbits.LATA7 = 0; } while(0);
-[e :U 491 ]
+[e :U 489 ]
+"112
+[; ;displays.c: 112:             do { LATAbits.LATA7 = 0; } while(0);
+[e :U 493 ]
 {
 [e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
 }
-[e :U 490 ]
-"112
-[; ;displays.c: 112:             do { LATAbits.LATA6 = 1; } while(0);
-[e :U 494 ]
+[e :U 492 ]
+"113
+[; ;displays.c: 113:             do { LATAbits.LATA6 = 1; } while(0);
+[e :U 496 ]
 {
 [e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 493 ]
-"115
-[; ;displays.c: 115:         break;
-[e $U 405  ]
-"119
-[; ;displays.c: 119:         case 4:
 [e :U 495 ]
-"121
-[; ;displays.c: 121:             do { LATAbits.LATA0 = 0; } while(0);
-[e :U 498 ]
+"116
+[; ;displays.c: 116:         break;
+[e $U 407  ]
+"120
+[; ;displays.c: 120:         case 4:
+[e :U 497 ]
+"122
+[; ;displays.c: 122:             do { LATAbits.LATA0 = 0; } while(0);
+[e :U 500 ]
 {
 [e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
 }
-[e :U 497 ]
-"122
-[; ;displays.c: 122:             do { LATAbits.LATA1 = 1; } while(0);
-[e :U 501 ]
+[e :U 499 ]
+"123
+[; ;displays.c: 123:             do { LATAbits.LATA1 = 1; } while(0);
+[e :U 503 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 500 ]
-"123
-[; ;displays.c: 123:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 504 ]
+[e :U 502 ]
+"124
+[; ;displays.c: 124:             do { LATAbits.LATA2 = 1; } while(0);
+[e :U 506 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 503 ]
-"124
-[; ;displays.c: 124:             do { LATAbits.LATA3 = 0; } while(0);
-[e :U 507 ]
+[e :U 505 ]
+"125
+[; ;displays.c: 125:             do { LATAbits.LATA3 = 0; } while(0);
+[e :U 509 ]
 {
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 506 ]
-"125
-[; ;displays.c: 125:             do { LATAbits.LATA4 = 0; } while(0);
-[e :U 510 ]
+[e :U 508 ]
+"126
+[; ;displays.c: 126:             do { LATAbits.LATA4 = 0; } while(0);
+[e :U 512 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 509 ]
-"126
-[; ;displays.c: 126:             do { LATAbits.LATA7 = 1; } while(0);
-[e :U 513 ]
+[e :U 511 ]
+"127
+[; ;displays.c: 127:             do { LATAbits.LATA7 = 1; } while(0);
+[e :U 515 ]
 {
 [e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
 }
-[e :U 512 ]
-"127
-[; ;displays.c: 127:             do { LATAbits.LATA6 = 1; } while(0);
-[e :U 516 ]
+[e :U 514 ]
+"128
+[; ;displays.c: 128:             do { LATAbits.LATA6 = 1; } while(0);
+[e :U 518 ]
 {
 [e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 515 ]
-"130
-[; ;displays.c: 130:         break;
-[e $U 405  ]
-"132
-[; ;displays.c: 132:         case 5:
 [e :U 517 ]
-"134
-[; ;displays.c: 134:             do { LATAbits.LATA0 = 1; } while(0);
-[e :U 520 ]
-{
-[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
-}
+"131
+[; ;displays.c: 131:         break;
+[e $U 407  ]
+"133
+[; ;displays.c: 133:         case 5:
 [e :U 519 ]
 "135
-[; ;displays.c: 135:             do { LATAbits.LATA1 = 0; } while(0);
-[e :U 523 ]
-{
-[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
-}
+[; ;displays.c: 135:             do { LATAbits.LATA0 = 1; } while(0);
 [e :U 522 ]
-"136
-[; ;displays.c: 136:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 526 ]
-{
-[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
-}
-[e :U 525 ]
-"137
-[; ;displays.c: 137:             do { LATAbits.LATA3 = 1; } while(0);
-[e :U 529 ]
-{
-[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 528 ]
-"138
-[; ;displays.c: 138:             do { LATAbits.LATA4 = 0; } while(0);
-[e :U 532 ]
-{
-[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
-}
-[e :U 531 ]
-"139
-[; ;displays.c: 139:             do { LATAbits.LATA7 = 1; } while(0);
-[e :U 535 ]
-{
-[e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
-}
-[e :U 534 ]
-"140
-[; ;displays.c: 140:             do { LATAbits.LATA6 = 1; } while(0);
-[e :U 538 ]
-{
-[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
-}
-[e :U 537 ]
-"143
-[; ;displays.c: 143:         break;
-[e $U 405  ]
-"146
-[; ;displays.c: 146:         case 6:
-[e :U 539 ]
-"148
-[; ;displays.c: 148:             do { LATAbits.LATA0 = 1; } while(0);
-[e :U 542 ]
 {
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 541 ]
-"149
-[; ;displays.c: 149:             do { LATAbits.LATA1 = 0; } while(0);
-[e :U 545 ]
+[e :U 521 ]
+"136
+[; ;displays.c: 136:             do { LATAbits.LATA1 = 0; } while(0);
+[e :U 525 ]
 {
 [e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
 }
-[e :U 544 ]
-"150
-[; ;displays.c: 150:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 548 ]
+[e :U 524 ]
+"137
+[; ;displays.c: 137:             do { LATAbits.LATA2 = 1; } while(0);
+[e :U 528 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 547 ]
-"151
-[; ;displays.c: 151:             do { LATAbits.LATA3 = 1; } while(0);
-[e :U 551 ]
+[e :U 527 ]
+"138
+[; ;displays.c: 138:             do { LATAbits.LATA3 = 1; } while(0);
+[e :U 531 ]
 {
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
+[e :U 530 ]
+"139
+[; ;displays.c: 139:             do { LATAbits.LATA4 = 0; } while(0);
+[e :U 534 ]
+{
+[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 533 ]
+"140
+[; ;displays.c: 140:             do { LATAbits.LATA7 = 1; } while(0);
+[e :U 537 ]
+{
+[e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
+}
+[e :U 536 ]
+"141
+[; ;displays.c: 141:             do { LATAbits.LATA6 = 1; } while(0);
+[e :U 540 ]
+{
+[e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
+}
+[e :U 539 ]
+"144
+[; ;displays.c: 144:         break;
+[e $U 407  ]
+"147
+[; ;displays.c: 147:         case 6:
+[e :U 541 ]
+"149
+[; ;displays.c: 149:             do { LATAbits.LATA0 = 1; } while(0);
+[e :U 544 ]
+{
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 543 ]
+"150
+[; ;displays.c: 150:             do { LATAbits.LATA1 = 0; } while(0);
+[e :U 547 ]
+{
+[e = . . _LATAbits 0 1 -> -> 0 `i `uc ]
+}
+[e :U 546 ]
+"151
+[; ;displays.c: 151:             do { LATAbits.LATA2 = 1; } while(0);
 [e :U 550 ]
+{
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 549 ]
 "152
-[; ;displays.c: 152:             do { LATAbits.LATA4 = 1; } while(0);
-[e :U 554 ]
+[; ;displays.c: 152:             do { LATAbits.LATA3 = 1; } while(0);
+[e :U 553 ]
+{
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 552 ]
+"153
+[; ;displays.c: 153:             do { LATAbits.LATA4 = 1; } while(0);
+[e :U 556 ]
 {
 [e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 553 ]
-"153
-[; ;displays.c: 153:             do { LATAbits.LATA7 = 1; } while(0);
-[e :U 557 ]
+[e :U 555 ]
+"154
+[; ;displays.c: 154:             do { LATAbits.LATA7 = 1; } while(0);
+[e :U 559 ]
 {
 [e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
 }
-[e :U 556 ]
-"154
-[; ;displays.c: 154:             do { LATAbits.LATA6 = 1; } while(0);
-[e :U 560 ]
+[e :U 558 ]
+"155
+[; ;displays.c: 155:             do { LATAbits.LATA6 = 1; } while(0);
+[e :U 562 ]
 {
 [e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 559 ]
-"157
-[; ;displays.c: 157:         break;
-[e $U 405  ]
-"160
-[; ;displays.c: 160:         case 7:
 [e :U 561 ]
-"162
-[; ;displays.c: 162:             do { LATAbits.LATA0 = 1; } while(0);
-[e :U 564 ]
+"158
+[; ;displays.c: 158:         break;
+[e $U 407  ]
+"161
+[; ;displays.c: 161:         case 7:
+[e :U 563 ]
+"163
+[; ;displays.c: 163:             do { LATAbits.LATA0 = 1; } while(0);
+[e :U 566 ]
 {
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 563 ]
-"163
-[; ;displays.c: 163:             do { LATAbits.LATA1 = 1; } while(0);
-[e :U 567 ]
+[e :U 565 ]
+"164
+[; ;displays.c: 164:             do { LATAbits.LATA1 = 1; } while(0);
+[e :U 569 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 566 ]
-"164
-[; ;displays.c: 164:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 570 ]
+[e :U 568 ]
+"165
+[; ;displays.c: 165:             do { LATAbits.LATA2 = 1; } while(0);
+[e :U 572 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 569 ]
-"165
-[; ;displays.c: 165:             do { LATAbits.LATA3 = 0; } while(0);
-[e :U 573 ]
+[e :U 571 ]
+"166
+[; ;displays.c: 166:             do { LATAbits.LATA3 = 0; } while(0);
+[e :U 575 ]
 {
 [e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 572 ]
-"166
-[; ;displays.c: 166:             do { LATAbits.LATA4 = 0; } while(0);
-[e :U 576 ]
+[e :U 574 ]
+"167
+[; ;displays.c: 167:             do { LATAbits.LATA4 = 0; } while(0);
+[e :U 578 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 575 ]
-"167
-[; ;displays.c: 167:             do { LATAbits.LATA7 = 0; } while(0);
-[e :U 579 ]
+[e :U 577 ]
+"168
+[; ;displays.c: 168:             do { LATAbits.LATA7 = 0; } while(0);
+[e :U 581 ]
 {
 [e = . . _LATAbits 0 7 -> -> 0 `i `uc ]
 }
-[e :U 578 ]
-"168
-[; ;displays.c: 168:             do { LATAbits.LATA6 = 0; } while(0);
-[e :U 582 ]
+[e :U 580 ]
+"169
+[; ;displays.c: 169:             do { LATAbits.LATA6 = 0; } while(0);
+[e :U 584 ]
 {
 [e = . . _LATAbits 0 6 -> -> 0 `i `uc ]
 }
-[e :U 581 ]
-"171
-[; ;displays.c: 171:         break;
-[e $U 405  ]
-"174
-[; ;displays.c: 174:         case 8:
 [e :U 583 ]
-"176
-[; ;displays.c: 176:             do { LATAbits.LATA0 = 1; } while(0);
-[e :U 586 ]
+"172
+[; ;displays.c: 172:         break;
+[e $U 407  ]
+"175
+[; ;displays.c: 175:         case 8:
+[e :U 585 ]
+"177
+[; ;displays.c: 177:             do { LATAbits.LATA0 = 1; } while(0);
+[e :U 588 ]
 {
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 585 ]
-"177
-[; ;displays.c: 177:             do { LATAbits.LATA1 = 1; } while(0);
-[e :U 589 ]
+[e :U 587 ]
+"178
+[; ;displays.c: 178:             do { LATAbits.LATA1 = 1; } while(0);
+[e :U 591 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 588 ]
-"178
-[; ;displays.c: 178:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 592 ]
+[e :U 590 ]
+"179
+[; ;displays.c: 179:             do { LATAbits.LATA2 = 1; } while(0);
+[e :U 594 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 591 ]
-"179
-[; ;displays.c: 179:             do { LATAbits.LATA3 = 1; } while(0);
-[e :U 595 ]
+[e :U 593 ]
+"180
+[; ;displays.c: 180:             do { LATAbits.LATA3 = 1; } while(0);
+[e :U 597 ]
 {
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 594 ]
-"180
-[; ;displays.c: 180:             do { LATAbits.LATA4 = 1; } while(0);
-[e :U 598 ]
+[e :U 596 ]
+"181
+[; ;displays.c: 181:             do { LATAbits.LATA4 = 1; } while(0);
+[e :U 600 ]
 {
 [e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
 }
-[e :U 597 ]
-"181
-[; ;displays.c: 181:             do { LATAbits.LATA7 = 1; } while(0);
-[e :U 601 ]
+[e :U 599 ]
+"182
+[; ;displays.c: 182:             do { LATAbits.LATA7 = 1; } while(0);
+[e :U 603 ]
 {
 [e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
 }
-[e :U 600 ]
-"182
-[; ;displays.c: 182:             do { LATAbits.LATA6 = 1; } while(0);
-[e :U 604 ]
+[e :U 602 ]
+"183
+[; ;displays.c: 183:             do { LATAbits.LATA6 = 1; } while(0);
+[e :U 606 ]
 {
 [e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 603 ]
-"185
-[; ;displays.c: 185:         break;
-[e $U 405  ]
-"188
-[; ;displays.c: 188:         case 9:
 [e :U 605 ]
-"190
-[; ;displays.c: 190:             do { LATAbits.LATA0 = 1; } while(0);
-[e :U 608 ]
+"186
+[; ;displays.c: 186:         break;
+[e $U 407  ]
+"189
+[; ;displays.c: 189:         case 9:
+[e :U 607 ]
+"191
+[; ;displays.c: 191:             do { LATAbits.LATA0 = 1; } while(0);
+[e :U 610 ]
 {
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 607 ]
-"191
-[; ;displays.c: 191:             do { LATAbits.LATA1 = 1; } while(0);
-[e :U 611 ]
+[e :U 609 ]
+"192
+[; ;displays.c: 192:             do { LATAbits.LATA1 = 1; } while(0);
+[e :U 613 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 610 ]
-"192
-[; ;displays.c: 192:             do { LATAbits.LATA2 = 1; } while(0);
-[e :U 614 ]
+[e :U 612 ]
+"193
+[; ;displays.c: 193:             do { LATAbits.LATA2 = 1; } while(0);
+[e :U 616 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 613 ]
-"193
-[; ;displays.c: 193:             do { LATAbits.LATA3 = 1; } while(0);
-[e :U 617 ]
+[e :U 615 ]
+"194
+[; ;displays.c: 194:             do { LATAbits.LATA3 = 1; } while(0);
+[e :U 619 ]
 {
 [e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 616 ]
-"194
-[; ;displays.c: 194:             do { LATAbits.LATA4 = 0; } while(0);
-[e :U 620 ]
+[e :U 618 ]
+"195
+[; ;displays.c: 195:             do { LATAbits.LATA4 = 0; } while(0);
+[e :U 622 ]
 {
 [e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
 }
-[e :U 619 ]
-"195
-[; ;displays.c: 195:             do { LATAbits.LATA7 = 1; } while(0);
-[e :U 623 ]
+[e :U 621 ]
+"196
+[; ;displays.c: 196:             do { LATAbits.LATA7 = 1; } while(0);
+[e :U 625 ]
 {
 [e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
 }
-[e :U 622 ]
-"196
-[; ;displays.c: 196:             do { LATAbits.LATA6 = 1; } while(0);
-[e :U 626 ]
+[e :U 624 ]
+"197
+[; ;displays.c: 197:             do { LATAbits.LATA6 = 1; } while(0);
+[e :U 628 ]
 {
 [e = . . _LATAbits 0 6 -> -> 1 `i `uc ]
 }
-[e :U 625 ]
-"198
-[; ;displays.c: 198:         break;
-[e $U 405  ]
-"201
-[; ;displays.c: 201:         case 10:
 [e :U 627 ]
+"199
+[; ;displays.c: 199:         break;
+[e $U 407  ]
 "202
-[; ;displays.c: 202:       do { LATAbits.LATA0 = 1; } while(0);
-[e :U 630 ]
+[; ;displays.c: 202:         case 10:
+[e :U 629 ]
+"203
+[; ;displays.c: 203:       do { LATAbits.LATA0 = 1; } while(0);
+[e :U 632 ]
 {
 [e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 }
-[e :U 629 ]
-"203
-[; ;displays.c: 203:       do { LATAbits.LATA1 = 1; } while(0);
-[e :U 633 ]
+[e :U 631 ]
+"204
+[; ;displays.c: 204:       do { LATAbits.LATA1 = 1; } while(0);
+[e :U 635 ]
 {
 [e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
 }
-[e :U 632 ]
-"204
-[; ;displays.c: 204:       do { LATAbits.LATA2 = 1; } while(0);
-[e :U 636 ]
+[e :U 634 ]
+"205
+[; ;displays.c: 205:       do { LATAbits.LATA2 = 1; } while(0);
+[e :U 638 ]
 {
 [e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
 }
-[e :U 635 ]
-"205
-[; ;displays.c: 205:       do { LATAbits.LATA3 = 0; } while(0);
-[e :U 639 ]
-{
-[e = . . _LATAbits 0 3 -> -> 0 `i `uc ]
-}
-[e :U 638 ]
+[e :U 637 ]
 "206
-[; ;displays.c: 206:             do { LATAbits.LATA4 = 0; } while(0);
-[e :U 642 ]
-{
-[e = . . _LATAbits 0 4 -> -> 0 `i `uc ]
-}
+[; ;displays.c: 206:       do { LATAbits.LATA3 = 1; } while(0);
 [e :U 641 ]
+{
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 640 ]
 "207
-[; ;displays.c: 207:             do { LATAbits.LATA7 = 1; } while(0);
-[e :U 645 ]
-{
-[e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
-}
+[; ;displays.c: 207:             do { LATAbits.LATA4 = 1; } while(0);
 [e :U 644 ]
+{
+[e = . . _LATAbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 643 ]
 "208
-[; ;displays.c: 208:       do { LATAbits.LATA7 = 1; } while(0);
-[e :U 648 ]
+[; ;displays.c: 208:             do { LATAbits.LATA7 = 1; } while(0);
+[e :U 647 ]
 {
 [e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
 }
-[e :U 647 ]
-"210
-[; ;displays.c: 210:  break;
-[e $U 405  ]
+[e :U 646 ]
+"209
+[; ;displays.c: 209:       do { LATAbits.LATA7 = 1; } while(0);
+[e :U 650 ]
+{
+[e = . . _LATAbits 0 7 -> -> 1 `i `uc ]
+}
+[e :U 649 ]
 "211
-[; ;displays.c: 211:     }
-}
-[e $U 405  ]
-[e :U 406 ]
-[e [\ -> _segmento `i , $ -> 0 `i 407
- , $ -> 1 `i 429
- , $ -> 2 `i 451
- , $ -> 3 `i 473
- , $ -> 4 `i 495
- , $ -> 5 `i 517
- , $ -> 6 `i 539
- , $ -> 7 `i 561
- , $ -> 8 `i 583
- , $ -> 9 `i 605
- , $ -> 10 `i 627
- 405 ]
-[e :U 405 ]
+[; ;displays.c: 211:         break;
+[e $U 407  ]
 "212
-[; ;displays.c: 212: }
-[e :UE 404 ]
+[; ;displays.c: 212:     }
 }
-"215
-[; ;displays.c: 215: void Ds_Convertir_en_uni(Ds_Display *dsp, int voltaje){
-[v _Ds_Convertir_en_uni `(v ~T0 @X0 1 ef2`*S2`i ]
+[e $U 407  ]
+[e :U 408 ]
+[e [\ -> _segmento `i , $ -> 0 `i 409
+ , $ -> 1 `i 431
+ , $ -> 2 `i 453
+ , $ -> 3 `i 475
+ , $ -> 4 `i 497
+ , $ -> 5 `i 519
+ , $ -> 6 `i 541
+ , $ -> 7 `i 563
+ , $ -> 8 `i 585
+ , $ -> 9 `i 607
+ , $ -> 10 `i 629
+ 407 ]
+[e :U 407 ]
+"213
+[; ;displays.c: 213: }
+[e :UE 406 ]
+}
+"216
+[; ;displays.c: 216: void Ds_Convertir_en_uni(Ds_Display *dsp, uint16_t voltaje){
+[v _Ds_Convertir_en_uni `(v ~T0 @X0 1 ef2`*S4`us ]
 {
 [e :U _Ds_Convertir_en_uni ]
-[v _dsp `*S2 ~T0 @X0 1 r1 ]
-[v _voltaje `i ~T0 @X0 1 r2 ]
+[v _dsp `*S4 ~T0 @X0 1 r1 ]
+[v _voltaje `us ~T0 @X0 1 r2 ]
 [f ]
-"216
-[; ;displays.c: 216:  dsp->D1 = voltaje % 10;
-[e = . *U _dsp 1 -> % _voltaje -> 10 `i `uc ]
 "217
-[; ;displays.c: 217:  voltaje = voltaje/10;
-[e = _voltaje / _voltaje -> 10 `i ]
+[; ;displays.c: 217:  dsp->D1 = voltaje % 10;
+[e = . *U _dsp 1 -> % -> _voltaje `ui -> -> 10 `i `ui `uc ]
 "218
-[; ;displays.c: 218:  dsp->D2 = voltaje % 10;
-[e = . *U _dsp 2 -> % _voltaje -> 10 `i `uc ]
+[; ;displays.c: 218:  voltaje = voltaje/10;
+[e = _voltaje -> / -> _voltaje `ui -> -> 10 `i `ui `us ]
 "219
-[; ;displays.c: 219:  voltaje = voltaje/10;
-[e = _voltaje / _voltaje -> 10 `i ]
+[; ;displays.c: 219:  dsp->D2 = voltaje % 10;
+[e = . *U _dsp 2 -> % -> _voltaje `ui -> -> 10 `i `ui `uc ]
 "220
-[; ;displays.c: 220:  dsp->D3 = voltaje % 10;
-[e = . *U _dsp 3 -> % _voltaje -> 10 `i `uc ]
+[; ;displays.c: 220:  voltaje = voltaje/10;
+[e = _voltaje -> / -> _voltaje `ui -> -> 10 `i `ui `us ]
 "221
-[; ;displays.c: 221: }
-[e :UE 649 ]
+[; ;displays.c: 221:  dsp->D3 = voltaje % 10;
+[e = . *U _dsp 3 -> % -> _voltaje `ui -> -> 10 `i `ui `uc ]
+"222
+[; ;displays.c: 222: }
+[e :UE 651 ]
 }
-"223
-[; ;displays.c: 223: int Ds_Conversor_ADC (int adcOUT){
-[v _Ds_Conversor_ADC `(i ~T0 @X0 1 ef1`i ]
+"224
+[; ;displays.c: 224: uint16_t Ds_Conversor_ADC (uint16_t adcOUT){
+[v _Ds_Conversor_ADC `(us ~T0 @X0 1 ef1`us ]
 {
 [e :U _Ds_Conversor_ADC ]
-[v _adcOUT `i ~T0 @X0 1 r1 ]
+[v _adcOUT `us ~T0 @X0 1 r1 ]
 [f ]
-"224
-[; ;displays.c: 224:     float pendiente = 0.9766;
-[v _pendiente `f ~T0 @X0 1 a ]
-[e = _pendiente -> .0.9766 `f ]
 "225
-[; ;displays.c: 225:     int voltios = (int) adcOUT*pendiente;
-[v _voltios `i ~T0 @X0 1 a ]
-[e = _voltios -> * -> _adcOUT `f _pendiente `i ]
+[; ;displays.c: 225:     float pendiente = 0.97665;
+[v _pendiente `f ~T0 @X0 1 a ]
+[e = _pendiente -> .0.97665 `f ]
 "226
-[; ;displays.c: 226:  return(voltios);
-[e ) _voltios ]
-[e $UE 650  ]
+[; ;displays.c: 226:     uint16_t voltios = (uint16_t) adcOUT*pendiente;
+[v _voltios `us ~T0 @X0 1 a ]
+[e = _voltios -> * -> -> _adcOUT `ui `f _pendiente `us ]
 "227
-[; ;displays.c: 227: }
-[e :UE 650 ]
+[; ;displays.c: 227:  return(voltios);
+[e ) _voltios ]
+[e $UE 652  ]
+"228
+[; ;displays.c: 228: }
+[e :UE 652 ]
 }
-"230
-[; ;displays.c: 230: void Ds_Procese_displays (Ds_Display *dsp){
-[v _Ds_Procese_displays `(v ~T0 @X0 1 ef1`*S2 ]
+"231
+[; ;displays.c: 231: void Ds_Procese_displays (Ds_Display *dsp){
+[v _Ds_Procese_displays `(v ~T0 @X0 1 ef1`*S4 ]
 {
 [e :U _Ds_Procese_displays ]
-[v _dsp `*S2 ~T0 @X0 1 r1 ]
+[v _dsp `*S4 ~T0 @X0 1 r1 ]
 [f ]
-"232
-[; ;displays.c: 232:     switch ( dsp->estados ){
-[e $U 653  ]
+"233
+[; ;displays.c: 233:     switch ( dsp->estados ){
+[e $U 655  ]
 {
-"234
-[; ;displays.c: 234:         case 1:
-[e :U 654 ]
 "235
-[; ;displays.c: 235:             --(dsp->tempE);
-[e =- . *U _dsp 6 -> -> 1 `i `uc ]
-"236
-[; ;displays.c: 236:             if(!(dsp->tempE)){
-[e $ ! ! != -> . *U _dsp 6 `i -> 0 `i 655  ]
-{
-"237
-[; ;displays.c: 237:                 dsp->estados =2;
-[e = . *U _dsp 0 -> -> 2 `i `uc ]
-"238
-[; ;displays.c: 238:                 dsp->tempA=dsp->tiempoApagado;
-[e = . *U _dsp 7 . *U _dsp 5 ]
-"239
-[; ;displays.c: 239:             }
-}
-[e :U 655 ]
-"242
-[; ;displays.c: 242:             Ds_Encienda_Disp(1);
-[e ( _Ds_Encienda_Disp (1 -> -> 1 `i `uc ]
-"243
-[; ;displays.c: 243:             Ds_BCD(dsp->D1);
-[e ( _Ds_BCD (1 . *U _dsp 1 ]
-"245
-[; ;displays.c: 245:         break;
-[e $U 652  ]
-"247
-[; ;displays.c: 247:         case 2:
+[; ;displays.c: 235:         case 1:
 [e :U 656 ]
-"248
-[; ;displays.c: 248:             --(dsp->tempA);
-[e =- . *U _dsp 7 -> -> 1 `i `uc ]
-"249
-[; ;displays.c: 249:             if(!(dsp->tempA)){
-[e $ ! ! != -> . *U _dsp 7 `i -> 0 `i 657  ]
+"236
+[; ;displays.c: 236:             --(dsp->tempE);
+[e =- . *U _dsp 6 -> -> 1 `i `uc ]
+"237
+[; ;displays.c: 237:             if(!(dsp->tempE)){
+[e $ ! ! != -> . *U _dsp 6 `i -> 0 `i 657  ]
 {
-"250
-[; ;displays.c: 250:                 dsp->estados =3;
-[e = . *U _dsp 0 -> -> 3 `i `uc ]
-"251
-[; ;displays.c: 251:                 dsp->tempE=dsp->tiempoEncendido;
-[e = . *U _dsp 6 . *U _dsp 4 ]
-"252
-[; ;displays.c: 252:             }
+"238
+[; ;displays.c: 238:                 dsp->estados =2;
+[e = . *U _dsp 0 -> -> 2 `i `uc ]
+"239
+[; ;displays.c: 239:                 dsp->tempA=dsp->tiempoApagado;
+[e = . *U _dsp 7 . *U _dsp 5 ]
+"240
+[; ;displays.c: 240:             }
 }
 [e :U 657 ]
-"254
-[; ;displays.c: 254:             Ds_Encienda_Disp(0);
-[e ( _Ds_Encienda_Disp (1 -> -> 0 `i `uc ]
-"255
-[; ;displays.c: 255:         break;
-[e $U 652  ]
-"257
-[; ;displays.c: 257:         case 3:
+"243
+[; ;displays.c: 243:             Ds_Encienda_Disp(1);
+[e ( _Ds_Encienda_Disp (1 -> -> 1 `i `uc ]
+"244
+[; ;displays.c: 244:             Ds_BCD(dsp->D1);
+[e ( _Ds_BCD (1 . *U _dsp 1 ]
+"246
+[; ;displays.c: 246:         break;
+[e $U 654  ]
+"248
+[; ;displays.c: 248:         case 2:
 [e :U 658 ]
-"258
-[; ;displays.c: 258:             --(dsp->tempE);
-[e =- . *U _dsp 6 -> -> 1 `i `uc ]
-"259
-[; ;displays.c: 259:             if(!(dsp->tempE)){
-[e $ ! ! != -> . *U _dsp 6 `i -> 0 `i 659  ]
+"249
+[; ;displays.c: 249:             --(dsp->tempA);
+[e =- . *U _dsp 7 -> -> 1 `i `uc ]
+"250
+[; ;displays.c: 250:             if(!(dsp->tempA)){
+[e $ ! ! != -> . *U _dsp 7 `i -> 0 `i 659  ]
 {
-"260
-[; ;displays.c: 260:                 dsp->estados =4;
-[e = . *U _dsp 0 -> -> 4 `i `uc ]
-"261
-[; ;displays.c: 261:                 dsp->tempA=dsp->tiempoApagado;
-[e = . *U _dsp 7 . *U _dsp 5 ]
-"262
-[; ;displays.c: 262:             }
+"251
+[; ;displays.c: 251:                 dsp->estados =3;
+[e = . *U _dsp 0 -> -> 3 `i `uc ]
+"252
+[; ;displays.c: 252:                 dsp->tempE=dsp->tiempoEncendido;
+[e = . *U _dsp 6 . *U _dsp 4 ]
+"253
+[; ;displays.c: 253:             }
 }
 [e :U 659 ]
-"264
-[; ;displays.c: 264:             Ds_Encienda_Disp(2);
-[e ( _Ds_Encienda_Disp (1 -> -> 2 `i `uc ]
-"265
-[; ;displays.c: 265:             Ds_BCD(dsp->D2);
-[e ( _Ds_BCD (1 . *U _dsp 2 ]
-"266
-[; ;displays.c: 266:         break;
-[e $U 652  ]
-"268
-[; ;displays.c: 268:         case 4:
+"255
+[; ;displays.c: 255:             Ds_Encienda_Disp(0);
+[e ( _Ds_Encienda_Disp (1 -> -> 0 `i `uc ]
+"256
+[; ;displays.c: 256:         break;
+[e $U 654  ]
+"258
+[; ;displays.c: 258:         case 3:
 [e :U 660 ]
-"269
-[; ;displays.c: 269:             --(dsp->tempA);
-[e =- . *U _dsp 7 -> -> 1 `i `uc ]
-"270
-[; ;displays.c: 270:             if(!(dsp->tempA)){
-[e $ ! ! != -> . *U _dsp 7 `i -> 0 `i 661  ]
+"259
+[; ;displays.c: 259:             --(dsp->tempE);
+[e =- . *U _dsp 6 -> -> 1 `i `uc ]
+"260
+[; ;displays.c: 260:             if(!(dsp->tempE)){
+[e $ ! ! != -> . *U _dsp 6 `i -> 0 `i 661  ]
 {
-"271
-[; ;displays.c: 271:                 dsp->estados =5;
-[e = . *U _dsp 0 -> -> 5 `i `uc ]
-"272
-[; ;displays.c: 272:                 dsp->tempE=dsp->tiempoEncendido;
-[e = . *U _dsp 6 . *U _dsp 4 ]
-"273
-[; ;displays.c: 273:             }
+"261
+[; ;displays.c: 261:                 dsp->estados =4;
+[e = . *U _dsp 0 -> -> 4 `i `uc ]
+"262
+[; ;displays.c: 262:                 dsp->tempA=dsp->tiempoApagado;
+[e = . *U _dsp 7 . *U _dsp 5 ]
+"263
+[; ;displays.c: 263:             }
 }
 [e :U 661 ]
-"275
-[; ;displays.c: 275:             Ds_Encienda_Disp(0);
-[e ( _Ds_Encienda_Disp (1 -> -> 0 `i `uc ]
-"276
-[; ;displays.c: 276:         break;
-[e $U 652  ]
-"278
-[; ;displays.c: 278:         case 5:
+"265
+[; ;displays.c: 265:             Ds_Encienda_Disp(2);
+[e ( _Ds_Encienda_Disp (1 -> -> 2 `i `uc ]
+"266
+[; ;displays.c: 266:             Ds_BCD(dsp->D2);
+[e ( _Ds_BCD (1 . *U _dsp 2 ]
+"267
+[; ;displays.c: 267:         break;
+[e $U 654  ]
+"269
+[; ;displays.c: 269:         case 4:
 [e :U 662 ]
-"279
-[; ;displays.c: 279:             --(dsp->tempE);
-[e =- . *U _dsp 6 -> -> 1 `i `uc ]
-"280
-[; ;displays.c: 280:             if(!(dsp->tempE)){
-[e $ ! ! != -> . *U _dsp 6 `i -> 0 `i 663  ]
+"270
+[; ;displays.c: 270:             --(dsp->tempA);
+[e =- . *U _dsp 7 -> -> 1 `i `uc ]
+"271
+[; ;displays.c: 271:             if(!(dsp->tempA)){
+[e $ ! ! != -> . *U _dsp 7 `i -> 0 `i 663  ]
 {
-"281
-[; ;displays.c: 281:                 dsp->estados =6;
-[e = . *U _dsp 0 -> -> 6 `i `uc ]
-"282
-[; ;displays.c: 282:                 dsp->tempA=dsp->tiempoApagado;
-[e = . *U _dsp 7 . *U _dsp 5 ]
-"283
-[; ;displays.c: 283:             }
+"272
+[; ;displays.c: 272:                 dsp->estados =5;
+[e = . *U _dsp 0 -> -> 5 `i `uc ]
+"273
+[; ;displays.c: 273:                 dsp->tempE=dsp->tiempoEncendido;
+[e = . *U _dsp 6 . *U _dsp 4 ]
+"274
+[; ;displays.c: 274:             }
 }
 [e :U 663 ]
-"285
-[; ;displays.c: 285:             Ds_Encienda_Disp(3);
-[e ( _Ds_Encienda_Disp (1 -> -> 3 `i `uc ]
-"286
-[; ;displays.c: 286:             Ds_BCD(dsp->D3);
-[e ( _Ds_BCD (1 . *U _dsp 3 ]
-"287
-[; ;displays.c: 287:         break;
-[e $U 652  ]
-"289
-[; ;displays.c: 289:         case 6:
+"276
+[; ;displays.c: 276:             Ds_Encienda_Disp(0);
+[e ( _Ds_Encienda_Disp (1 -> -> 0 `i `uc ]
+"277
+[; ;displays.c: 277:         break;
+[e $U 654  ]
+"279
+[; ;displays.c: 279:         case 5:
 [e :U 664 ]
-"290
-[; ;displays.c: 290:             --(dsp->tempA);
-[e =- . *U _dsp 7 -> -> 1 `i `uc ]
-"291
-[; ;displays.c: 291:             if(!(dsp->tempA)){
-[e $ ! ! != -> . *U _dsp 7 `i -> 0 `i 665  ]
+"280
+[; ;displays.c: 280:             --(dsp->tempE);
+[e =- . *U _dsp 6 -> -> 1 `i `uc ]
+"281
+[; ;displays.c: 281:             if(!(dsp->tempE)){
+[e $ ! ! != -> . *U _dsp 6 `i -> 0 `i 665  ]
 {
-"292
-[; ;displays.c: 292:                 dsp->estados = 1;
-[e = . *U _dsp 0 -> -> 1 `i `uc ]
-"293
-[; ;displays.c: 293:                 dsp->tempE=dsp->tiempoEncendido;
-[e = . *U _dsp 6 . *U _dsp 4 ]
-"294
-[; ;displays.c: 294:             }
+"282
+[; ;displays.c: 282:                 dsp->estados =6;
+[e = . *U _dsp 0 -> -> 6 `i `uc ]
+"283
+[; ;displays.c: 283:                 dsp->tempA=dsp->tiempoApagado;
+[e = . *U _dsp 7 . *U _dsp 5 ]
+"284
+[; ;displays.c: 284:             }
 }
 [e :U 665 ]
-"296
-[; ;displays.c: 296:             Ds_Encienda_Disp(0);
-[e ( _Ds_Encienda_Disp (1 -> -> 0 `i `uc ]
-"297
-[; ;displays.c: 297:         break;
-[e $U 652  ]
-"299
-[; ;displays.c: 299:         default:
+"286
+[; ;displays.c: 286:             Ds_Encienda_Disp(3);
+[e ( _Ds_Encienda_Disp (1 -> -> 3 `i `uc ]
+"287
+[; ;displays.c: 287:             Ds_BCD(dsp->D3);
+[e ( _Ds_BCD (1 . *U _dsp 3 ]
+"288
+[; ;displays.c: 288:         break;
+[e $U 654  ]
+"290
+[; ;displays.c: 290:         case 6:
 [e :U 666 ]
-"300
-[; ;displays.c: 300:             while(1){
-[e :U 668 ]
+"291
+[; ;displays.c: 291:             --(dsp->tempA);
+[e =- . *U _dsp 7 -> -> 1 `i `uc ]
+"292
+[; ;displays.c: 292:             if(!(dsp->tempA)){
+[e $ ! ! != -> . *U _dsp 7 `i -> 0 `i 667  ]
 {
-"302
-[; ;displays.c: 302:             Ds_BCD(10);
-[e ( _Ds_BCD (1 -> -> 10 `i `uc ]
-"303
-[; ;displays.c: 303:    Ds_Encienda_Disp(2);
-[e ( _Ds_Encienda_Disp (1 -> -> 2 `i `uc ]
-"304
-[; ;displays.c: 304:             }
+"293
+[; ;displays.c: 293:                 dsp->estados = 1;
+[e = . *U _dsp 0 -> -> 1 `i `uc ]
+"294
+[; ;displays.c: 294:                 dsp->tempE=dsp->tiempoEncendido;
+[e = . *U _dsp 6 . *U _dsp 4 ]
+"295
+[; ;displays.c: 295:             }
 }
 [e :U 667 ]
-[e $U 668  ]
-[e :U 669 ]
+"297
+[; ;displays.c: 297:             Ds_Encienda_Disp(0);
+[e ( _Ds_Encienda_Disp (1 -> -> 0 `i `uc ]
+"298
+[; ;displays.c: 298:         break;
+[e $U 654  ]
+"300
+[; ;displays.c: 300:         default:
+[e :U 668 ]
+"301
+[; ;displays.c: 301:             while(1){
+[e :U 670 ]
+{
+"303
+[; ;displays.c: 303:             Ds_BCD(10);
+[e ( _Ds_BCD (1 -> -> 10 `i `uc ]
+"304
+[; ;displays.c: 304:    Ds_Encienda_Disp(2);
+[e ( _Ds_Encienda_Disp (1 -> -> 2 `i `uc ]
 "305
-[; ;displays.c: 305:         }
+[; ;displays.c: 305:             }
 }
-[e $U 652  ]
-[e :U 653 ]
-[e [\ -> . *U _dsp 0 `i , $ -> 1 `i 654
- , $ -> 2 `i 656
- , $ -> 3 `i 658
- , $ -> 4 `i 660
- , $ -> 5 `i 662
- , $ -> 6 `i 664
- 666 ]
-[e :U 652 ]
+[e :U 669 ]
+[e $U 670  ]
+[e :U 671 ]
 "306
-[; ;displays.c: 306:     }
-[e :UE 651 ]
+[; ;displays.c: 306:         }
+}
+[e $U 654  ]
+[e :U 655 ]
+[e [\ -> . *U _dsp 0 `i , $ -> 1 `i 656
+ , $ -> 2 `i 658
+ , $ -> 3 `i 660
+ , $ -> 4 `i 662
+ , $ -> 5 `i 664
+ , $ -> 6 `i 666
+ 668 ]
+[e :U 654 ]
+"307
+[; ;displays.c: 307:     }
+[e :UE 653 ]
 }

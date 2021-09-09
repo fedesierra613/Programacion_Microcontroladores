@@ -10,6 +10,11 @@ extern "C" {
 #define UNSEGUNDO 250
 #define DISPLAYENCENDIDO 9
 #define DISPLAYAPAGADO 1
+    
+#include <stdio.h>
+#include <stdint.h>
+    
+//typedef unsigned int16_t uint16_t;
 
 #define MAX(a,b) (((a)>(b))?(a):(b))
 #define MIN(a,b) (((a)<(b))?(a):(b))
@@ -17,11 +22,10 @@ extern "C" {
 #define CLR_BIT(p,n) ((p) &= ~((1) << (n)))
 #define T_On 4
 #define T_Off 1
-#define Valor_Inicial0 4
-#define Valor_Inicial1 5
-#define Valor_Inicial2 6
+#define N_1 1
+#define N_2 2
+#define N_3 3
 #define Zero 0
-//#define uint16_t ADC_Value 
 
 #define S0 0
 #define S1 1
@@ -30,6 +34,11 @@ extern "C" {
 #define S4 4
 #define S5 5
 #define S6 6
+    
+
+    
+    
+    
     
 //#define Valor_Vmax 999
 
