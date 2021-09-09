@@ -8,7 +8,7 @@ extern "C" {
 #define SI 1
 #define NO 0
 #define UNSEGUNDO 250
-#define DISPLAYENCENDIDO 9
+#define DISPLAYENCENDIDO 5
 #define DISPLAYAPAGADO 1
     
 #include <stdio.h>
@@ -34,12 +34,10 @@ extern "C" {
 #define S4 4
 #define S5 5
 #define S6 6
-    
 
-    
-    
-    
-    
+#define tiempo_cont 1000
+
+      
 //#define Valor_Vmax 999
 
 
