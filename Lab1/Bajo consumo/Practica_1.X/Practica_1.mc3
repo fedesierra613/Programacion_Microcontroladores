@@ -2916,7 +2916,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="WDT" name="wdtPeriod"/>
-         <value>0.00103</value>
+         <value>1.05703</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="WDT" registerAlias="WDTCON0" settingAlias="WDTPS" alias="1:1024"/>
@@ -3004,11 +3004,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="WDT" registerAlias="WDTCON0"/>
-         <value>0</value>
+         <value>20</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="WDT" registerAlias="WDTCON0" settingAlias="WDTPS"/>
-         <value>1:32</value>
+         <value>1:32768</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="WDT" registerAlias="WDTCON0" settingAlias="WDTSEN"/>
@@ -3074,7 +3074,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>5d40b7011852b132dcfe8ffc4370f6e0c1443621cb3ecfa3098e9d2feeb1d06f</hash>
+         <hash>596f753d7fbf44c4e0659320fb79bced5e3b2a23f8085776d6b24ac00756825d</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

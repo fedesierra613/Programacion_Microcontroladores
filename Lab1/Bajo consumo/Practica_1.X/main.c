@@ -1,4 +1,3 @@
-
 #include "mcc_generated_files/mcc.h"
 #include <math.h> //estan en el PATH de compilacion osea la ruta donde busca el copilador por defecto
 #include "displays.h"
@@ -31,7 +30,7 @@ void main(void){
     uint16_t volt_ADC=0;
     uint8_t Pack[6];
     char EnviarPorSerial = 0;
-    char send = FALSE;
+    //char send = FALSE;
 	Ds_Display seven_seg;
 	Tm_Periodico timer_1ms;
 	Tm_Inicie_periodico (&timer_1ms, tiempo_cont);
@@ -45,20 +44,22 @@ void main(void){
 	TMR6_SetInterruptHandler(Interrupcion_timer);
 	
     while (1){        
-		if(timer_flag){
+		
+        
+        /*if(1){
             timer_flag = FALSE;
             Tm_Procese_tiempo(&timer_1ms);
             Ds_Procese_displays(&seven_seg);
-			} 
+		}*/ 
         
-        if(Tm_Hubo_periodico(&timer_1ms)){						
+        if(1){						
 				Tm_Baje_periodico(&timer_1ms); //bajo bandera
                 ADC_StartConversion();                
-                send = TRUE;
+                //send = TRUE;
 		}
         
         
-        if(ADC_flag){//bandera activada en la interrupcion 
+        if(1){//bandera activada en la interrupcion 
 			ADC_flag = FALSE;
             //valor_ADC = ADC_GetConversionResult();//interrupcion 
 			valor_ADC = num_ADC;
@@ -71,6 +72,8 @@ void main(void){
         
         if (EnviarPorSerial){
             while(!EUSART_is_tx_ready()){
+            }
+            
                 Pack[0]=(seven_seg.D3 + '0');
                 Pack[1]=(',');   
                 Pack[2]=(seven_seg.D2 + '0');
@@ -84,7 +87,9 @@ void main(void){
                 EUSART_Write(Pack[3]); 
                 EUSART_Write(Pack[4]);
                 EUSART_Write(Pack[5]);
-            }
+                sleep_flag = 1;
+            
+       
        }
         
        if (sleep_flag){
@@ -93,5 +98,5 @@ void main(void){
             Ds_Encienda_Disp(0);
             SLEEP();
         }
-	};
+	}
 }

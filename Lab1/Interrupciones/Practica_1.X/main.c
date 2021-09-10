@@ -54,7 +54,8 @@ void main(void){
                 send = TRUE;
 		}
         
-        if(EUSART_is_tx_ready()){
+        if(send && EUSART_is_tx_ready()){
+        	send = FALSE;
             Pack[0]=(seven_seg.D3 + '0');
             Pack[1]=(',');   
             Pack[2]=(seven_seg.D2 + '0');
@@ -67,7 +68,7 @@ void main(void){
             EUSART_Write(Pack[3]); 
             EUSART_Write(Pack[4]);
             EUSART_Write(Pack[5]);
-          }        
+        }        
         
         if(ADC_flag){//bandera activada en la interrupcion 
 			ADC_flag = FALSE;
