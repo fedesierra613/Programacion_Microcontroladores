@@ -122,12 +122,20 @@ void TMR6_ISR(void)
     // clear the TMR6 interrupt flag
     PIR3bits.TMR6IF = 0;
 
+    // ticker function call;
+    // ticker is 1 -> Callback function gets called everytime this ISR executes
+    TMR6_CallBack();
+}
+
+void TMR6_CallBack(void)
+{
+    // Add your custom callback code here
+    // this code executes every TMR6_INTERRUPT_TICKER_FACTOR periods of TMR6
     if(TMR6_InterruptHandler)
     {
         TMR6_InterruptHandler();
     }
 }
-
 
 void TMR6_SetInterruptHandler(void (* InterruptHandler)(void)){
     TMR6_InterruptHandler = InterruptHandler;
