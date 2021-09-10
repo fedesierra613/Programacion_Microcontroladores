@@ -55,6 +55,8 @@
   Section: Global Variables Definitions
 */
 
+void (*TMR6_InterruptHandler)(void);
+
 /**
   Section: TMR6 APIs
 */
@@ -69,8 +71,14 @@ void TMR6_Initialize(void)
     // TMR6 0; 
     TMR6 = 0x00;
 
-    // Clearing IF flag.
+    // Clearing IF flag before enabling the interrupt.
     PIR3bits.TMR6IF = 0;
+
+    // Enabling TMR6 interrupt.
+    PIE3bits.TMR6IE = 1;
+
+    // Set Default Interrupt Handler
+    TMR6_SetInterruptHandler(TMR6_DefaultInterruptHandler);
 
     // T6CKPS 1:4; T6OUTPS 1:8; TMR6ON on; 
     T6CON = 0x3D;
@@ -108,17 +116,28 @@ void TMR6_LoadPeriodRegister(uint8_t periodVal)
    PR6 = periodVal;
 }
 
-bool TMR6_HasOverflowOccured(void)
+void TMR6_ISR(void)
 {
-    // check if  overflow has occurred by checking the TMRIF bit
-    bool status = PIR3bits.TMR6IF;
-    if(status)
+
+    // clear the TMR6 interrupt flag
+    PIR3bits.TMR6IF = 0;
+
+    if(TMR6_InterruptHandler)
     {
-        // Clearing IF flag.
-        PIR3bits.TMR6IF = 0;
+        TMR6_InterruptHandler();
     }
-    return status;
 }
+
+
+void TMR6_SetInterruptHandler(void (* InterruptHandler)(void)){
+    TMR6_InterruptHandler = InterruptHandler;
+}
+
+void TMR6_DefaultInterruptHandler(void){
+    // add your TMR6 interrupt custom code
+    // or set custom function using TMR6_SetInterruptHandler()
+}
+
 /**
   End of File
 */

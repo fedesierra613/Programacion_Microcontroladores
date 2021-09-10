@@ -58,7 +58,7 @@ void main(void){
         if(ADC_IsConversionDone()){
             valor_ADC = ADC_GetConversionResult();
             volt_ADC = Ds_Conversor_ADC(valor_ADC);
-            Ds_Convertir_en_uni(&seven_seg, valor_ADC);
+            Ds_Convertir_en_uni(&seven_seg, volt_ADC);
 		}
 	};
 }

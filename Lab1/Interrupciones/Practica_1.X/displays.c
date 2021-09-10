@@ -17,44 +17,6 @@ void Ds_Iniciar_displays(Ds_Display *dsp, char d1, char d2, char d3, char tE, ch
     dsp->tempA=tA;
 }
 
-void Ds_Encienda_Disp(char dispNum){
-
-    switch (dispNum){
-
-        case 0:
-
-            IO_RB0_SetLow();
-            IO_RB3_SetLow();//Apagar todos los displays 1ms
-            IO_RB4_SetLow();
-
-        break;
-
-
-        case 1:
-
-            IO_RB0_SetHigh();//Enciende display 1 9ms
-            IO_RB3_SetLow();
-            IO_RB4_SetLow();
-        break;
-
-        case 2:
-
-            IO_RB3_SetHigh();//Enciende display 2
-            IO_RB0_SetLow();
-            IO_RB4_SetLow();
-
-        break;
-
-
-        case 3:
-
-            IO_RB4_SetHigh();//Enciende display 3
-            IO_RB0_SetLow();
-            IO_RB3_SetLow();
-
-        break;
-    }
-}
 
 
 void Ds_BCD(char segmento){
@@ -238,7 +200,7 @@ void Ds_Procese_displays (Ds_Display *dsp){
                 dsp->estados =D1A;
                 dsp->tempA=dsp->tiempoApagado;
             }
-
+    
             Ds_Encienda_Disp(1);
             Ds_BCD(dsp->D1);
 
@@ -304,3 +266,23 @@ void Ds_Procese_displays (Ds_Display *dsp){
             }
         }
     }
+
+void Ds_Encienda_Disp(char dispNum){
+    if(dispNum == 1){
+        IO_RB0_SetHigh();
+        IO_RB4_SetLow();
+        IO_RB3_SetLow();
+    }else if(dispNum == 2){
+        IO_RB0_SetLow();
+        IO_RB3_SetHigh();
+        IO_RB4_SetLow();
+    }else if(dispNum == 3){
+        IO_RB0_SetLow();
+        IO_RB3_SetLow();
+        IO_RB4_SetHigh();
+    }else {
+        IO_RB0_SetLow();
+        IO_RB4_SetLow();
+        IO_RB3_SetLow();
+    }
+}

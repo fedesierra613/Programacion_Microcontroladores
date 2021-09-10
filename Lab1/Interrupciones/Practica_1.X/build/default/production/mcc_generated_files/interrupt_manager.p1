@@ -1,17 +1,21 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F2500 `(v ~T0 @X0 0 tf ]
-"1967 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1967: extern volatile unsigned char ADCON1 __attribute__((address(0x09E)));
-[v _ADCON1 `Vuc ~T0 @X0 0 e@158 ]
-"1847
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1847: extern volatile unsigned char ADRESL __attribute__((address(0x09B)));
-[v _ADRESL `Vuc ~T0 @X0 0 e@155 ]
-"1867
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1867: extern volatile unsigned char ADRESH __attribute__((address(0x09C)));
-[v _ADRESH `Vuc ~T0 @X0 0 e@156 ]
-"1887
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1887: extern volatile unsigned char ADCON0 __attribute__((address(0x09D)));
-[v _ADCON0 `Vuc ~T0 @X0 0 e@157 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"357 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 357:     struct {
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+"367
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 367:     struct {
+[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S32 . . T0IF . T0IE ]
+"356
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 356: typedef union {
+[u S30 `S31 1 `S32 1 ]
+[n S30 . . . ]
+"374
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
 "1282
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1282:     struct {
 [s S75 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -23,41 +27,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "1293
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1293: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x091)));
 [v _PIE1bits `VS74 ~T0 @X0 0 e@145 ]
-[v F2493 `(v ~T0 @X0 0 tf ]
-"350 mcc_generated_files/adc.h
-[; ;mcc_generated_files/adc.h: 350:  void ADC_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _ADC_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F2493 ]
-"386
-[; ;mcc_generated_files/adc.h: 386: void ADC_DefaultInterruptHandler(void);
-[v _ADC_DefaultInterruptHandler `(v ~T0 @X0 0 ef ]
-"90 mcc_generated_files/adc.c
-[; ;mcc_generated_files/adc.c: 90: void ADC_SelectChannel(adc_channel_t channel)
-[c E2476 7 29 30 31 .. ]
-[n E2476 . channel_AN7 channel_Temp channel_DAC channel_FVR  ]
-"1893 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1893:     struct {
-[s S103 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S103 . ADON GO_nDONE CHS0 CHS1 CHS2 CHS3 CHS4 ]
-"1902
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1902:     struct {
-[s S104 :1 `uc 1 :1 `uc 1 :5 `uc 1 ]
-[n S104 . . ADGO CHS ]
-"1907
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1907:     struct {
-[s S105 :1 `uc 1 :1 `uc 1 ]
-[n S105 . . GO ]
-"1892
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1892: typedef union {
-[u S102 `S103 1 `S104 1 `S105 1 ]
-[n S102 . . . . ]
-"1912
-[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1912: extern volatile ADCON0bits_t ADCON0bits __attribute__((address(0x09D)));
-[v _ADCON0bits `VS102 ~T0 @X0 0 e@157 ]
-[v F2428 `(v ~T0 @X0 1 tf1`ul ]
-"92 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
-[v __delay `JF2428 ~T0 @X0 0 e ]
-[p i __delay ]
-"559 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+"559
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 559:     struct {
 [s S38 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S38 . TMR1IF TMR2IF CCP1IF SSP1IF TXIF RCIF ADIF TMR1GIF ]
@@ -68,9 +38,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 "570
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 570: extern volatile PIR1bits_t PIR1bits __attribute__((address(0x011)));
 [v _PIR1bits `VS37 ~T0 @X0 0 e@17 ]
-[v F2512 `(v ~T0 @X0 0 tf ]
-[v F2514 `(v ~T0 @X0 0 tf ]
-[v F2516 `(v ~T0 @X0 0 tf ]
+"332 mcc_generated_files/adc.h
+[; ;mcc_generated_files/adc.h: 332: void ADC_ISR(void);
+[v _ADC_ISR `(v ~T0 @X0 0 ef ]
+"1395 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1395:     struct {
+[s S79 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S79 . . TMR4IE . TMR6IE CCP3IE CCP4IE ]
+"1394
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1394: typedef union {
+[u S78 `S79 1 ]
+[n S78 . . ]
+"1404
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 1404: extern volatile PIE3bits_t PIE3bits __attribute__((address(0x093)));
+[v _PIE3bits `VS78 ~T0 @X0 0 e@147 ]
+"672
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 672:     struct {
+[s S42 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S42 . . TMR4IF . TMR6IF CCP3IF CCP4IF ]
+"671
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 671: typedef union {
+[u S41 `S42 1 ]
+[n S41 . . ]
+"681
+[; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 681: extern volatile PIR3bits_t PIR3bits __attribute__((address(0x013)));
+[v _PIR3bits `VS41 ~T0 @X0 0 e@19 ]
+"308 mcc_generated_files/tmr6.h
+[; ;mcc_generated_files/tmr6.h: 308: void TMR6_ISR(void);
+[v _TMR6_ISR `(v ~T0 @X0 0 ef ]
 "54 D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -545,221 +540,74 @@ Version 4.0 HI-TECH Software Intermediate Code
 "6748
 [; ;D:/Programas/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1827.h: 6748: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"61 mcc_generated_files/adc.c
-[; ;mcc_generated_files/adc.c: 61: void (*ADC_InterruptHandler)(void);
-[v _ADC_InterruptHandler `*F2500 ~T0 @X0 1 e ]
-"67
-[; ;mcc_generated_files/adc.c: 67: void ADC_Initialize(void)
-[v _ADC_Initialize `(v ~T0 @X0 1 ef ]
-"68
-[; ;mcc_generated_files/adc.c: 68: {
+[v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
+"52 mcc_generated_files/interrupt_manager.c
+[; ;mcc_generated_files/interrupt_manager.c: 52: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
+[v _INTERRUPT_InterruptManager `(v ~T1 @X0 1 ef ]
+"53
+[; ;mcc_generated_files/interrupt_manager.c: 53: {
 {
-[e :U _ADC_Initialize ]
+[e :U _INTERRUPT_InterruptManager ]
 [f ]
-"72
-[; ;mcc_generated_files/adc.c: 72:     ADCON1 = 0b11100000;
-[e = _ADCON1 -> -> 224 `i `uc ]
-"75
-[; ;mcc_generated_files/adc.c: 75:     ADRESL = 0x00;
-[e = _ADRESL -> -> 0 `i `uc ]
-"78
-[; ;mcc_generated_files/adc.c: 78:     ADRESH = 0x00;
-[e = _ADRESH -> -> 0 `i `uc ]
-"81
-[; ;mcc_generated_files/adc.c: 81:     ADCON0 = 0b00011101;
-[e = _ADCON0 -> -> 29 `i `uc ]
-"84
-[; ;mcc_generated_files/adc.c: 84:     PIE1bits.ADIE = 1;
-[e = . . _PIE1bits 0 6 -> -> 1 `i `uc ]
-"87
-[; ;mcc_generated_files/adc.c: 87:     ADC_SetInterruptHandler(ADC_DefaultInterruptHandler);
-[e ( _ADC_SetInterruptHandler (1 &U _ADC_DefaultInterruptHandler ]
-"88
-[; ;mcc_generated_files/adc.c: 88: }
-[e :UE 355 ]
-}
-"90
-[; ;mcc_generated_files/adc.c: 90: void ADC_SelectChannel(adc_channel_t channel)
-[v _ADC_SelectChannel `(v ~T0 @X0 1 ef1`E2476 ]
-"91
-[; ;mcc_generated_files/adc.c: 91: {
+"55
+[; ;mcc_generated_files/interrupt_manager.c: 55:     if(INTCONbits.PEIE == 1)
+[e $ ! == -> . . _INTCONbits 0 6 `i -> 1 `i 358  ]
+"56
+[; ;mcc_generated_files/interrupt_manager.c: 56:     {
 {
-[e :U _ADC_SelectChannel ]
-"90
-[; ;mcc_generated_files/adc.c: 90: void ADC_SelectChannel(adc_channel_t channel)
-[v _channel `E2476 ~T0 @X0 1 r1 ]
-"91
-[; ;mcc_generated_files/adc.c: 91: {
-[f ]
-"93
-[; ;mcc_generated_files/adc.c: 93:     ADCON0bits.CHS = channel;
-[e = . . _ADCON0bits 1 2 -> _channel `uc ]
-"95
-[; ;mcc_generated_files/adc.c: 95:     ADCON0bits.ADON = 1;
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-"96
-[; ;mcc_generated_files/adc.c: 96: }
-[e :UE 356 ]
-}
-"98
-[; ;mcc_generated_files/adc.c: 98: void ADC_StartConversion(void)
-[v _ADC_StartConversion `(v ~T0 @X0 1 ef ]
-"99
-[; ;mcc_generated_files/adc.c: 99: {
+"57
+[; ;mcc_generated_files/interrupt_manager.c: 57:         if(PIE1bits.ADIE == 1 && PIR1bits.ADIF == 1)
+[e $ ! && == -> . . _PIE1bits 0 6 `i -> 1 `i == -> . . _PIR1bits 0 6 `i -> 1 `i 359  ]
+"58
+[; ;mcc_generated_files/interrupt_manager.c: 58:         {
 {
-[e :U _ADC_StartConversion ]
-[f ]
-"101
-[; ;mcc_generated_files/adc.c: 101:     ADCON0bits.GO_nDONE = 1;
-[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
-"102
-[; ;mcc_generated_files/adc.c: 102: }
-[e :UE 357 ]
+"59
+[; ;mcc_generated_files/interrupt_manager.c: 59:             ADC_ISR();
+[e ( _ADC_ISR ..  ]
+"60
+[; ;mcc_generated_files/interrupt_manager.c: 60:         }
 }
-"105
-[; ;mcc_generated_files/adc.c: 105: _Bool ADC_IsConversionDone(void)
-[v _ADC_IsConversionDone `(a ~T0 @X0 1 ef ]
-"106
-[; ;mcc_generated_files/adc.c: 106: {
+[e $U 360  ]
+"61
+[; ;mcc_generated_files/interrupt_manager.c: 61:         else if(PIE3bits.TMR6IE == 1 && PIR3bits.TMR6IF == 1)
+[e :U 359 ]
+[e $ ! && == -> . . _PIE3bits 0 3 `i -> 1 `i == -> . . _PIR3bits 0 3 `i -> 1 `i 361  ]
+"62
+[; ;mcc_generated_files/interrupt_manager.c: 62:         {
 {
-[e :U _ADC_IsConversionDone ]
-[f ]
-"108
-[; ;mcc_generated_files/adc.c: 108:    return ((_Bool)(!ADCON0bits.GO_nDONE));
-[e ) -> -> ! != -> . . _ADCON0bits 0 1 `i -> 0 `i `i `a ]
-[e $UE 358  ]
-"109
-[; ;mcc_generated_files/adc.c: 109: }
-[e :UE 358 ]
+"63
+[; ;mcc_generated_files/interrupt_manager.c: 63:             TMR6_ISR();
+[e ( _TMR6_ISR ..  ]
+"64
+[; ;mcc_generated_files/interrupt_manager.c: 64:         }
 }
-"111
-[; ;mcc_generated_files/adc.c: 111: adc_result_t ADC_GetConversionResult(void)
-[v _ADC_GetConversionResult `(us ~T0 @X0 1 ef ]
-"112
-[; ;mcc_generated_files/adc.c: 112: {
-{
-[e :U _ADC_GetConversionResult ]
-[f ]
-"114
-[; ;mcc_generated_files/adc.c: 114:     return ((adc_result_t)((ADRESH << 8) + ADRESL));
-[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
-[e $UE 359  ]
-"115
-[; ;mcc_generated_files/adc.c: 115: }
-[e :UE 359 ]
-}
-"117
-[; ;mcc_generated_files/adc.c: 117: adc_result_t ADC_GetConversion(adc_channel_t channel)
-[v _ADC_GetConversion `(us ~T0 @X0 1 ef1`E2476 ]
-"118
-[; ;mcc_generated_files/adc.c: 118: {
-{
-[e :U _ADC_GetConversion ]
-"117
-[; ;mcc_generated_files/adc.c: 117: adc_result_t ADC_GetConversion(adc_channel_t channel)
-[v _channel `E2476 ~T0 @X0 1 r1 ]
-"118
-[; ;mcc_generated_files/adc.c: 118: {
-[f ]
-"120
-[; ;mcc_generated_files/adc.c: 120:     ADCON0bits.CHS = channel;
-[e = . . _ADCON0bits 1 2 -> _channel `uc ]
-"123
-[; ;mcc_generated_files/adc.c: 123:     ADCON0bits.ADON = 1;
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-"126
-[; ;mcc_generated_files/adc.c: 126:     _delay((unsigned long)((5)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"129
-[; ;mcc_generated_files/adc.c: 129:     ADCON0bits.GO_nDONE = 1;
-[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
-"132
-[; ;mcc_generated_files/adc.c: 132:     while (ADCON0bits.GO_nDONE)
-[e $U 361  ]
-[e :U 362 ]
-"133
-[; ;mcc_generated_files/adc.c: 133:     {
-{
-"134
-[; ;mcc_generated_files/adc.c: 134:     }
-}
+[e $U 362  ]
+"65
+[; ;mcc_generated_files/interrupt_manager.c: 65:         else
 [e :U 361 ]
-"132
-[; ;mcc_generated_files/adc.c: 132:     while (ADCON0bits.GO_nDONE)
-[e $ != -> . . _ADCON0bits 0 1 `i -> 0 `i 362  ]
+"66
+[; ;mcc_generated_files/interrupt_manager.c: 66:         {
+{
+"68
+[; ;mcc_generated_files/interrupt_manager.c: 68:         }
+}
+[e :U 362 ]
+[e :U 360 ]
+"69
+[; ;mcc_generated_files/interrupt_manager.c: 69:     }
+}
+[e $U 363  ]
+"70
+[; ;mcc_generated_files/interrupt_manager.c: 70:     else
+[e :U 358 ]
+"71
+[; ;mcc_generated_files/interrupt_manager.c: 71:     {
+{
+"73
+[; ;mcc_generated_files/interrupt_manager.c: 73:     }
+}
 [e :U 363 ]
-"137
-[; ;mcc_generated_files/adc.c: 137:     return ((adc_result_t)((ADRESH << 8) + ADRESL));
-[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
-[e $UE 360  ]
-"138
-[; ;mcc_generated_files/adc.c: 138: }
-[e :UE 360 ]
-}
-"140
-[; ;mcc_generated_files/adc.c: 140: void ADC_TemperatureAcquisitionDelay(void)
-[v _ADC_TemperatureAcquisitionDelay `(v ~T0 @X0 1 ef ]
-"141
-[; ;mcc_generated_files/adc.c: 141: {
-{
-[e :U _ADC_TemperatureAcquisitionDelay ]
-[f ]
-"142
-[; ;mcc_generated_files/adc.c: 142:     _delay((unsigned long)((200)*(32000000/4000000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
-"143
-[; ;mcc_generated_files/adc.c: 143: }
-[e :UE 364 ]
-}
-"145
-[; ;mcc_generated_files/adc.c: 145: void ADC_ISR(void)
-[v _ADC_ISR `(v ~T0 @X0 1 ef ]
-"146
-[; ;mcc_generated_files/adc.c: 146: {
-{
-[e :U _ADC_ISR ]
-[f ]
-"148
-[; ;mcc_generated_files/adc.c: 148:     PIR1bits.ADIF = 0;
-[e = . . _PIR1bits 0 6 -> -> 0 `i `uc ]
-"150
-[; ;mcc_generated_files/adc.c: 150:  if(ADC_InterruptHandler)
-[e $ ! != _ADC_InterruptHandler -> -> 0 `i `*F2512 366  ]
-"151
-[; ;mcc_generated_files/adc.c: 151:     {
-{
-"152
-[; ;mcc_generated_files/adc.c: 152:         ADC_InterruptHandler();
-[e ( *U _ADC_InterruptHandler ..  ]
-"153
-[; ;mcc_generated_files/adc.c: 153:     }
-}
-[e :U 366 ]
-"154
-[; ;mcc_generated_files/adc.c: 154: }
-[e :UE 365 ]
-}
-"156
-[; ;mcc_generated_files/adc.c: 156: void ADC_SetInterruptHandler(void (* InterruptHandler)(void)){
-[v _ADC_SetInterruptHandler `(v ~T0 @X0 1 ef1`*F2514 ]
-{
-[e :U _ADC_SetInterruptHandler ]
-[v _InterruptHandler `*F2516 ~T0 @X0 1 r1 ]
-[f ]
-"157
-[; ;mcc_generated_files/adc.c: 157:     ADC_InterruptHandler = InterruptHandler;
-[e = _ADC_InterruptHandler _InterruptHandler ]
-"158
-[; ;mcc_generated_files/adc.c: 158: }
-[e :UE 367 ]
-}
-"160
-[; ;mcc_generated_files/adc.c: 160: void ADC_DefaultInterruptHandler(void){
-[v _ADC_DefaultInterruptHandler `(v ~T0 @X0 1 ef ]
-{
-[e :U _ADC_DefaultInterruptHandler ]
-[f ]
-"163
-[; ;mcc_generated_files/adc.c: 163: }
-[e :UE 368 ]
+"74
+[; ;mcc_generated_files/interrupt_manager.c: 74: }
+[e :UE 357 ]
 }
