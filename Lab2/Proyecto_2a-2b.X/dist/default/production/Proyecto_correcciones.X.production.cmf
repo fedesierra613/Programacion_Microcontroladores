@@ -1,0 +1,1789 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+idloc IDLOC 5 200000 200000 10 1
+init CODE 0 70 70 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 C 1
+$dist/default/production\Proyecto_correcciones.X.production.o
+cinit CODE 0 29DA 29DA 9A 1
+idloc IDLOC 5 200000 200000 10 1
+text0 CODE 0 F1E F1E 4E8 1
+text1 CODE 0 2162 2162 270 1
+text2 CODE 0 23D2 23D2 142 1
+text3 CODE 0 2D52 2D52 56 1
+text4 CODE 0 2C80 2C80 70 1
+text5 CODE 0 2890 2890 AC 1
+text6 CODE 0 2514 2514 140 1
+text7 CODE 0 2E44 2E44 26 1
+text8 CODE 0 1BCE 1BCE 30C 1
+text9 CODE 0 2B04 2B04 84 1
+nvCOMRAM COMRAM 1 33 33 D 1
+text10 CODE 0 2E90 2E90 22 1
+text11 CODE 0 2F12 2F12 1E 1
+text12 CODE 0 2EB2 2EB2 20 1
+text13 CODE 0 2F30 2F30 1C 1
+text14 CODE 0 2A74 2A74 90 1
+text15 CODE 0 2F96 2F96 16 1
+text16 CODE 0 3024 3024 4 1
+text17 CODE 0 2C0A 2C0A 76 1
+text18 CODE 0 2FDC 2FDC A 1
+text19 CODE 0 2FE6 2FE6 A 1
+text20 CODE 0 2FF0 2FF0 A 1
+text21 CODE 0 2FFA 2FFA A 1
+text22 CODE 0 3004 3004 A 1
+text23 CODE 0 2CF0 2CF0 62 1
+text24 CODE 0 300E 300E A 1
+text25 CODE 0 2E16 2E16 2E 1
+text26 CODE 0 2FAC 2FAC 12 1
+text27 CODE 0 293C 293C 9E 1
+text28 CODE 0 27DE 27DE B2 1
+text29 CODE 0 2DE2 2DE2 34 1
+text30 CODE 0 1406 1406 44C 1
+text31 CODE 0 2654 2654 D0 1
+text32 CODE 0 1852 1852 37C 1
+text33 CODE 0 2724 2724 BA 1
+text34 CODE 0 1EDA 1EDA 288 1
+text36 CODE 0 2B88 2B88 82 1
+text37 CODE 0 2FBE 2FBE 12 1
+text38 CODE 0 3018 3018 6 1
+text39 CODE 0 3028 3028 2 1
+text40 CODE 0 301E 301E 6 1
+text41 CODE 0 2ED2 2ED2 20 1
+text42 CODE 0 2DA8 2DA8 3A 1
+text43 CODE 0 2E6A 2E6A 26 1
+text44 CODE 0 2EF2 2EF2 20 1
+text45 CODE 0 302A 302A 2 1
+text46 CODE 0 2F4C 2F4C 1A 1
+idataCOMRAM CODE 0 2FD0 2FD0 C 1
+cstackCOMRAM COMRAM 1 1 1 32 1
+cstackBANK1 BANK1 1 100 100 D7 1
+temp COMRAM 1 54 54 1 1
+bssBANK0 BANK0 1 60 60 70 1
+bssBANK1 BANK1 1 1EF 1EF 9 1
+bssBANK2 BANK2 1 200 200 20 1
+intcode CODE 0 8 8 68 1
+smallconst SMALLCONST 0 F00 F00 1E 1
+idataBANK0 CODE 0 2F66 2F66 18 1
+idataBANK1 CODE 0 2F7E 2F7E 18 1
+dataBANK0 BANK0 1 D0 D0 18 1
+dataBANK1 BANK1 1 1D7 1D7 18 1
+dataCOMRAM COMRAM 1 40 40 C 1
+bssCOMRAM COMRAM 1 4C 4C 8 1
+config CONFIG 4 300000 300000 C 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM E8-FF 1
+RAM 1F8-1FF 1
+RAM 220-E87 1
+SFR E8D-FFF 1
+BANK0 E8-FF 1
+BANK1 1F8-1FF 1
+BANK2 220-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-7 1
+CONST 74-EFF 1
+CONST 302C-FFFF 1
+STACK 220-E87 1
+SMALLCONST 302C-FFFF 1
+CODE 4-7 1
+CODE 74-EFF 1
+CODE 302C-FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-E87 1
+BIGRAM 55-5F 1
+BIGRAM E8-FF 1
+BIGRAM 1F8-1FF 1
+BIGRAM 220-E87 1
+COMRAM 55-5F 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 302C-FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Proyecto_correcciones.X.production.o
+8 intcode CODE >18555:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+8 intcode CODE >58:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+1A intcode CODE >61:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+1E intcode CODE >63:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+26 intcode CODE >65:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+36 intcode CODE >67:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+3C intcode CODE >69:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+52 intcode CODE >71:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+58 intcode CODE >73:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+5C intcode CODE >78:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+5C intcode CODE >84:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+2F4C text46 CODE >25:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+2F4C text46 CODE >26:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+2F60 text46 CODE >27:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+2F64 text46 CODE >28:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+302A text45 CODE >311:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+302A text45 CODE >314:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2EF2 text44 CODE >298:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2EF2 text44 CODE >301:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2EF4 text44 CODE >303:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2EFC text44 CODE >304:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2E6A text43 CODE >197:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E6A text43 CODE >201:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E70 text43 CODE >203:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E7E text43 CODE >204:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E84 text43 CODE >206:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E88 text43 CODE >208:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E8A text43 CODE >209:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E8C text43 CODE >210:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E8C text43 CODE >212:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E8E text43 CODE >214:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DA8 text42 CODE >151:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DA8 text42 CODE >155:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DAE text42 CODE >159:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DBA text42 CODE >161:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DCC text42 CODE >162:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DD2 text42 CODE >164:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DD6 text42 CODE >166:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DDA text42 CODE >167:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DDC text42 CODE >168:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DDE text42 CODE >170:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DE0 text42 CODE >171:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2ED2 text41 CODE >240:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2ED2 text41 CODE >242:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2EE4 text41 CODE >243:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2EEA text41 CODE >245:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2EEE text41 CODE >247:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2EF0 text41 CODE >248:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+301E text40 CODE >260:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+301E text40 CODE >261:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+3022 text40 CODE >262:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+3028 text39 CODE >250:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+3018 text38 CODE >252:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+3018 text38 CODE >255:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+301A text38 CODE >256:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+301C text38 CODE >258:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FBE text37 CODE >19:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+2FBE text37 CODE >20:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+2FC2 text37 CODE >21:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+2FCA text37 CODE >22:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+2FCE text37 CODE >23:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+2B88 text36 CODE >216:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2B88 text36 CODE >219:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2B94 text36 CODE >221:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2B98 text36 CODE >222:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2BA4 text36 CODE >223:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2BBA text36 CODE >226:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2BBE text36 CODE >227:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2BCA text36 CODE >228:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2BE0 text36 CODE >231:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2BEE text36 CODE >232:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C04 text36 CODE >234:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C08 text36 CODE >238:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+1EDA text34 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1EDA text34 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1EE0 text34 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1EE6 text34 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1EE8 text34 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1EEA text34 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1EF0 text34 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1EF6 text34 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F06 text34 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F08 text34 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F0A text34 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F1A text34 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F20 text34 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F26 text34 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F28 text34 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F2A text34 CODE >56:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F30 text34 CODE >58:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F36 text34 CODE >60:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F46 text34 CODE >63:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F48 text34 CODE >65:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F4A text34 CODE >69:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F5A text34 CODE >75:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F66 text34 CODE >76:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F76 text34 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F7E text34 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F82 text34 CODE >79:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F94 text34 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1F9A text34 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1FAC text34 CODE >89:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1FC6 text34 CODE >92:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1FD6 text34 CODE >93:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1FE6 text34 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1FF6 text34 CODE >96:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1FFA text34 CODE >97:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+1FFC text34 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2002 text34 CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+200C text34 CODE >102:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2016 text34 CODE >103:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2018 text34 CODE >104:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+201A text34 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2024 text34 CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2038 text34 CODE >115:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+203A text34 CODE >116:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+204A text34 CODE >118:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+204C text34 CODE >97:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+204C text34 CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2052 text34 CODE >122:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+205E text34 CODE >123:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2062 text34 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+206C text34 CODE >129:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+206E text34 CODE >130:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2070 text34 CODE >132:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+207A text34 CODE >133:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2080 text34 CODE >127:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2084 text34 CODE >139:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2088 text34 CODE >140:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+208C text34 CODE >141:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20B0 text34 CODE >142:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20B4 text34 CODE >143:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20B6 text34 CODE >144:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20B6 text34 CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20BA text34 CODE >149:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20BA text34 CODE >150:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20C0 text34 CODE >151:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20CC text34 CODE >152:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20D0 text34 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20FA text34 CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+20FE text34 CODE >159:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+210C text34 CODE >160:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2112 text34 CODE >161:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2122 text34 CODE >165:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2130 text34 CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2138 text34 CODE >167:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2148 text34 CODE >169:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+214C text34 CODE >173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2150 text34 CODE >175:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2154 text34 CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2156 text34 CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2158 text34 CODE >180:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+215A text34 CODE >182:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+2724 text33 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2724 text33 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2730 text33 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2742 text33 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2768 text33 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+276A text33 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+277A text33 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+277E text33 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+2782 text33 CODE >54:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+278C text33 CODE >57:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+279C text33 CODE >60:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+27A4 text33 CODE >63:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+27AE text33 CODE >64:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+27B0 text33 CODE >62:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+27B6 text33 CODE >67:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+27BC text33 CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+27CC text33 CODE >69:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+27DC text33 CODE >70:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+1852 text32 CODE >72:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1852 text32 CODE >73:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1856 text32 CODE >74:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+185E text32 CODE >75:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+189A text32 CODE >77:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+18A2 text32 CODE >78:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+18DE text32 CODE >80:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+18E6 text32 CODE >81:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1922 text32 CODE >83:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+192A text32 CODE >84:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1966 text32 CODE >86:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+196E text32 CODE >87:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+19AA text32 CODE >89:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+19B2 text32 CODE >90:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+19EE text32 CODE >92:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+19F6 text32 CODE >93:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1A32 text32 CODE >95:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1A3A text32 CODE >96:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1A76 text32 CODE >98:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1A7E text32 CODE >99:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1ABA text32 CODE >101:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1AC2 text32 CODE >102:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1AFE text32 CODE >104:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1B06 text32 CODE >105:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1B42 text32 CODE >107:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1B4A text32 CODE >108:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1B86 text32 CODE >110:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1B8E text32 CODE >111:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1BCA text32 CODE >113:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1BCC text32 CODE >114:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2654 text31 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2654 text31 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2678 text31 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2688 text31 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+26AC text31 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+26BC text31 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+26C0 text31 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+26D2 text31 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+26D6 text31 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+26E8 text31 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+26F8 text31 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2708 text31 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+2722 text31 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+1406 text30 CODE >27:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1406 text30 CODE >28:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+140A text30 CODE >29:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+145A text30 CODE >30:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+145E text30 CODE >32:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+14AE text30 CODE >33:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+14B2 text30 CODE >35:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1502 text30 CODE >36:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1506 text30 CODE >38:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1556 text30 CODE >39:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+155A text30 CODE >41:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+15AA text30 CODE >42:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+15AE text30 CODE >44:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+15FE text30 CODE >45:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1602 text30 CODE >47:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1652 text30 CODE >48:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1656 text30 CODE >50:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+16A6 text30 CODE >51:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+16AA text30 CODE >53:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+16FA text30 CODE >54:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+16FE text30 CODE >56:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+174E text30 CODE >57:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1752 text30 CODE >59:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+17A2 text30 CODE >60:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+17A6 text30 CODE >62:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+17F6 text30 CODE >63:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+17FA text30 CODE >65:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+184A text30 CODE >66:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+184E text30 CODE >67:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+184E text30 CODE >68:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+1850 text30 CODE >69:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2DE2 text29 CODE >173:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DE4 text29 CODE >175:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DEA text29 CODE >179:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DF0 text29 CODE >181:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DF4 text29 CODE >182:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DF6 text29 CODE >183:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DF6 text29 CODE >185:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2DF8 text29 CODE >186:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E06 text29 CODE >187:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E0C text29 CODE >189:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E10 text29 CODE >191:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E12 text29 CODE >193:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2E14 text29 CODE >194:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+27DE text28 CODE >7:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+27DE text28 CODE >9:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+27F2 text28 CODE >10:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2802 text28 CODE >11:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2812 text28 CODE >12:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2816 text28 CODE >14:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2828 text28 CODE >15:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2856 text28 CODE >16:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2864 text28 CODE >18:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2878 text28 CODE >19:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+2888 text28 CODE >20:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+288C text28 CODE >22:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+288E text28 CODE >23:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\Config_Usart.c
+293C text27 CODE >79:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+293E text27 CODE >81:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2942 text27 CODE >83:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2964 text27 CODE >84:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+297E text27 CODE >85:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2982 text27 CODE >86:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+29A4 text27 CODE >87:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+29D6 text27 CODE >88:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+29D8 text27 CODE >92:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2FAC text26 CODE >99:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2FAE text26 CODE >101:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2FB2 text26 CODE >102:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2FB8 text26 CODE >103:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2FBA text26 CODE >104:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2FBC text26 CODE >105:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2E16 text25 CODE >120:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2E16 text25 CODE >122:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2E1E text25 CODE >123:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2E20 text25 CODE >125:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2E32 text25 CODE >123:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+300E text24 CODE >307:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+300E text24 CODE >308:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+3016 text24 CODE >309:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2CF0 text23 CODE >63:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2CF0 text23 CODE >67:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2CF4 text23 CODE >69:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2CF8 text23 CODE >71:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2CFC text23 CODE >73:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D00 text23 CODE >75:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D04 text23 CODE >77:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D08 text23 CODE >79:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D0C text23 CODE >81:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D12 text23 CODE >83:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D16 text23 CODE >85:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D1A text23 CODE >87:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D1E text23 CODE >89:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D22 text23 CODE >91:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D26 text23 CODE >93:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D2A text23 CODE >95:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D2E text23 CODE >97:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D32 text23 CODE >99:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D36 text23 CODE >101:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D3A text23 CODE >103:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D3E text23 CODE >106:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D42 text23 CODE >108:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D44 text23 CODE >110:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+2D50 text23 CODE >112:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/adcc.c
+3004 text22 CODE >272:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+3004 text22 CODE >273:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+300C text22 CODE >274:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FFA text21 CODE >264:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FFA text21 CODE >265:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+3002 text21 CODE >266:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FF0 text20 CODE >268:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FF0 text20 CODE >269:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FF8 text20 CODE >270:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FE6 text19 CODE >280:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FE6 text19 CODE >281:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FEE text19 CODE >282:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FDC text18 CODE >276:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FDC text18 CODE >277:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2FE4 text18 CODE >278:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C0A text17 CODE >88:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C0A text17 CODE >91:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C0C text17 CODE >92:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C18 text17 CODE >93:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C1C text17 CODE >94:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C28 text17 CODE >98:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C2C text17 CODE >101:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C30 text17 CODE >104:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C34 text17 CODE >107:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C38 text17 CODE >110:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C3C text17 CODE >113:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C48 text17 CODE >114:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C54 text17 CODE >115:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C60 text17 CODE >117:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C64 text17 CODE >120:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C68 text17 CODE >121:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C6C text17 CODE >122:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C70 text17 CODE >124:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C74 text17 CODE >125:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C78 text17 CODE >126:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C7C text17 CODE >129:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+2C7E text17 CODE >130:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/eusart1.c
+3024 text16 CODE >52:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+3024 text16 CODE >55:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+3026 text16 CODE >56:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/interrupt_manager.c
+2F96 text15 CODE >62:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F96 text15 CODE >65:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F9A text15 CODE >67:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F9E text15 CODE >69:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2FA2 text15 CODE >71:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2FA6 text15 CODE >73:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2FAA text15 CODE >74:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2A74 text14 CODE >55:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A74 text14 CODE >60:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A78 text14 CODE >61:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A7C text14 CODE >62:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A80 text14 CODE >63:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A84 text14 CODE >64:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A88 text14 CODE >69:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A8C text14 CODE >70:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A8E text14 CODE >71:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A92 text14 CODE >72:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A96 text14 CODE >73:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A98 text14 CODE >78:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2A9C text14 CODE >79:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AA0 text14 CODE >80:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AA2 text14 CODE >81:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AA6 text14 CODE >82:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AA8 text14 CODE >87:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AAC text14 CODE >88:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AB0 text14 CODE >89:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AB4 text14 CODE >90:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AB8 text14 CODE >91:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2ABC text14 CODE >96:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AC0 text14 CODE >97:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AC4 text14 CODE >98:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AC8 text14 CODE >99:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2ACC text14 CODE >100:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AD0 text14 CODE >105:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AD2 text14 CODE >106:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AD4 text14 CODE >107:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AD6 text14 CODE >108:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AD8 text14 CODE >109:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2ADC text14 CODE >114:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2ADE text14 CODE >115:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AE0 text14 CODE >116:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AE2 text14 CODE >117:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AE4 text14 CODE >118:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AE8 text14 CODE >127:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AEE text14 CODE >128:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AF2 text14 CODE >129:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AF6 text14 CODE >130:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AFA text14 CODE >131:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2AFE text14 CODE >132:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2B02 text14 CODE >133:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/pin_manager.c
+2F30 text13 CODE >76:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F30 text13 CODE >79:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F36 text13 CODE >81:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F3A text13 CODE >83:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F3E text13 CODE >85:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F42 text13 CODE >87:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F46 text13 CODE >89:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2F4A text13 CODE >90:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2EB2 text12 CODE >62:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2EB2 text12 CODE >65:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2EB6 text12 CODE >66:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2EBA text12 CODE >68:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2EBE text12 CODE >70:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2EC2 text12 CODE >71:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2EC6 text12 CODE >72:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2ECA text12 CODE >73:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2ECC text12 CODE >74:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2ECE text12 CODE >75:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2ED0 text12 CODE >76:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/spi1.c
+2F12 text11 CODE >62:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/tmr2.c
+2F12 text11 CODE >67:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/tmr2.c
+2F16 text11 CODE >70:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/tmr2.c
+2F1A text11 CODE >73:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/tmr2.c
+2F1E text11 CODE >76:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/tmr2.c
+2F22 text11 CODE >79:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/tmr2.c
+2F26 text11 CODE >82:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/tmr2.c
+2F2A text11 CODE >85:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/tmr2.c
+2F2E text11 CODE >86:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/tmr2.c
+2E90 text10 CODE >50:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2E90 text10 CODE >52:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2E94 text10 CODE >53:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2E98 text10 CODE >54:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2E9C text10 CODE >55:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2EA0 text10 CODE >56:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2EA4 text10 CODE >57:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2EA8 text10 CODE >58:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2EAC text10 CODE >59:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2EB0 text10 CODE >60:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\mcc_generated_files/mcc.c
+2B04 text9 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B04 text9 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B08 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B0C text9 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B14 text9 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B18 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B1C text9 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B24 text9 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B28 text9 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B30 text9 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B38 text9 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B3C text9 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B3E text9 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B44 text9 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B46 text9 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B4A text9 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B50 text9 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B5C text9 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B64 text9 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B66 text9 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B6C text9 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B70 text9 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B76 text9 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B7E text9 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+2B86 text9 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+1BCE text8 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BCE text8 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BD4 text8 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BDA text8 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BDC text8 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BDE text8 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BE4 text8 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BEA text8 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BFA text8 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BFC text8 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1BFE text8 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C0E text8 CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C14 text8 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C1A text8 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C1C text8 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C22 text8 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C24 text8 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C26 text8 CODE >55:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C2C text8 CODE >57:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C32 text8 CODE >59:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C42 text8 CODE >62:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C44 text8 CODE >64:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C46 text8 CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C56 text8 CODE >75:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C5E text8 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C62 text8 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C66 text8 CODE >81:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C6A text8 CODE >82:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C6E text8 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C72 text8 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C76 text8 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C7A text8 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C7E text8 CODE >87:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C82 text8 CODE >88:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C86 text8 CODE >89:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C8A text8 CODE >90:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C8E text8 CODE >91:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C92 text8 CODE >92:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C96 text8 CODE >93:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C9A text8 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1C9E text8 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CA2 text8 CODE >98:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CA6 text8 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CC4 text8 CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CD8 text8 CODE >102:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CE8 text8 CODE >103:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CEC text8 CODE >104:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CEE text8 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CEE text8 CODE >109:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CF2 text8 CODE >110:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CFA text8 CODE >111:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1CFC text8 CODE >113:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D00 text8 CODE >115:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D02 text8 CODE >116:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D04 text8 CODE >118:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D0E text8 CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D10 text8 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D10 text8 CODE >120:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D18 text8 CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D1C text8 CODE >127:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D22 text8 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D34 text8 CODE >132:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D44 text8 CODE >134:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D48 text8 CODE >135:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D4C text8 CODE >136:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D54 text8 CODE >137:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D56 text8 CODE >139:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D5A text8 CODE >141:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D5C text8 CODE >142:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D5E text8 CODE >144:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D68 text8 CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D6C text8 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1D88 text8 CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1DB8 text8 CODE >155:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1DBC text8 CODE >156:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1DBE text8 CODE >157:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1DC4 text8 CODE >158:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1DD2 text8 CODE >162:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1DE2 text8 CODE >163:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1DE2 text8 CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1DF4 text8 CODE >167:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E06 text8 CODE >172:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E10 text8 CODE >173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E12 text8 CODE >174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E14 text8 CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E18 text8 CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E1C text8 CODE >180:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E20 text8 CODE >182:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E24 text8 CODE >183:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E26 text8 CODE >171:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E2A text8 CODE >192:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E2E text8 CODE >193:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E32 text8 CODE >194:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E3E text8 CODE >195:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E42 text8 CODE >196:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E44 text8 CODE >197:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E44 text8 CODE >198:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E48 text8 CODE >202:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E48 text8 CODE >203:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E4E text8 CODE >204:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E5A text8 CODE >205:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E5E text8 CODE >206:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E88 text8 CODE >207:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E8C text8 CODE >208:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E8E text8 CODE >215:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1E9A text8 CODE >216:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EAA text8 CODE >218:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EB0 text8 CODE >219:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EB4 text8 CODE >225:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EB8 text8 CODE >226:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EBA text8 CODE >227:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EBC text8 CODE >230:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EBE text8 CODE >232:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EC4 text8 CODE >233:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EC6 text8 CODE >234:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1EC8 text8 CODE >236:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+1ED8 text8 CODE >237:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+2E44 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2E44 text7 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2E50 text7 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2E58 text7 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2E60 text7 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2E68 text7 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+2514 text6 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2516 text6 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+251E text6 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2550 text6 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2552 text6 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2552 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2562 text6 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+256E text6 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2580 text6 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2584 text6 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2586 text6 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2588 text6 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2592 text6 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+25B8 text6 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+25BA text6 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+25C6 text6 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+25D0 text6 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+25D0 text6 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+25F6 text6 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+25F8 text6 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2602 text6 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+260C text6 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+260E text6 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2610 text6 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2614 text6 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2638 text6 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2640 text6 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2642 text6 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2652 text6 CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+2890 text5 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+2890 text5 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+2894 text5 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+2898 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28A8 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28AC text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28B0 text5 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28C0 text5 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28CC text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28D0 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28D2 text5 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28DC text5 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28DE text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28E2 text5 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+28F6 text5 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+2906 text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+2910 text5 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+2914 text5 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+291A text5 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+292A text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+293A text5 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\almod.c
+2C80 text4 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2C80 text4 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2C84 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2C88 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2C90 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2C94 text4 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2C98 text4 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CA0 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CA8 text4 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CAC text4 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CAE text4 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CB4 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CB6 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CBA text4 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CC6 text4 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CCE text4 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CD4 text4 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CD8 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CDE text4 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CE6 text4 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2CEE text4 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+2D52 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+2D52 text3 CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+2D62 text3 CODE >121:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+2D66 text3 CODE >122:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+2D76 text3 CODE >123:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+2D80 text3 CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+2D8A text3 CODE >125:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+2D96 text3 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+2DA6 text3 CODE >129:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+23D2 text2 CODE >61:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+23D2 text2 CODE >64:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+23E6 text2 CODE >65:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+23F6 text2 CODE >66:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+2406 text2 CODE >68:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+24B0 text2 CODE >69:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+24D0 text2 CODE >71:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+24F0 text2 CODE >72:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+2512 text2 CODE >73:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+2162 text1 CODE >121:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+2162 text1 CODE >123:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+216A text1 CODE >124:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+21AA text1 CODE >125:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+2202 text1 CODE >126:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+225A text1 CODE >127:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+22B2 text1 CODE >128:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+230A text1 CODE >129:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+2362 text1 CODE >130:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+23BA text1 CODE >131:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+23D0 text1 CODE >132:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\funciones.c
+F1E text0 CODE >35:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F1E text0 CODE >37:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F22 text0 CODE >39:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F24 text0 CODE >43:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F26 text0 CODE >57:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F2C text0 CODE >58:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F30 text0 CODE >63:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F38 text0 CODE >64:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F3E text0 CODE >69:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F42 text0 CODE >70:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F46 text0 CODE >74:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F4A text0 CODE >75:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F4E text0 CODE >76:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F52 text0 CODE >77:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F56 text0 CODE >80:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F5A text0 CODE >81:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F5E text0 CODE >88:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F60 text0 CODE >90:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F62 text0 CODE >91:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F64 text0 CODE >96:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F70 text0 CODE >98:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F7C text0 CODE >100:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F82 text0 CODE >101:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+F9A text0 CODE >114:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+FAC text0 CODE >115:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+FBE text0 CODE >116:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+FCA text0 CODE >117:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+FDC text0 CODE >118:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+FEE text0 CODE >119:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+FFA text0 CODE >120:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+100C text0 CODE >121:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1050 text0 CODE >124:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1054 text0 CODE >125:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1058 text0 CODE >129:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1060 text0 CODE >130:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1064 text0 CODE >131:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1068 text0 CODE >132:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1076 text0 CODE >135:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+107C text0 CODE >136:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1080 text0 CODE >137:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1090 text0 CODE >138:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1098 text0 CODE >139:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+10A4 text0 CODE >140:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+110C text0 CODE >141:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1128 text0 CODE >142:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+112E text0 CODE >143:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1132 text0 CODE >144:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1132 text0 CODE >146:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1138 text0 CODE >147:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1150 text0 CODE >148:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1154 text0 CODE >149:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1158 text0 CODE >150:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+115C text0 CODE >153:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1162 text0 CODE >154:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+117E text0 CODE >155:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1182 text0 CODE >156:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1186 text0 CODE >159:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+118C text0 CODE >160:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1190 text0 CODE >161:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+11A8 text0 CODE >163:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+11C4 text0 CODE >176:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+11D2 text0 CODE >178:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+11DE text0 CODE >179:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+11E2 text0 CODE >180:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+11E6 text0 CODE >181:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+11E8 text0 CODE >182:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+11FC text0 CODE >183:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1204 text0 CODE >184:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1206 text0 CODE >185:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+120E text0 CODE >186:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1210 text0 CODE >187:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1218 text0 CODE >188:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+121A text0 CODE >190:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1222 text0 CODE >191:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+123C text0 CODE >192:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1258 text0 CODE >193:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1272 text0 CODE >194:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+128E text0 CODE >195:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+12A8 text0 CODE >196:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+12C4 text0 CODE >197:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+12DE text0 CODE >199:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+12E6 text0 CODE >200:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1300 text0 CODE >201:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+131C text0 CODE >202:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1336 text0 CODE >203:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1352 text0 CODE >204:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+136C text0 CODE >205:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+1388 text0 CODE >206:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13A2 text0 CODE >207:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13A8 text0 CODE >208:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13B2 text0 CODE >209:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13BC text0 CODE >210:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13C6 text0 CODE >211:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13D0 text0 CODE >212:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13D6 text0 CODE >213:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13E0 text0 CODE >214:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13EA text0 CODE >215:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13F4 text0 CODE >216:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+13FE text0 CODE >217:C:\Users\MARIA FERNANDA\MPLABXProjects\Proyecto_correcciones.X\main.c
+29DA cinit CODE >8870:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29DA cinit CODE >8872:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29DA cinit CODE >8875:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29DA cinit CODE >8977:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29DC cinit CODE >8978:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29DE cinit CODE >8979:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29E0 cinit CODE >8980:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29E2 cinit CODE >8981:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29E4 cinit CODE >8982:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29E6 cinit CODE >8983:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29EA cinit CODE >8984:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29EE cinit CODE >8985:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29EE cinit CODE >8986:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29F0 cinit CODE >8987:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29F4 cinit CODE >8988:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29F6 cinit CODE >8989:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29F8 cinit CODE >8990:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29FA cinit CODE >8994:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29FC cinit CODE >8995:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+29FE cinit CODE >8996:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A00 cinit CODE >8997:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A02 cinit CODE >8998:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A04 cinit CODE >8999:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A06 cinit CODE >9000:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A0A cinit CODE >9001:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A0E cinit CODE >9002:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A0E cinit CODE >9003:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A10 cinit CODE >9004:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A14 cinit CODE >9005:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A16 cinit CODE >9006:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A18 cinit CODE >9007:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A1A cinit CODE >9011:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A1C cinit CODE >9012:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A1E cinit CODE >9013:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A20 cinit CODE >9014:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A22 cinit CODE >9015:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A24 cinit CODE >9016:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A26 cinit CODE >9017:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A2A cinit CODE >9018:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A2E cinit CODE >9019:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A2E cinit CODE >9020:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A30 cinit CODE >9021:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A34 cinit CODE >9022:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A36 cinit CODE >9023:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A38 cinit CODE >9024:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A3A cinit CODE >9028:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A3E cinit CODE >9029:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A40 cinit CODE >9030:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A40 cinit CODE >9031:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A42 cinit CODE >9032:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A44 cinit CODE >9033:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A46 cinit CODE >9036:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A4A cinit CODE >9037:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A4C cinit CODE >9038:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A4C cinit CODE >9039:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A4E cinit CODE >9040:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A50 cinit CODE >9041:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A52 cinit CODE >9044:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A56 cinit CODE >9045:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A58 cinit CODE >9046:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A58 cinit CODE >9047:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A5A cinit CODE >9048:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A5C cinit CODE >9049:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A5E cinit CODE >9052:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A62 cinit CODE >9053:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A64 cinit CODE >9054:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A64 cinit CODE >9055:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A66 cinit CODE >9056:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A68 cinit CODE >9057:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A6A cinit CODE >9063:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A6A cinit CODE >9065:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A6C cinit CODE >9066:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A6E cinit CODE >9067:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+2A70 cinit CODE >9068:C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_B F05 0 SMALLCONST 0 smallconst dist/default/production\Proyecto_correcciones.X.production.o
+_k 4C 0 COMRAM 1 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_x B8 0 BANK0 1 bssBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+___awdiv@counter B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Proyecto_correcciones.X.production.o
+__Hspace_0 302C 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hspace_1 220 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hspace_4 60000C 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_ConfigPostcaler 1852 0 CODE 0 text30 dist/default/production\Proyecto_correcciones.X.production.o
+EUSART1_SetErrorHandler@interruptHandler 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Proyecto_correcciones.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+_EUSART1_Initialize 2C0A 0 CODE 0 text17 dist/default/production\Proyecto_correcciones.X.production.o
+ConfigCont@Dato 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+ConfigCont@Post 2E 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_INTERRUPT_Initialize 3028 0 CODE 0 text16 dist/default/production\Proyecto_correcciones.X.production.o
+_PMD_Initialize 2F30 0 CODE 0 text13 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_DefaultErrorHandler 3024 0 CODE 0 text40 dist/default/production\Proyecto_correcciones.X.production.o
+main@a 16A 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@i 173 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@w 118 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+Re_Vector@BandDato A 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Lsmallconst F00 0 SMALLCONST 0 smallconst dist/default/production\Proyecto_correcciones.X.production.o
+_LATA F83 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_LATB F84 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_LATC F85 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_LATD F86 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_LATE F87 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PMD0 EE1 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PMD1 EE2 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PMD2 EE3 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PMD3 EE4 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PMD4 EE5 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PMD5 EE6 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_T2PR FBC 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_WPUA F10 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_WPUB F18 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_WPUC F20 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_WPUD F25 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_WPUE F2D 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+_main F1E 0 CODE 0 text0 dist/default/production\Proyecto_correcciones.X.production.o
+btemp 54 0 COMRAM 1 temp dist/default/production\Proyecto_correcciones.X.production.o
+start 70 0 CODE 0 init C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+__size_of___almod 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of___fladd 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of___fldiv 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of___fltol 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_SPI1_WriteBlock 2E44 0 CODE 0 text25 dist/default/production\Proyecto_correcciones.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_SPI1_Initialize 2ED2 0 CODE 0 text12 dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_Receive_ISR 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+?___lmul 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+?___wmul 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_SetTxInterruptHandler 2FE6 0 CODE 0 text18 dist/default/production\Proyecto_correcciones.X.production.o
+inicializar_iir_2_ord@i 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+inicializar_iir_2_ord@w B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_filtrarFIR1 2514 0 CODE 0 text2 dist/default/production\Proyecto_correcciones.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@Vector_DAC 168 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__Hpowerup 70 0 CODE 0 powerup dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_spi1_configuration F05 0 SMALLCONST 0 smallconst dist/default/production\Proyecto_correcciones.X.production.o
+___almod@sign 10 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_ADCC_ISR 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___awmod@sign C 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_TMR2_Initialize 2F12 0 CODE 0 text11 dist/default/production\Proyecto_correcciones.X.production.o
+ttemp5 55 0 COMRAM 1 temp dist/default/production\Proyecto_correcciones.X.production.o
+ttemp6 58 0 COMRAM 1 temp dist/default/production\Proyecto_correcciones.X.production.o
+ttemp7 5C 0 COMRAM 1 temp dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_ADCC_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+inicializar_iir_2_ord@ir 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+inicializar_iir_2_ord@w2 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+SPI1_WriteBlock@block 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+intlevel0 0 0 CODE 0 text C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+intlevel1 0 0 CODE 0 text C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+intlevel2 0 0 CODE 0 text C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+intlevel3 0 0 CODE 0 text C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+__size_of_EUSART1_SetErrorHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ConfigPostcaler 1406 0 CODE 0 text30 dist/default/production\Proyecto_correcciones.X.production.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+main@AuxPost 15E 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@Auxcont 15F 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_ADCC_DefaultInterruptHandler 302C 0 CODE 0 text45 dist/default/production\Proyecto_correcciones.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Proyecto_correcciones.X.production.o
+wtemp8 55 0 COMRAM 1 temp dist/default/production\Proyecto_correcciones.X.production.o
+_ConfigCont 1852 0 CODE 0 text32 dist/default/production\Proyecto_correcciones.X.production.o
+_RC1STAbits F9D 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_PMD_Initialize 2F4C 0 CODE 0 text13 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_B F1D 0 SMALLCONST 0 smallconst dist/default/production\Proyecto_correcciones.X.production.o
+EUSART1_Write@txData 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___awdiv@sign C 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Proyecto_correcciones.X.production.o
+filtrarFIR1@in 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_RxDataHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__pidataCOMRAM 2FD0 0 CODE 0 idataCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_Receive_ISR 2B88 0 CODE 0 text36 dist/default/production\Proyecto_correcciones.X.production.o
+_SPI1_WriteBlock 2E16 0 CODE 0 text25 dist/default/production\Proyecto_correcciones.X.production.o
+___wmul@multiplicand 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_SPI1_Initialize 2EB2 0 CODE 0 text12 dist/default/production\Proyecto_correcciones.X.production.o
+_ADCON0 F60 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADCON1 F59 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADCON2 F5A 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADCON3 F5B 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADLTHH F6B 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADLTHL F6A 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADRESH F64 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADRESL F63 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADSTAT F65 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADUTHH F6D 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADUTHL F6C 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_spi1_configuration F01 0 SMALLCONST 0 smallconst dist/default/production\Proyecto_correcciones.X.production.o
+_ANSELA F11 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ANSELB F19 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ANSELC F21 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ANSELD F26 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ANSELE F2E 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___awdiv@dividend 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_INTERRUPT_InterruptManager 70 0 CODE 0 intcode dist/default/production\Proyecto_correcciones.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___flge 2724 0 CODE 0 text31 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___lmul 2DA8 0 CODE 0 text3 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___wmul 2E6A 0 CODE 0 text7 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_SetRxInterruptHandler 2FF0 0 CODE 0 text19 dist/default/production\Proyecto_correcciones.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Proyecto_correcciones.X.production.o
+main@V_P 154 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@den 10C 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@gan 148 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@num 100 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+_ADCC_ISR 2EF2 0 CODE 0 text44 dist/default/production\Proyecto_correcciones.X.production.o
+inicializar_iir_2_ord@den2 F 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+inicializar_iir_2_ord@num2 D 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fldiv@aexp 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fldiv@bexp 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fldiv@sign 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Proyecto_correcciones.X.production.o
+EUSART1_SetTxInterruptHandler@interruptHandler 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_ADC_flag 1F7 0 BANK1 1 bssBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_SPI1_ExchangeByte 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hintcodelo 70 0 CODE 0 intcodelo dist/default/production\Proyecto_correcciones.X.production.o
+SPI1_WriteBlock@data C 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+SPI1_WriteBlock@blockSize A 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___awdiv@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+main@Postcaler 16E 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___almod 293C 0 CODE 0 text5 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___awdiv 2B88 0 CODE 0 text9 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___awmod 2CF0 0 CODE 0 text4 dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_Interrupcion_Rx_Serial 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+EUSART1_SetFramingErrorHandler@interruptHandler 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___fladd 1EDA 0 CODE 0 text8 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___fldiv 2162 0 CODE 0 text34 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___fltol 27DE 0 CODE 0 text33 dist/default/production\Proyecto_correcciones.X.production.o
+Re_Vector@dsp 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_ADCC_ISR 2F12 0 CODE 0 text44 dist/default/production\Proyecto_correcciones.X.production.o
+_INLVLA F0D 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_INLVLB F15 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_INLVLC F1D 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_INLVLD F22 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_INLVLE F2A 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+inicializar_iir_2_ord@den 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+inicializar_iir_2_ord@gan 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+inicializar_iir_2_ord@num 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_ConfigCont 1BCE 0 CODE 0 text32 dist/default/production\Proyecto_correcciones.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fladd@a 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fladd@b 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fldiv@a B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fldiv@b 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+?_filtrarFIR1 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Lintcodelo 70 0 CODE 0 intcodelo dist/default/production\Proyecto_correcciones.X.production.o
+_PIN_MANAGER_Initialize 2A74 0 CODE 0 text14 dist/default/production\Proyecto_correcciones.X.production.o
+start_initialization 29DA 0 CODE 0 cinit dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1RxLastError 4E 0 COMRAM 1 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_ODCONA F0F 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ODCONB F17 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ODCONC F1F 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ODCOND F24 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ODCONE F2C 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_ConfigPostcaler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_OSCFRQ EDE 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Proyecto_correcciones.X.production.o
+_TRISCbits F8A 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_Serial_Rx_flag 1F6 0 BANK1 1 bssBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADSTPTH F69 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADSTPTL F68 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_RC1REG F99 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_RC1STA F9D 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_RC3PPS EFA 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_RC5PPS EFC 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_RC6PPS EFD 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___almod@dividend 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_SetTxInterruptHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_SYSTEM_Initialize 2EB2 0 CODE 0 text10 dist/default/production\Proyecto_correcciones.X.production.o
+_RX1PPS EB5 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+_T2CLKCON FBF 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_filtrarFIR1 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_TX1REG F9A 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_TX1STA F9E 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_SPI1_WriteBlock 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_SPI1_Initialize 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_DefaultFramingErrorHandler 3028 0 CODE 0 text39 dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_DefaultOverrunErrorHandler 3018 0 CODE 0 text38 dist/default/production\Proyecto_correcciones.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+__end_of_EUSART1_Receive_ISR 2C0A 0 CODE 0 text36 dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_Initialize 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+main@ADC_Vect 164 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_ADCC_Initialize 2D52 0 CODE 0 text23 dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_Write 2DE2 0 CODE 0 text29 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\Proyecto_correcciones.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Proyecto_correcciones.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\Proyecto_correcciones.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\Proyecto_correcciones.X.production.o
+__Hidloc 200010 0 IDLOC 5 idloc dist/default/production\Proyecto_correcciones.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Proyecto_correcciones.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+main@DAC_IN 156 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Proyecto_correcciones.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\Proyecto_correcciones.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_Transmit_ISR 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\Proyecto_correcciones.X.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\Proyecto_correcciones.X.production.o
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Proyecto_correcciones.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Proyecto_correcciones.X.production.o
+main@DatoRe 16F 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__smallconst F00 0 SMALLCONST 0 smallconst C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+_BAUD1CON F9F 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___xxtofl@arg 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___xxtofl@exp 16 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___xxtofl@val D 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+ConfigPostcaler@Post 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+main@F10648 1E3 0 BANK1 1 dataBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@F10650 1D7 0 BANK1 1 dataBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@F10654 40 0 COMRAM 1 dataCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+main@F10656 DC 0 BANK0 1 dataBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+main@F10660 D0 0 BANK0 1 dataBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\Proyecto_correcciones.X.production.o
+__Hconfig 30000C 0 CONFIG 4 config dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\Proyecto_correcciones.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Proyecto_correcciones.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\Proyecto_correcciones.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\Proyecto_correcciones.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\Proyecto_correcciones.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Proyecto_correcciones.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Proyecto_correcciones.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1TxBufferRemaining 3F 0 COMRAM 1 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_FramingErrorHandler 39 0 COMRAM 1 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_OverrunErrorHandler 37 0 COMRAM 1 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_Transmit_ISR 2E90 0 CODE 0 text43 dist/default/production\Proyecto_correcciones.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_INTERRUPT_Initialize 3024 0 CODE 0 text16 dist/default/production\Proyecto_correcciones.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Proyecto_correcciones.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\Proyecto_correcciones.X.production.o
+__Hinit 74 0 CODE 0 init dist/default/production\Proyecto_correcciones.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Proyecto_correcciones.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Proyecto_correcciones.X.production.o
+__Htemp 55 0 COMRAM 1 temp dist/default/production\Proyecto_correcciones.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\Proyecto_correcciones.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Proyecto_correcciones.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\Proyecto_correcciones.X.production.o
+__Linit 70 0 CODE 0 init dist/default/production\Proyecto_correcciones.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Proyecto_correcciones.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Proyecto_correcciones.X.production.o
+__Ltemp 54 0 COMRAM 1 temp dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\Proyecto_correcciones.X.production.o
+_SSP1CON1 F96 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_SSP1CON2 F97 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_SSP1STAT F95 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___flge 2654 0 CODE 0 text31 dist/default/production\Proyecto_correcciones.X.production.o
+___lmul 2D52 0 CODE 0 text3 dist/default/production\Proyecto_correcciones.X.production.o
+___wmul 2E44 0 CODE 0 text7 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_SPI1_ExchangeByte 2FBE 0 CODE 0 text26 dist/default/production\Proyecto_correcciones.X.production.o
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@Iniciar 15D 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+int$flags 54 0 COMRAM 1 temp dist/default/production\Proyecto_correcciones.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_RxDefaultInterruptHandler 3B 0 COMRAM 1 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Proyecto_correcciones.X.production.o
+__S0 302C 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__S1 220 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_ADCC_SetADIInterruptHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___almod@counter F 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_SetRxInterruptHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_DefaultErrorHandler 301E 0 CODE 0 text40 dist/default/production\Proyecto_correcciones.X.production.o
+__pnvCOMRAM 33 0 COMRAM 1 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_ADCC_Initialize 2CF0 0 CODE 0 text23 dist/default/production\Proyecto_correcciones.X.production.o
+ConfigCont@contador 2F 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_inicializar_iir_2_ord 23D2 0 CODE 0 text1 dist/default/production\Proyecto_correcciones.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Proyecto_correcciones.X.production.o
+_SYSTEM_Initialize 2E90 0 CODE 0 text10 dist/default/production\Proyecto_correcciones.X.production.o
+___xxtofl 2514 0 CODE 0 text6 dist/default/production\Proyecto_correcciones.X.production.o
+main@SALIDA 15A 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+filtrarFIR1@i 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+filtrarFIR1@y 29 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_ADCC_SetADIInterruptHandler 3018 0 CODE 0 text24 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_Re_Vector 2890 0 CODE 0 text28 dist/default/production\Proyecto_correcciones.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Proyecto_correcciones.X.production.o
+__Hramtop F00 0 RAM 0 ramtop dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_Re_Vector 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Proyecto_correcciones.X.production.o
+_ADCC_ADI_InterruptHandler 33 0 COMRAM 1 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of___xxtofl 2654 0 CODE 0 text6 dist/default/production\Proyecto_correcciones.X.production.o
+main@Contador 15C 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__pdataBANK0 D0 0 BANK0 1 dataBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__pdataBANK1 1D7 0 BANK1 1 dataBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__activetblptr 3 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Proyecto_correcciones.X.production.o
+__size_of___flge 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of___lmul 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__LbssBANK2 0 0 ABS 0 bssBANK2 dist/default/production\Proyecto_correcciones.X.production.o
+_inicializar_iir_2_ord 2162 0 CODE 0 text1 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext30 0 0 ABS 0 text30 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext31 0 0 ABS 0 text31 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext32 0 0 ABS 0 text32 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext33 0 0 ABS 0 text33 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext34 0 0 ABS 0 text34 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext36 0 0 ABS 0 text36 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext37 0 0 ABS 0 text37 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext38 0 0 ABS 0 text38 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext39 0 0 ABS 0 text39 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext40 0 0 ABS 0 text40 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext41 0 0 ABS 0 text41 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext42 0 0 ABS 0 text42 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext43 0 0 ABS 0 text43 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext44 0 0 ABS 0 text44 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext45 0 0 ABS 0 text45 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext46 0 0 ABS 0 text46 dist/default/production\Proyecto_correcciones.X.production.o
+__Htext47 0 0 ABS 0 text47 dist/default/production\Proyecto_correcciones.X.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_ConfigCont 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___awmod@counter B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PIE1bits EC3 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PIE3bits EC5 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_Write 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1RxHead 51 0 COMRAM 1 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1RxTail 50 0 COMRAM 1 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fladd@signs 27 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__ptext10 2E90 0 CODE 0 text10 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext11 2F12 0 CODE 0 text11 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext12 2EB2 0 CODE 0 text12 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext13 2F30 0 CODE 0 text13 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext14 2A74 0 CODE 0 text14 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext15 2F96 0 CODE 0 text15 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext16 3024 0 CODE 0 text16 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext17 2C0A 0 CODE 0 text17 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext18 2FDC 0 CODE 0 text18 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext19 2FE6 0 CODE 0 text19 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext20 2FF0 0 CODE 0 text20 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext21 2FFA 0 CODE 0 text21 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext22 3004 0 CODE 0 text22 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext23 2CF0 0 CODE 0 text23 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext24 300E 0 CODE 0 text24 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext25 2E16 0 CODE 0 text25 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext26 2FAC 0 CODE 0 text26 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext27 293C 0 CODE 0 text27 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext28 27DE 0 CODE 0 text28 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext29 2DE2 0 CODE 0 text29 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext30 1406 0 CODE 0 text30 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext31 2654 0 CODE 0 text31 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext32 1852 0 CODE 0 text32 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext33 2724 0 CODE 0 text33 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext34 1EDA 0 CODE 0 text34 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext36 2B88 0 CODE 0 text36 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext37 2FBE 0 CODE 0 text37 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext38 3018 0 CODE 0 text38 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext39 3028 0 CODE 0 text39 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext40 301E 0 CODE 0 text40 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext41 2ED2 0 CODE 0 text41 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext42 2DA8 0 CODE 0 text42 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext43 2E6A 0 CODE 0 text43 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext44 2EF2 0 CODE 0 text44 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext45 302A 0 CODE 0 text45 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext46 2F4C 0 CODE 0 text46 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext47 0 0 CODE 0 text47 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_DefaultFramingErrorHandler 302A 0 CODE 0 text39 dist/default/production\Proyecto_correcciones.X.production.o
+_Re_Vector 27DE 0 CODE 0 text28 dist/default/production\Proyecto_correcciones.X.production.o
+main@AuxReADC 1D5 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_DefaultOverrunErrorHandler 301E 0 CODE 0 text38 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_PIN_MANAGER_Initialize 2B04 0 CODE 0 text14 dist/default/production\Proyecto_correcciones.X.production.o
+___almod 2890 0 CODE 0 text5 dist/default/production\Proyecto_correcciones.X.production.o
+___awdiv 2B04 0 CODE 0 text9 dist/default/production\Proyecto_correcciones.X.production.o
+___awmod 2C80 0 CODE 0 text4 dist/default/production\Proyecto_correcciones.X.production.o
+___fladd 1BCE 0 CODE 0 text8 dist/default/production\Proyecto_correcciones.X.production.o
+___fldiv 1EDA 0 CODE 0 text34 dist/default/production\Proyecto_correcciones.X.production.o
+___fltol 2724 0 CODE 0 text33 dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_ErrorHandler 35 0 COMRAM 1 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\Proyecto_correcciones.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Proyecto_correcciones.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1TxHead 53 0 COMRAM 1 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1TxTail 52 0 COMRAM 1 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___lmul@multiplier 11 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+SPI1_ExchangeByte@data 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_Interrupcion_Rx_Serial 2FBE 0 CODE 0 text37 dist/default/production\Proyecto_correcciones.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\Proyecto_correcciones.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Proyecto_correcciones.X.production.o
+___wmul@multiplier 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_LATBbits F84 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_LATEbits F87 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_SetErrorHandler 3004 0 CODE 0 text22 dist/default/production\Proyecto_correcciones.X.production.o
+___fldiv@grs 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fldiv@rem 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_Read 2DA8 0 CODE 0 text42 dist/default/production\Proyecto_correcciones.X.production.o
+main@Resta 158 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_SetErrorHandler 300E 0 CODE 0 text22 dist/default/production\Proyecto_correcciones.X.production.o
+main@den2 130 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@num2 124 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Proyecto_correcciones.X.production.o
+_SPI1_ExchangeByte 2FAC 0 CODE 0 text26 dist/default/production\Proyecto_correcciones.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Proyecto_correcciones.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+___fldiv@new_exp 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_SPI1_Open 29DA 0 CODE 0 text27 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_SetFramingErrorHandler 3004 0 CODE 0 text21 dist/default/production\Proyecto_correcciones.X.production.o
+stackhi E87 0 ABS 0 - C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+stacklo 220 0 ABS 0 - C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+__end_of_EUSART1_SetOverrunErrorHandler 2FFA 0 CODE 0 text20 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_Write 2E16 0 CODE 0 text29 dist/default/production\Proyecto_correcciones.X.production.o
+_SSP1CLKPPS EB7 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_SPI1_Open 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_OSCCON1 ED8 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_OSCCON3 EDA 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_OSCTUNE EDD 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\Proyecto_correcciones.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Proyecto_correcciones.X.production.o
+main@SalidaFIR_long 160 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+_SSP1DATPPS EB8 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___fladd@grs 2A 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_filtrarFIR1 23D2 0 CODE 0 text2 dist/default/production\Proyecto_correcciones.X.production.o
+ConfigPostcaler@n 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_ADCC_Initialize 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+main@ir 174 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@w2 13C 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__pbssCOMRAM 4C 0 COMRAM 1 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_RxDataHandler 2EF2 0 CODE 0 text41 dist/default/production\Proyecto_correcciones.X.production.o
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+___flge@ff1 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___flge@ff2 B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_PIR1bits ECB 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PIR3bits ECD 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_PIR4bits ECE 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fltol@exp1 29 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+SPI1_Open@spi1UniqueConfiguration A 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1TxBuffer 80 0 BANK0 1 bssBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_SetTxInterruptHandler 2FDC 0 CODE 0 text18 dist/default/production\Proyecto_correcciones.X.production.o
+end_of_initialization 2A6A 0 CODE 0 cinit dist/default/production\Proyecto_correcciones.X.production.o
+_SPI1_Open 293C 0 CODE 0 text27 dist/default/production\Proyecto_correcciones.X.production.o
+EUSART1_Read@readValue 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Proyecto_correcciones.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Proyecto_correcciones.X.production.o
+___almod@divisor B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_Interrupcion_ADC 2F4C 0 CODE 0 text46 dist/default/production\Proyecto_correcciones.X.production.o
+___awdiv@quotient D 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+?___almod 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+?___awdiv 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+?___awmod 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_Read 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+?___fladd 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+?___fldiv 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+?___fltol 20 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Proyecto_correcciones.X.production.o
+EUSART1_SetRxInterruptHandler@interruptHandler 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__HbssBANK2 0 0 ABS 0 bssBANK2 dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_RxDataHandler 2ED2 0 CODE 0 text41 dist/default/production\Proyecto_correcciones.X.production.o
+___awmod@dividend 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Lramtop F00 0 RAM 0 ramtop dist/default/production\Proyecto_correcciones.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Proyecto_correcciones.X.production.o
+__pcinit 29DA 0 CODE 0 cinit dist/default/production\Proyecto_correcciones.X.production.o
+main@MiVector 1C8 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext0 F1E 0 CODE 0 text0 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext1 2162 0 CODE 0 text1 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext2 23D2 0 CODE 0 text2 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext3 2D52 0 CODE 0 text3 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext4 2C80 0 CODE 0 text4 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext5 2890 0 CODE 0 text5 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext6 2514 0 CODE 0 text6 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext7 2E44 0 CODE 0 text7 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext8 1BCE 0 CODE 0 text8 dist/default/production\Proyecto_correcciones.X.production.o
+__ptext9 2B04 0 CODE 0 text9 dist/default/production\Proyecto_correcciones.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext30 0 0 ABS 0 text30 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext31 0 0 ABS 0 text31 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext32 0 0 ABS 0 text32 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext33 0 0 ABS 0 text33 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext34 0 0 ABS 0 text34 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext36 0 0 ABS 0 text36 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext37 0 0 ABS 0 text37 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext38 0 0 ABS 0 text38 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext39 0 0 ABS 0 text39 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext40 0 0 ABS 0 text40 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext41 0 0 ABS 0 text41 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext42 0 0 ABS 0 text42 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext43 0 0 ABS 0 text43 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext44 0 0 ABS 0 text44 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext45 0 0 ABS 0 text45 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext46 0 0 ABS 0 text46 dist/default/production\Proyecto_correcciones.X.production.o
+__Ltext47 0 0 ABS 0 text47 dist/default/production\Proyecto_correcciones.X.production.o
+__ramtop F00 0 RAM 0 ramtop C:\Users\MARIAF~1\AppData\Local\Temp\xcAs258.o
+__Lpowerup 70 0 CODE 0 powerup dist/default/production\Proyecto_correcciones.X.production.o
+?___xxtofl D 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Proyecto_correcciones.X.production.o
+___fladd@aexp 28 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___fladd@bexp 29 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_Read 2DE2 0 CODE 0 text42 dist/default/production\Proyecto_correcciones.X.production.o
+___fltol@sign1 28 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__psmallconst F00 0 SMALLCONST 0 smallconst dist/default/production\Proyecto_correcciones.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_TxDefaultInterruptHandler 3D 0 COMRAM 1 nvCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_SLRCONA F0E 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_SLRCONB F16 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_SLRCONC F1E 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_SLRCOND F23 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_SLRCONE F2B 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADCC_DefaultInterruptHandler 302A 0 CODE 0 text45 dist/default/production\Proyecto_correcciones.X.production.o
+___fltol@f1 20 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Proyecto_correcciones.X.production.o
+__end_of__initialization 2A6A 0 CODE 0 cinit dist/default/production\Proyecto_correcciones.X.production.o
+___awmod@divisor 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Proyecto_correcciones.X.production.o
+__pidataBANK0 2F66 0 CODE 0 idataBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__pidataBANK1 2F7E 0 CODE 0 idataBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+main@Palabra_DAC 16C 0 BANK1 1 cstackBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+_SP1BRGH F9C 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_SP1BRGL F9B 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Proyecto_correcciones.X.production.o
+_SSP1CON1bits F96 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+___lmul@product 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_SetRxInterruptHandler 2FE6 0 CODE 0 text19 dist/default/production\Proyecto_correcciones.X.production.o
+___lmul@multiplicand 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1RxBuffer 200 0 BANK2 1 bssBANK2 dist/default/production\Proyecto_correcciones.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_Transmit_ISR 2E6A 0 CODE 0 text43 dist/default/production\Proyecto_correcciones.X.production.o
+_SSP1ADD F93 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_SSP1BUF F92 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_SetFramingErrorHandler 2FFA 0 CODE 0 text21 dist/default/production\Proyecto_correcciones.X.production.o
+_EUSART1_SetOverrunErrorHandler 2FF0 0 CODE 0 text20 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_main 1406 0 CODE 0 text0 dist/default/production\Proyecto_correcciones.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\Proyecto_correcciones.X.production.o
+_Lectura_Rx 1F5 0 BANK1 1 bssBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+_ADACQ F5C 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADACT F56 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADCAP F5D 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADCLK F57 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADPCH F5F 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADPRE F5E 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADREF F58 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADRPT F66 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_Interrupcion_ADC 2F66 0 CODE 0 text46 dist/default/production\Proyecto_correcciones.X.production.o
+_OSCEN EDC 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_T2CON FBD 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_T2HLT FBE 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_T2RST FC0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_T2TMR FBB 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_TRISA F88 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_TRISB F89 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_TRISC F8A 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_TRISD F8B 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_TRISE F8C 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\Proyecto_correcciones.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\Proyecto_correcciones.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Proyecto_correcciones.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\Proyecto_correcciones.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\Proyecto_correcciones.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Proyecto_correcciones.X.production.o
+ADCC_SetADIInterruptHandler@InterruptHandler 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_Interrupcion_Rx_Serial 2FD0 0 CODE 0 text37 dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1RxCount 4F 0 COMRAM 1 bssCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_Interrupcion_ADC 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_EUSART1_Initialize 2C80 0 CODE 0 text17 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_OSCILLATOR_Initialize 2FAC 0 CODE 0 text15 dist/default/production\Proyecto_correcciones.X.production.o
+__initialization 29DA 0 CODE 0 cinit dist/default/production\Proyecto_correcciones.X.production.o
+___xxtofl@sign 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__pbssBANK1 1EF 0 BANK1 1 bssBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__pbssBANK2 200 0 BANK2 1 bssBANK2 dist/default/production\Proyecto_correcciones.X.production.o
+__pdataCOMRAM 40 0 COMRAM 1 dataCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Proyecto_correcciones.X.production.o
+___wmul@product B 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_eusart1RxStatusBuffer 60 0 BANK0 1 bssBANK0 dist/default/production\Proyecto_correcciones.X.production.o
+__Hsmallconst F1E 0 SMALLCONST 0 smallconst dist/default/production\Proyecto_correcciones.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Proyecto_correcciones.X.production.o
+_ADC_Tx_Vect 1EF 0 BANK1 1 bssBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_EUSART1_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Proyecto_correcciones.X.production.o
+EUSART1_SetOverrunErrorHandler@interruptHandler 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Proyecto_correcciones.X.production.o
+_Result_ADC 1F3 0 BANK1 1 bssBANK1 dist/default/production\Proyecto_correcciones.X.production.o
+__Hintcode 70 0 CODE 0 intcode dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_INTERRUPT_Initialize 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+__size_of_inicializar_iir_2_ord 0 0 ABS 0 - dist/default/production\Proyecto_correcciones.X.production.o
+_ADCC_SetADIInterruptHandler 300E 0 CODE 0 text24 dist/default/production\Proyecto_correcciones.X.production.o
+_OSCILLATOR_Initialize 2F96 0 CODE 0 text15 dist/default/production\Proyecto_correcciones.X.production.o
+__end_of_TMR2_Initialize 2F30 0 CODE 0 text11 dist/default/production\Proyecto_correcciones.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text0 0 F1E F1E 210E 1
+cstackCOMRAM 1 1 1 54 1
+cstackBANK1 1 100 100 F8 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 88 1
+bssBANK2 1 200 200 20 1
+intcode 0 8 8 6C 1
+smallconst 0 F00 F00 1E 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

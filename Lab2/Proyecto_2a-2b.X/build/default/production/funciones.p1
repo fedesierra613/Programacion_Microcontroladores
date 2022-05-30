@@ -1,0 +1,570 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"20 ./funciones.h
+[; ;./funciones.h: 20: typedef struct coef_iir_2_ord {
+[s S1 `f -> 3 `i `f -> 3 `i `f -> 3 `i `f -> 3 `i `f -> 3 `i `f -> 3 `i `f -> 3 `i ]
+[n S1 coef_iir_2_ord num den w gan num2 den2 w2 ]
+"7 funciones.c
+[; ;funciones.c: 7: const int B[12] = {
+[v _B `Ci ~T0 @X0 -> 12 `i e ]
+[i _B
+:U ..
+-U -> 4 `i
+-> 5 `i
+-> 16 `i
+-> 28 `i
+-> 38 `i
+-> 44 `i
+-> 44 `i
+-> 38 `i
+-> 28 `i
+-> 16 `i
+-> 5 `i
+-U -> 4 `i
+..
+]
+"58
+[; ;funciones.c: 58: volatile int x[12];
+[v _x `Vi ~T0 @X0 -> 12 `i e ]
+"59
+[; ;funciones.c: 59: volatile int k=0;
+[v _k `Vi ~T0 @X0 1 e ]
+[i _k
+-> 0 `i
+]
+"61
+[; ;funciones.c: 61: long filtrarFIR1(int in)
+[v _filtrarFIR1 `(l ~T0 @X0 1 ef1`i ]
+"62
+[; ;funciones.c: 62: {
+{
+[e :U _filtrarFIR1 ]
+"61
+[; ;funciones.c: 61: long filtrarFIR1(int in)
+[v _in `i ~T0 @X0 1 r1 ]
+"62
+[; ;funciones.c: 62: {
+[f ]
+"63
+[; ;funciones.c: 63:   long i = 1;
+[v _i `l ~T0 @X0 1 a ]
+[e = _i -> -> 1 `i `l ]
+"64
+[; ;funciones.c: 64:   x[k] = (long)in;
+[e = *U + &U _x * -> -> _k `Vui `ux -> -> # *U &U _x `ui `ux -> -> _in `l `i ]
+"65
+[; ;funciones.c: 65:   long y = 0;
+[v _y `l ~T0 @X0 1 a ]
+[e = _y -> -> 0 `i `l ]
+"66
+[; ;funciones.c: 66:   for (i = 1; i <= 12; i++)
+{
+[e = _i -> -> 1 `i `l ]
+[e $ <= _i -> -> 12 `i `l 3  ]
+[e $U 4  ]
+[e :U 3 ]
+"67
+[; ;funciones.c: 67:   {
+{
+"68
+[; ;funciones.c: 68:     y += (long)B[i - 1] * (long)x[(i + k) % 12];
+[e =+ _y * -> *U + &U _B * -> - _i -> -> 1 `i `l `ux -> -> # *U &U _B `ui `ux `l -> *U + &U _x * -> % + _i -> _k `l -> -> 12 `i `l `ux -> -> # *U &U _x `ui `ux `l ]
+"69
+[; ;funciones.c: 69:   }
+}
+[e ++ _i -> -> 1 `i `l ]
+[e $ <= _i -> -> 12 `i `l 3  ]
+[e :U 4 ]
+}
+"71
+[; ;funciones.c: 71:   k = (k + 1) % 12;
+[e = _k % + _k -> 1 `i -> 12 `i ]
+"72
+[; ;funciones.c: 72:   return y >> 8;
+[e ) >> _y -> 8 `i ]
+[e $UE 2  ]
+"73
+[; ;funciones.c: 73: }
+[e :UE 2 ]
+}
+"75
+[; ;funciones.c: 75: long filtrarFIR2(int in)
+[v _filtrarFIR2 `(l ~T0 @X0 1 ef1`i ]
+"76
+[; ;funciones.c: 76: {
+{
+[e :U _filtrarFIR2 ]
+"75
+[; ;funciones.c: 75: long filtrarFIR2(int in)
+[v _in `i ~T0 @X0 1 r1 ]
+"76
+[; ;funciones.c: 76: {
+[f ]
+"77
+[; ;funciones.c: 77:   int i = 0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"78
+[; ;funciones.c: 78:   x[k] = in;
+[e = *U + &U _x * -> -> _k `Vui `ux -> -> # *U &U _x `ui `ux _in ]
+"79
+[; ;funciones.c: 79:   int inx = k;
+[v _inx `i ~T0 @X0 1 a ]
+[e = _inx _k ]
+"80
+[; ;funciones.c: 80:   long y = 0;
+[v _y `l ~T0 @X0 1 a ]
+[e = _y -> -> 0 `i `l ]
+"81
+[; ;funciones.c: 81:   for (i = 0; i < 12; ++i) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 12 `i 7  ]
+[e $U 8  ]
+[e :U 7 ]
+{
+"82
+[; ;funciones.c: 82:     y += (long)x[inx] * (long)B[i];
+[e =+ _y * -> *U + &U _x * -> -> _inx `ui `ux -> -> # *U &U _x `ui `ux `l -> *U + &U _B * -> -> _i `ui `ux -> -> # *U &U _B `ui `ux `l ]
+"83
+[; ;funciones.c: 83:     inx = inx != 0 ? inx - 1 : 12 - 1;
+[e = _inx ? != _inx -> 0 `i : - _inx -> 1 `i - -> 12 `i -> 1 `i ]
+"84
+[; ;funciones.c: 84:   }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i -> 12 `i 7  ]
+[e :U 8 ]
+}
+"85
+[; ;funciones.c: 85:   k++;
+[e ++ _k -> -> 1 `i `Vi ]
+"86
+[; ;funciones.c: 86:   k = (k >= 12) ? 0 : k;
+[e = _k ? >= _k -> 12 `i : -> 0 `i _k ]
+"87
+[; ;funciones.c: 87:   return y >> 8;
+[e ) >> _y -> 8 `i ]
+[e $UE 6  ]
+"89
+[; ;funciones.c: 89: }
+[e :UE 6 ]
+}
+"91
+[; ;funciones.c: 91: long filtrarFIR3(int in)
+[v _filtrarFIR3 `(l ~T0 @X0 1 ef1`i ]
+"92
+[; ;funciones.c: 92: {
+{
+[e :U _filtrarFIR3 ]
+"91
+[; ;funciones.c: 91: long filtrarFIR3(int in)
+[v _in `i ~T0 @X0 1 r1 ]
+"92
+[; ;funciones.c: 92: {
+[f ]
+"93
+[; ;funciones.c: 93:   int i = 0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"94
+[; ;funciones.c: 94:   x[k] = in;
+[e = *U + &U _x * -> -> _k `Vui `ux -> -> # *U &U _x `ui `ux _in ]
+"95
+[; ;funciones.c: 95:   int inx = k;
+[v _inx `i ~T0 @X0 1 a ]
+[e = _inx _k ]
+"96
+[; ;funciones.c: 96:   char *apuntadorcoef = &B[0];
+[v _apuntadorcoef `*uc ~T0 @X0 1 a ]
+[e = _apuntadorcoef -> &U *U + &U _B * -> -> -> 0 `i `ui `ux -> -> # *U &U _B `ui `ux `*uc ]
+"97
+[; ;funciones.c: 97:   int *apuntadorarrc = &x[inx];
+[v _apuntadorarrc `*i ~T0 @X0 1 a ]
+[e = _apuntadorarrc -> &U *U + &U _x * -> -> _inx `ui `ux -> -> # *U &U _x `ui `ux `*i ]
+"100
+[; ;funciones.c: 100:   long y = 0;
+[v _y `l ~T0 @X0 1 a ]
+[e = _y -> -> 0 `i `l ]
+"101
+[; ;funciones.c: 101:   for (i = 0; i < 12; ++i) {
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 12 `i 11  ]
+[e $U 12  ]
+[e :U 11 ]
+{
+"102
+[; ;funciones.c: 102:     y += (long)(*apuntadorarrc) * (long)(*apuntadorcoef);
+[e =+ _y * -> *U _apuntadorarrc `l -> *U _apuntadorcoef `l ]
+"103
+[; ;funciones.c: 103:     apuntadorcoef++;
+[e ++ _apuntadorcoef * -> -> 1 `i `x -> -> # *U _apuntadorcoef `i `x ]
+"104
+[; ;funciones.c: 104:     if (inx != 0) {
+[e $ ! != _inx -> 0 `i 14  ]
+{
+"105
+[; ;funciones.c: 105:       apuntadorarrc--;
+[e -- _apuntadorarrc * -> -> 1 `i `x -> -> # *U _apuntadorarrc `i `x ]
+"106
+[; ;funciones.c: 106:       inx--;
+[e -- _inx -> 1 `i ]
+"107
+[; ;funciones.c: 107:     }
+}
+[e $U 15  ]
+"108
+[; ;funciones.c: 108:     else {
+[e :U 14 ]
+{
+"109
+[; ;funciones.c: 109:       apuntadorarrc = &x[12 - 1];
+[e = _apuntadorarrc -> &U *U + &U _x * -> -> - -> 12 `i -> 1 `i `ui `ux -> -> # *U &U _x `ui `ux `*i ]
+"110
+[; ;funciones.c: 110:       inx = 12 - 1;
+[e = _inx - -> 12 `i -> 1 `i ]
+"111
+[; ;funciones.c: 111:     }
+}
+[e :U 15 ]
+"112
+[; ;funciones.c: 112:   }
+}
+[e =+ _i -> 1 `i ]
+[e $ < _i -> 12 `i 11  ]
+[e :U 12 ]
+}
+"113
+[; ;funciones.c: 113:   k++;
+[e ++ _k -> -> 1 `i `Vi ]
+"114
+[; ;funciones.c: 114:   k = (k >= 12) ? 0 : k;
+[e = _k ? >= _k -> 12 `i : -> 0 `i _k ]
+"115
+[; ;funciones.c: 115:   return y >> 8;
+[e ) >> _y -> 8 `i ]
+[e $UE 10  ]
+"116
+[; ;funciones.c: 116: }
+[e :UE 10 ]
+}
+"121
+[; ;funciones.c: 121: void inicializar_iir_2_ord(float*num, float*den, float*w, float *num2, float *den2, float *w2, float *gan, coef_iir_2_ord* ir)
+[v _inicializar_iir_2_ord `(v ~T0 @X0 1 ef8`*f`*f`*f`*f`*f`*f`*f`*S1 ]
+"122
+[; ;funciones.c: 122: {
+{
+[e :U _inicializar_iir_2_ord ]
+"121
+[; ;funciones.c: 121: void inicializar_iir_2_ord(float*num, float*den, float*w, float *num2, float *den2, float *w2, float *gan, coef_iir_2_ord* ir)
+[v _num `*f ~T0 @X0 1 r1 ]
+[v _den `*f ~T0 @X0 1 r2 ]
+[v _w `*f ~T0 @X0 1 r3 ]
+[v _num2 `*f ~T0 @X0 1 r4 ]
+[v _den2 `*f ~T0 @X0 1 r5 ]
+[v _w2 `*f ~T0 @X0 1 r6 ]
+[v _gan `*f ~T0 @X0 1 r7 ]
+[v _ir `*S1 ~T0 @X0 1 r8 ]
+"122
+[; ;funciones.c: 122: {
+[f ]
+"123
+[; ;funciones.c: 123:   for (int i = 0; i < 3; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 3 `i 17  ]
+[e $U 18  ]
+[e :U 17 ]
+{
+"124
+[; ;funciones.c: 124:     ir->num[i] = num[i];
+[e = *U + &U . *U _ir 0 * -> -> _i `ui `ux -> -> # *U &U . *U _ir 0 `ui `ux *U + _num * -> _i `x -> -> # *U _num `i `x ]
+"125
+[; ;funciones.c: 125:     ir->den[i] = den[i];
+[e = *U + &U . *U _ir 1 * -> -> _i `ui `ux -> -> # *U &U . *U _ir 1 `ui `ux *U + _den * -> _i `x -> -> # *U _den `i `x ]
+"126
+[; ;funciones.c: 126:     ir->w[i] = w[i];
+[e = *U + &U . *U _ir 2 * -> -> _i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux *U + _w * -> _i `x -> -> # *U _w `i `x ]
+"127
+[; ;funciones.c: 127:     ir->num2[i] = num2[i];
+[e = *U + &U . *U _ir 4 * -> -> _i `ui `ux -> -> # *U &U . *U _ir 4 `ui `ux *U + _num2 * -> _i `x -> -> # *U _num2 `i `x ]
+"128
+[; ;funciones.c: 128:     ir->den2[i] = den2[i];
+[e = *U + &U . *U _ir 5 * -> -> _i `ui `ux -> -> # *U &U . *U _ir 5 `ui `ux *U + _den2 * -> _i `x -> -> # *U _den2 `i `x ]
+"129
+[; ;funciones.c: 129:     ir->w2[i] = w2[i];
+[e = *U + &U . *U _ir 6 * -> -> _i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux *U + _w2 * -> _i `x -> -> # *U _w2 `i `x ]
+"130
+[; ;funciones.c: 130:     ir->gan[i] = gan[i];
+[e = *U + &U . *U _ir 3 * -> -> _i `ui `ux -> -> # *U &U . *U _ir 3 `ui `ux *U + _gan * -> _i `x -> -> # *U _gan `i `x ]
+"131
+[; ;funciones.c: 131:   }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 3 `i 17  ]
+[e :U 18 ]
+}
+"132
+[; ;funciones.c: 132: }
+[e :UE 16 ]
+}
+"135
+[; ;funciones.c: 135: float filtrarIIR(float in, coef_iir_2_ord* ir) {
+[v _filtrarIIR `(f ~T0 @X0 1 ef2`f`*S1 ]
+{
+[e :U _filtrarIIR ]
+[v _in `f ~T0 @X0 1 r1 ]
+[v _ir `*S1 ~T0 @X0 1 r2 ]
+[f ]
+"136
+[; ;funciones.c: 136:   float y;
+[v _y `f ~T0 @X0 1 a ]
+"143
+[; ;funciones.c: 143:   ir->w[0] = (ir->den[0] * in) - (ir->den[1] * ir->w[1]) - (ir->den[2] * ir->w[2]);
+[e = *U + &U . *U _ir 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux - - * *U + &U . *U _ir 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 1 `ui `ux _in * *U + &U . *U _ir 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 1 `ui `ux *U + &U . *U _ir 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux * *U + &U . *U _ir 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 1 `ui `ux *U + &U . *U _ir 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux ]
+"144
+[; ;funciones.c: 144:   y = ((ir->num[0] * ir->w[0]) + (ir->num[1] * ir->w[1]) + (ir->num[2] * ir->w[2]));
+[e = _y + + * *U + &U . *U _ir 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 0 `ui `ux *U + &U . *U _ir 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux * *U + &U . *U _ir 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 0 `ui `ux *U + &U . *U _ir 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux * *U + &U . *U _ir 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 0 `ui `ux *U + &U . *U _ir 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux ]
+"145
+[; ;funciones.c: 145:   ir->w[2] = ir->w[1];
+[e = *U + &U . *U _ir 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux *U + &U . *U _ir 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux ]
+"146
+[; ;funciones.c: 146:   ir->w[1] = ir->w[0];
+[e = *U + &U . *U _ir 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux *U + &U . *U _ir 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux ]
+"147
+[; ;funciones.c: 147:   return y;
+[e ) _y ]
+[e $UE 20  ]
+"148
+[; ;funciones.c: 148: }
+[e :UE 20 ]
+}
+"161
+[; ;funciones.c: 161: long filtrarFIR3_Optimizado(int in)
+[v _filtrarFIR3_Optimizado `(l ~T0 @X0 1 ef1`i ]
+"162
+[; ;funciones.c: 162: {
+{
+[e :U _filtrarFIR3_Optimizado ]
+"161
+[; ;funciones.c: 161: long filtrarFIR3_Optimizado(int in)
+[v _in `i ~T0 @X0 1 r1 ]
+"162
+[; ;funciones.c: 162: {
+[f ]
+"163
+[; ;funciones.c: 163:   int i = 0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"164
+[; ;funciones.c: 164:   x[k] = in;
+[e = *U + &U _x * -> -> _k `Vui `ux -> -> # *U &U _x `ui `ux _in ]
+"165
+[; ;funciones.c: 165:   int inx = k;
+[v _inx `i ~T0 @X0 1 a ]
+[e = _inx _k ]
+"166
+[; ;funciones.c: 166:   char *apuntadorcoef = &B[0];
+[v _apuntadorcoef `*uc ~T0 @X0 1 a ]
+[e = _apuntadorcoef -> &U *U + &U _B * -> -> -> 0 `i `ui `ux -> -> # *U &U _B `ui `ux `*uc ]
+"167
+[; ;funciones.c: 167:   int *apuntadorarrc = &x[inx];
+[v _apuntadorarrc `*i ~T0 @X0 1 a ]
+[e = _apuntadorarrc -> &U *U + &U _x * -> -> _inx `ui `ux -> -> # *U &U _x `ui `ux `*i ]
+"168
+[; ;funciones.c: 168:   int *apuntadoroffset = inx;
+[v _apuntadoroffset `*i ~T0 @X0 1 a ]
+[e = _apuntadoroffset -> _inx `*i ]
+"170
+[; ;funciones.c: 170:   long buffer[12];
+[v _buffer `l ~T0 @X0 -> 12 `i a ]
+"171
+[; ;funciones.c: 171:   for ( i = 12 -1; i > 0; i = i-1 ){
+{
+[e = _i - -> 12 `i -> 1 `i ]
+[e $ > _i -> 0 `i 22  ]
+[e $U 23  ]
+[e :U 22 ]
+{
+"172
+[; ;funciones.c: 172:     buffer[i] = buffer[i-1];
+[e = *U + &U _buffer * -> -> _i `ui `ux -> -> # *U &U _buffer `ui `ux *U + &U _buffer * -> -> - _i -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux ]
+"173
+[; ;funciones.c: 173:   }
+}
+[e = _i - _i -> 1 `i ]
+[e $ > _i -> 0 `i 22  ]
+[e :U 23 ]
+}
+"174
+[; ;funciones.c: 174:   buffer[0] = in;
+[e = *U + &U _buffer * -> -> -> 0 `i `ui `ux -> -> # *U &U _buffer `ui `ux -> _in `l ]
+"175
+[; ;funciones.c: 175:   long y = 0;
+[v _y `l ~T0 @X0 1 a ]
+[e = _y -> -> 0 `i `l ]
+"176
+[; ;funciones.c: 176:   for (i = 0; i < (12/2); i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i / -> 12 `i -> 2 `i 25  ]
+[e $U 26  ]
+[e :U 25 ]
+"177
+[; ;funciones.c: 177:   {
+{
+"178
+[; ;funciones.c: 178:     y += ((long)(*apuntadorcoef) * ((long)(*apuntadorarrc) + (long)(buffer[12 -i-1])));
+[e =+ _y * -> *U _apuntadorcoef `l + -> *U _apuntadorarrc `l *U + &U _buffer * -> -> - - -> 12 `i _i -> 1 `i `ui `ux -> -> # *U &U _buffer `ui `ux ]
+"179
+[; ;funciones.c: 179:     apuntadorcoef++;
+[e ++ _apuntadorcoef * -> -> 1 `i `x -> -> # *U _apuntadorcoef `i `x ]
+"180
+[; ;funciones.c: 180:     if (inx != 0)
+[e $ ! != _inx -> 0 `i 28  ]
+"181
+[; ;funciones.c: 181:     {
+{
+"182
+[; ;funciones.c: 182:       apuntadorarrc--;
+[e -- _apuntadorarrc * -> -> 1 `i `x -> -> # *U _apuntadorarrc `i `x ]
+"183
+[; ;funciones.c: 183:       apuntadoroffset++;
+[e ++ _apuntadoroffset * -> -> 1 `i `x -> -> # *U _apuntadoroffset `i `x ]
+"184
+[; ;funciones.c: 184:       inx--;
+[e -- _inx -> 1 `i ]
+"185
+[; ;funciones.c: 185:     }
+}
+[e $U 29  ]
+"186
+[; ;funciones.c: 186:     else
+[e :U 28 ]
+"187
+[; ;funciones.c: 187:     {
+{
+"188
+[; ;funciones.c: 188:       apuntadorarrc = &x[12 - 1];
+[e = _apuntadorarrc -> &U *U + &U _x * -> -> - -> 12 `i -> 1 `i `ui `ux -> -> # *U &U _x `ui `ux `*i ]
+"189
+[; ;funciones.c: 189:       apuntadoroffset = &x[0];
+[e = _apuntadoroffset -> &U *U + &U _x * -> -> -> 0 `i `ui `ux -> -> # *U &U _x `ui `ux `*i ]
+"190
+[; ;funciones.c: 190:       inx = (12/2) ;
+[e = _inx / -> 12 `i -> 2 `i ]
+"191
+[; ;funciones.c: 191:     }
+}
+[e :U 29 ]
+"192
+[; ;funciones.c: 192:   }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i / -> 12 `i -> 2 `i 25  ]
+[e :U 26 ]
+}
+"193
+[; ;funciones.c: 193:   k++;
+[e ++ _k -> -> 1 `i `Vi ]
+"194
+[; ;funciones.c: 194:   k = (k >= 12) ? 0 : k;
+[e = _k ? >= _k -> 12 `i : -> 0 `i _k ]
+"197
+[; ;funciones.c: 197:   if((12%2) == 0)
+[e $ ! == % -> 12 `i -> 2 `i -> 0 `i 30  ]
+"198
+[; ;funciones.c: 198:   {
+{
+"199
+[; ;funciones.c: 199:     return y>>8;
+[e ) >> _y -> 8 `i ]
+[e $UE 21  ]
+"200
+[; ;funciones.c: 200:   }
+}
+[e $U 31  ]
+"201
+[; ;funciones.c: 201:   else
+[e :U 30 ]
+"202
+[; ;funciones.c: 202:   {
+{
+"203
+[; ;funciones.c: 203:     y += ((long)B[(12/2)+1]) * ((long)x[(12/2)+1]);
+[e =+ _y * -> *U + &U _B * -> -> + / -> 12 `i -> 2 `i -> 1 `i `ui `ux -> -> # *U &U _B `ui `ux `l -> *U + &U _x * -> -> + / -> 12 `i -> 2 `i -> 1 `i `ui `ux -> -> # *U &U _x `ui `ux `l ]
+"204
+[; ;funciones.c: 204:     return y>>8;
+[e ) >> _y -> 8 `i ]
+[e $UE 21  ]
+"205
+[; ;funciones.c: 205:   }
+}
+[e :U 31 ]
+"206
+[; ;funciones.c: 206: }
+[e :UE 21 ]
+}
+"209
+[; ;funciones.c: 209: float filtrarIIRFormula2_a(float in, coef_iir_2_ord* ir){
+[v _filtrarIIRFormula2_a `(f ~T0 @X0 1 ef2`f`*S1 ]
+{
+[e :U _filtrarIIRFormula2_a ]
+[v _in `f ~T0 @X0 1 r1 ]
+[v _ir `*S1 ~T0 @X0 1 r2 ]
+[f ]
+"210
+[; ;funciones.c: 210:     float y;
+[v _y `f ~T0 @X0 1 a ]
+"211
+[; ;funciones.c: 211:     ir->w[0] = ((ir->gan[0] * in) - (ir->den[1] * ir->w[1]) - (ir->den[2] * ir->w[2]))/(1/ir->den[0]);
+[e = *U + &U . *U _ir 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux / - - * *U + &U . *U _ir 3 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 3 `ui `ux _in * *U + &U . *U _ir 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 1 `ui `ux *U + &U . *U _ir 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux * *U + &U . *U _ir 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 1 `ui `ux *U + &U . *U _ir 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux / -> -> 1 `i `f *U + &U . *U _ir 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 1 `ui `ux ]
+"212
+[; ;funciones.c: 212:     y = ((ir->num[0] * ir->w[0]) + (ir->num[1] * ir->w[1]) + (ir->num[2] * ir->w[2]));
+[e = _y + + * *U + &U . *U _ir 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 0 `ui `ux *U + &U . *U _ir 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux * *U + &U . *U _ir 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 0 `ui `ux *U + &U . *U _ir 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux * *U + &U . *U _ir 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 0 `ui `ux *U + &U . *U _ir 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux ]
+"213
+[; ;funciones.c: 213:     ir->w[2] = ir->w[1];
+[e = *U + &U . *U _ir 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux *U + &U . *U _ir 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux ]
+"214
+[; ;funciones.c: 214:     ir->w[1] = ir->w[0];
+[e = *U + &U . *U _ir 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux *U + &U . *U _ir 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 2 `ui `ux ]
+"215
+[; ;funciones.c: 215:     return y;
+[e ) _y ]
+[e $UE 32  ]
+"216
+[; ;funciones.c: 216: }
+[e :UE 32 ]
+}
+"218
+[; ;funciones.c: 218: float filtrarIIRFormula2_b(float in, coef_iir_2_ord* ir){
+[v _filtrarIIRFormula2_b `(f ~T0 @X0 1 ef2`f`*S1 ]
+{
+[e :U _filtrarIIRFormula2_b ]
+[v _in `f ~T0 @X0 1 r1 ]
+[v _ir `*S1 ~T0 @X0 1 r2 ]
+[f ]
+"219
+[; ;funciones.c: 219:     float y;
+[v _y `f ~T0 @X0 1 a ]
+"220
+[; ;funciones.c: 220:     ir->w2[0] = ((ir->gan[1] * in) - (ir->den2[1] * ir->w2[1]) - (ir->den2[2] * ir->w2[2]))/(1/ir->den2[0]);
+[e = *U + &U . *U _ir 6 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux / - - * *U + &U . *U _ir 3 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 3 `ui `ux _in * *U + &U . *U _ir 5 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 5 `ui `ux *U + &U . *U _ir 6 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux * *U + &U . *U _ir 5 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 5 `ui `ux *U + &U . *U _ir 6 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux / -> -> 1 `i `f *U + &U . *U _ir 5 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 5 `ui `ux ]
+"221
+[; ;funciones.c: 221:     y = ((ir->num2[0] * ir->w2[0]) + (ir->num2[1] * ir->w2[1]) + (ir->num2[2] * ir->w2[2]));
+[e = _y + + * *U + &U . *U _ir 4 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 4 `ui `ux *U + &U . *U _ir 6 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux * *U + &U . *U _ir 4 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 4 `ui `ux *U + &U . *U _ir 6 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux * *U + &U . *U _ir 4 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 4 `ui `ux *U + &U . *U _ir 6 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux ]
+"222
+[; ;funciones.c: 222:     ir->w2[2] = ir->w2[1];
+[e = *U + &U . *U _ir 6 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux *U + &U . *U _ir 6 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux ]
+"223
+[; ;funciones.c: 223:     ir->w2[1] = ir->w2[0];
+[e = *U + &U . *U _ir 6 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux *U + &U . *U _ir 6 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _ir 6 `ui `ux ]
+"224
+[; ;funciones.c: 224:     return y;
+[e ) _y ]
+[e $UE 33  ]
+"225
+[; ;funciones.c: 225: }
+[e :UE 33 ]
+}
